@@ -1,8 +1,26 @@
-/*A. Moore. D, Lally, N. Melia
-	style.css - 1st yr final project*/
+h1{
+	color: blue;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: 4.0em;
+}
 
-html, body {
- }
+body{
+	padding-left: 5%;
+	padding-right: 5%;
+}
 
-p{
+img{
+	padding: 5%;
+}
+
+.btn-default {
+	background-color: white;
+	border-color: grey;
+	color: #337ab7;
+	font-size: 1.0em;
+}
+
+.nav-pills {
+	font-size: 1.7em;
+	background-color: white;
 }

@@ -2,53 +2,107 @@
 	index.html - 1st yr final project-->
 	
 <!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	
-	<!-- JavaScript index.js-->
-	<link rel = "index" href="index.js">
-
-	<!--Linking CSS to page-->
-	<link rel="stylesheet" href="style.css">
-	
-	<!--Adding an image to the browser tab, code from stacked overflow-->
-	<link rel="shortcut icon" type="image/x-icon" href=" ../images/default.jpg" />
-
-	<!--Adding meta data for search engines and to control the view a user has when on the site-->
-	<meta name="description" content="*********">
-	<meta name="keywords" content="*************">
-	<meta name="viewport" content="****************">
-	
-	
-    <title>store.com</title>
-  </head>
-  <body>
-		<div>
-			<div>
+<html>
+	<head>
+		<title>store.com</title>
+		<!-- Icon for title -->
+		<link rel="shortcut icon" type="image/x-icon" href="Images/stars.png" />
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!--Adding meta data for search engines and to control the view a user has when on the site-->
+		<meta name="description" content="*********">
+		<meta name="keywords" content="*************">
+		<meta name="viewport" content="****************">
+		<!-- Bootstrap CSS -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" rel="stylesheet">	
+		<link href="Css/style.css" rel="stylesheet">
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<!-- External JavaScript -->
+		<script src="JavaScript/index.js"></script>	
+	</head>
+	<body>
+		<div class="container-fluid">
+			<!-- Navagation bar at top of page (Place Holder) -->
+			<ul class="nav nav-pills text-center">
+			
+				<li class="pull-right">
+					<a href="#page4.html">page4</a>
+				</li>
 				
+				<li class="pull-right">
+					<a href="#page3.html">page3</a>
+				</li>
+				
+				<li class="pull-right">
+					<a href="#page2.html">page2</a>
+				</li>
+				
+				<li class="pull-right">
+					<a href="#page1.html">page1</a>
+				</li>
+					
+				<li class="pull-left">
+					<a href="#../Index.html">Home</a>
+				</li>
+
+			</ul>
+			
+			<!-- placeholder for search bar and buttons-->
+			<div class="row">
+			
+				<div class="btnList">
+					<input type="text" id="searchBar">
+					<a class="btn btn-default" href="#">Search</a>
+					<a class="btn btn-default pull-right" href="#">checkout</a>
+					<a class="btn btn-default pull-right" href="#">log in</a>					
+				</div>
+			
+			</div>
+			
+			<!-- placeholder for slide show-->
+			<h1 class="text-center">Slide show here</h1>
+			
+			<!-- placeholder images for the store page-->
+			<div class="row">
+				<!-- left col-->
+				<div class="col-sm-4 col-md-4">
+					<img src="Images/placeHolder.jpg" alt="inProgress" class="">
+					<p>product1 Details</p>
+					<img src="Images/placeHolder.jpg" alt="inProgress" class="">
+					<p>product4 Details</p>
+					<img src="Images/placeHolder.jpg" alt="inProgress" class="">
+					<p>product7 Details</p>
+					<img src="Images/placeHolder.jpg" alt="inProgress" class="">
+					<p>product10 Details</p>
+				</div>
+				<!-- middle col-->
+				<div class="col-sm-4 col-md-4">
+					<img src="Images/placeHolder.jpg" alt="inProgress" class="">
+					<p>product2 Details</p>
+					<img src="Images/placeHolder.jpg" alt="inProgress" class="">
+					<p>product5 Details</p>
+					<img src="Images/placeHolder.jpg" alt="inProgress" class="">
+					<p>product8 Details</p>
+					<img src="Images/placeHolder.jpg" alt="inProgress" class="">
+					<p>product11 Details</p>
+				</div>
+				<!-- right col-->
+				<div class="col-sm-4 col-md-4">
+					<img src="Images/placeHolder.jpg" alt="inProgress" class="">
+					<p>product3 Details</p>
+					<img src="Images/placeHolder.jpg" alt="inProgress" class="">
+					<p>product6 Details</p>
+					<img src="Images/placeHolder.jpg" alt="inProgress" class="">
+					<p>product9 Details</p>
+					<img src="Images/placeHolder.jpg" alt="inProgress" class="">
+					<p>product12 Details</p>
+				</div>
 			</div>
 		</div>
-
-   
-   
-   
-   
-   
-   
-   
-   
-   
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+	</body>
 </html>
