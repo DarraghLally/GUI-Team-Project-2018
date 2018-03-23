@@ -13,16 +13,16 @@
 			"username" : "Mary Doe", 
 			"pssword" : "timmy08" 
 		}
-	];	
+	];
+		alert("Test");
+	
 	// Then operate on the array with a for loop 
 	for (var i = 0; i< accounts.length; i++) 
 	{
 		var name = accounts[i].username; // Or some other logic.
 		var pass = accounts[i].pssword;
 		//output city and street
-		alert(name);
 		alert(pass);
-		
 	}
 	
 

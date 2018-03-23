@@ -17,12 +17,6 @@
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
 		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" rel="stylesheet">	
 		<link href="Css/style.css" rel="stylesheet">
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		<!-- External JavaScript -->
-		<script src="JavaScript/index.js"></script>	
 	</head>
 	<body>
 		<div class="container-fluid">
@@ -63,8 +57,30 @@
 			
 			</div>
 			
-			<!-- placeholder for slide show-->
-			<h1 class="text-center">Slide show here</h1>
+			<div class="row">
+				<div class="slideshow-container">
+					<!-- 1st slide show image-->
+					<div class="mySlides fade">
+					  <img src="Images/sunrise.jpg" style="width:100%">
+					</div>
+					<!-- 2nd slide show image-->
+					<div class="mySlides fade">
+					  <img src="Images/planet_light.jpg" style="width:100%">
+					</div>
+					<!-- 3rd slide show image-->
+					<div class="mySlides fade">
+					  <img src="Images/planet.jpg" style="width:100%">
+					</div>
+					
+				</div>
+				<!-- dots under the slideshow-->
+				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span> 
+				  <span class="dot" onclick="currentSlide(2)"></span> 
+				  <span class="dot" onclick="currentSlide(3)"></span> 
+				</div>
+				
+			</div>
 			
 			<!-- placeholder images for the store page-->
 			<div class="row">
@@ -102,6 +118,19 @@
 					<p>product12 Details</p>
 				</div>
 			</div>
+			<!-- Place holder buttons for misc pages-->
+			<div class="btnList text-center">
+				<a class="btn btn-default" href="#" target="_blank">Contact Us</a>
+				<a class="btn btn-default" href="#" target="_blank">Terms of Service</a>
+				<a class="btn btn-default" href="#" target="_blank">GitHub</a>
+			</div>
+			
 		</div>
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<!-- External JavaScript -->
+		<script src="JavaScript/index.js"></script>	
 	</body>
 </html>
