@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- GUI & Web Devlopment Project 2018-->
+<!-- Authors: Darragh, Anthony, Noel -->
+<html>
+	<head>
+		<title>MyBasket</title>
+		<!-- Icon for title -->
+		<link rel="shortcut icon" type="image/x-icon" href="../Images/Laptop-icon.png" />
+		<!-- Required meta tags -->
+		<meta charset="UTF-8">
+		<meta name="description" content="Basket Page">
+		<meta name="keywords" content="Online Shopping, Laptops, Phones, PC, TV">
+		<meta name="author" content="Anthony Moore, Darragh Lally, Noel Melia">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	
+		<link href="../Css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<!-- Navagation bar at top of page (Place Holder) -->
+			<ul class="nav nav-pills text-center">
+			
+				<li class="pull-right">
+					<a href="#page4.html">Basket</a>
+				</li>
+				
+				<li class="pull-right">
+					<a href="#page3.html">Orders</a>
+				</li>
+				
+				<li class="pull-right">
+					<a href="#page2.html">Account</a>
+				</li>
+				
+				<li class="pull-right">
+					<a href="#page1.html">Departments</a>
+				</li>
+					
+				<li class="pull-left">
+					<a href="#../Index.html">Home</a>
+				</li>
+
+			</ul>
+			
+			<div class="row">
+				<div id="header" class="">
+					<h1>Shopping Cart</h1>
+				</div>
+			</div>
+			
+		<div class="row">
+			<!-- ID tag we will target with the jQuery output -->
+			<div class="col-sm-9 col-md-9">
+				<div id="basketInfo"></div>
+			</div>
+			
+			<!-- Basket summary for checkout -->
+			<div class="col-sm-3 col-md-3">
+				<div class="totals-item">
+					<label>Items in basket</label>
+					<div id="basket-items-value"></div>
+				</div>								
+				<div class="totals-item">
+					<label>Subtotal</label>
+					<div id="sub-total-value"></div>
+				</div>
+				<div class="totals-item">
+					<label>VAT (23%)</label>
+					<div id="vat-value"></div>
+				</div>
+				<div class="totals-item">
+					<label>Shipping</label>
+					<div id="shipping-value"></div>
+				</div>
+				<div class="totals-item">
+					<label>Grand Total</label>
+					<div id="totals-value"></div>
+				</div>
+				<br>
+				<button class="checkoutBtn">Checkout</button>				
+			</div>
+		</div>			
+			
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- External JavaScript -->
+		<script src="../JavaScript/basket.js"></script>	
+	</body>
+</html>
