@@ -22,46 +22,55 @@ $(document).ready(function() {
 			"productName":"Lenovo IdeaPad ",
 			"productDescription": "The IdeaPad 120S features a redesigned chassis with simple, clean lines giving it a contemporary take on elegant style. You count on your devices to keep up with you. So the manufacturer applied a protective finish to guard against wear and tear. Lenovo also included subtle rubber detailing on the bottom cover to maximise ventilation and extend product life. Available in a sophisticated range of colours: Mineral grey, blizzard white and ballerina pink.",
 			"productPrice": 149.99,
-			"productImgURL": "../Images/phonePlaceHolder.jpg"
+			"productImgURL": "../Images/laptopPlaceholder.jpg"
 		}		
 	]
-	//get variables from local storage
-	var productIdNum = localStorage.getItem("prodID");
-	var amount = localStorage.getItem("quantity");
-	//make loop and search through JSON arrays
-	for (var i = 0; i < productsArr.length; i++)
+	
+	// Retrieve local storage data
+	var productIdNumArr = JSON.parse(localStorage["prodIdArr"]);
+	var amountArr = JSON.parse(localStorage["quantityArr"]);
+	
+	//make a loop to search through the product numbers
+	for (var i = 0; i < productIdNumArr.length; i++)
 	{
-		var id = productsArr[i].productID;
-		var name = productsArr[i].productName;
-		var description = productsArr[i].productDescription;
-		var price = productsArr[i].productPrice.toFixed(2);
-		var image = productsArr[i].productImgURL;
+		var productIdNum = productIdNumArr[i];
+		var amount = amountArr[i];
 		
-		if (productIdNum == id)
+		//make loop and search through JSON arrays
+		for (var j = 0; j < productsArr.length; j++)
 		{
-		
-			//counters for subtotal and items in basket
-			subTotal += (price * amount);
-			itemsCounter += amount;
+			var id = productsArr[j].productID;
+			var name = productsArr[j].productName;
+			var description = productsArr[j].productDescription;
+			var price = productsArr[j].productPrice.toFixed(2);
+			var image = productsArr[j].productImgURL;
 			
-			//use jQuery to output the JSON objeccts to the page (with bootStrap imbedded)
-			$("#basketInfo").prepend(
-			"<div class ='row'>" + 
-				"<div class='col-sm-3 col-md-3'>" +
-					"<img src=" + image + ">" +
-				"</div>" + 
-				"<div class='col-sm-4 col-md-4'>" +
-					"<h4>" + name + "</h4>" + 
-					"<p>" + description + "</p>" +
-				"</div>" + 
-				"<div class='col-sm-2 col-md-2'> € " + price + "</div>" +
-				"<div class='col-sm-1 col-md-1'>" + amount + "</div>" +
-				"<div class='col-sm-1 col-md-1'>" + 
-					"<button id='removeItem'>Remove</button>" + 
-				"</div>" +
-			"</div>");
-		}
-	}
+			if (productIdNum == id)
+			{
+				//counters for subtotal and items in basket
+				subTotal += (price * amount);
+				itemsCounter += Number(amount);
+				
+				//use jQuery to output the JSON objects to the page (with bootStrap imbedded)
+				$("#basketInfo").prepend(
+				"<div class ='row'>" + 
+					"<div class='col-sm-3 col-md-3'>" +
+						"<img src=" + image + ">" +
+					"</div>" + 
+					"<div class='col-sm-4 col-md-4'>" +
+						"<h4>" + name + "</h4>" + 
+						"<p>" + description + "</p>" +
+					"</div>" + 
+					"<div class='col-sm-2 col-md-2'> € " + price + "</div>" +
+					"<div class='col-sm-1 col-md-1'>" + amount + "</div>" +
+					"<div class='col-sm-1 col-md-1'>" + 
+						"<button id='removeItem'>Remove</button>" + 
+					"</div>" +
+				"</div>");
+			}// if
+		}// inner for 
+	}// outer for 
+	
 	//get totals after closing loop
 	vatCharged = (subTotal * vatRate);
 	grandTotal = subTotal + vatCharged + shipping;
