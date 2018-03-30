@@ -15,6 +15,16 @@ function showSlides() {
     slides[slideIndex-1].style.display = "block"; 
     setTimeout(showSlides, 4600); // Change image every 4.6 seconds
 }
+
+var found = localStorage.getItem("login");
+
+if (found == 1)
+{
+	var name = localStorage.getItem("accountName");
+	document.getElementById("nameTag").innerHTML = "Hello, " + name;
+}
+
+
 	
 
 	
