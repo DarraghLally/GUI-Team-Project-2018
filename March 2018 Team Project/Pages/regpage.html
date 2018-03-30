@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>InputScreen</title>
+		<title>regpage</title>
 		<!-- Icon for title -->
 		<link rel="shortcut icon" type="image/x-icon" href="Images/stars.png" />
 		<!-- Required meta tags -->
@@ -50,29 +50,34 @@
 			</ul>
 		</div>	
 		
-		<form>
-			
-			<br><h1>Login</h1>
-			<h5>Please Sign in with User-name and Password to proceed.</h5>
-			<hr>
-
-			<label for="username"><b>User-name</b></label>
-			<input type="text" placeholder="Enter Username" name="name" required>
-
-			<label for="psw"><b>Password</b></label>
-			<input type="password" placeholder="Enter Password" name="psw" required>
-
-			<label>
-			<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-			</label>
-			
-			<div class="clearfix">
-			<a href ="#"><button type="button" class="loginbtn" >Login</button></a>
-			<a href ="regpage.html"><button type="button" class="regbtn" >Register</button></a>
-			</div>
-			<hr>
-			
-		</form>
+		<div id="register" class="animate form">
+			<form> 
+				<h1> Sign up </h1> 
+				<p> 
+					<label for="usernamesignup" class="uname" >Your User-name</label>
+					<input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="username" />
+				</p>
+				<p> 
+					<label for="emailsignup" class="email"  > Your email</label>
+					<input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="G*********@gmit.ie"/> 
+				</p>
+				<p> 
+					<label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
+					<input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. ********"/>
+				</p>
+				<p> 
+					<label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
+					<input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. *********"/>
+				</p>
+				<p class="signin button"> 
+					<input type="submit" /> 
+				</p>
+				<p class="change_link">  
+					Already a member ?
+					<a href="LoginScreen.html" > Go and log in </a>
+				</p>
+			</form>
+		</div>
 		
 	</body>
 </html>
