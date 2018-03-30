@@ -3,44 +3,38 @@
 	<head>
 		<title>InputScreen</title>
 		<!-- Icon for title -->
-		<link rel="shortcut icon" type="image/x-icon" href="Images/stars.png" />
+		<link rel="shortcut icon" type="image/x-icon" href="../Images/Laptop-icon.png" />
 		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!--Adding meta data for search engines and to control the view a user has when on the site-->
-		<meta name="description" content="*********">
-		<meta name="keywords" content="*************">
-		<meta name="viewport" content="****************">
+		<meta charset="UTF-8">
+		<meta name="description" content="Login Page">
+		<meta name="keywords" content="Online Shopping, Laptops, Phones, PC, TV">
+		<meta name="author" content="Anthony Moore, Darragh Lally, Noel Melia">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Bootstrap CSS -->
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
-		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" rel="stylesheet">	
-		<link href="../Css/style.css" rel="stylesheet">
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		<!-- External JavaScript -->
-		<script src="../JavaScript/login.js"></script>			
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	
+		<link href="../Css/style.css" rel="stylesheet">			
 	</head>
 	<body>
 		<div class="container-fluid">
 		<!-- Navagation bar at top of page (Place Holder) -->
+			<div class="container-fluid">
+			<!-- Navagation bar at top of page (Place Holder) -->
 			<ul class="nav nav-pills text-center">
 			
 				<li class="pull-right">
-					<a href="#page4.html">page4</a>
+					<a href="Basket.html">Basket</a>
 				</li>
 				
 				<li class="pull-right">
-					<a href="#page3.html">page3</a>
+					<a href="#page3.html">Orders</a>
 				</li>
 				
 				<li class="pull-right">
-					<a href="#page2.html">page2</a>
+					<a href="#page2.html">Account</a>
 				</li>
 				
 				<li class="pull-right">
-					<a href="#page1.html">page1</a>
+					<a href="#page1.html">Departments</a>
 				</li>
 					
 				<li class="pull-left">
@@ -57,22 +51,29 @@
 			<hr>
 
 			<label for="username"><b>User-name</b></label>
-			<input type="text" placeholder="Enter Username" name="name" required>
+			<input id="nameInput" type="text" placeholder="Enter Username" name="name" required>
 
 			<label for="psw"><b>Password</b></label>
-			<input type="password" placeholder="Enter Password" name="psw" required>
+			<input id="passInput" type="password" placeholder="Enter Password" name="psw" required>
 
 			<label>
-			<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+				<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
 			</label>
 			
 			<div class="clearfix">
-			<a href ="#"><button type="button" class="loginbtn" >Login</button></a>
+			<a href ="#"><button id="loginBtn" type="button">Login</button></a>
+			
 			<a href ="regpage.html"><button type="button" class="regbtn" >Register</button></a>
+			
 			</div>
 			<hr>
 			
 		</form>
-		
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- External JavaScript -->
+		<script src="../JavaScript/login.js"></script>
 	</body>
 </html>
