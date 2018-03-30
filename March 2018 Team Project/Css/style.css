@@ -7,6 +7,18 @@ body{
 	padding-right: 5%;
 }
 
+/* Product details for center column of product pages */
+.productDecription{
+	border: 2px solid grey;
+	padding: 15px;
+    border-radius: 12px;
+	font-size: 1.0em;	
+}
+
+/* Add Product to Basket button */
+.btn-addToBasket{
+	padding: 15px;
+}
 
 .btn-default {
 	background-color: white;
