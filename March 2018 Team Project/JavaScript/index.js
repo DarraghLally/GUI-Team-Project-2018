@@ -25,6 +25,12 @@ if (found == 1)
 }
 
 
+//On click 'search' - send input text to local
+document.getElementById("searchBtn").onclick = function()
+{	
+	//get the user name from the text box
+	var searchValue = document.getElementById("searchBarText").value;
 	
-
-	
+	//send search
+	localStorage.setItem("searchBar", searchValue);
+}

@@ -14,7 +14,7 @@ $(document).ready(function() {
 			"productID": 1001,
 			"productName":"LG K8",
 			"productDescription": "5.0' HD In-cell Touch Display with 2.5D Arc Glass Wide display, smooth edges. The big bright 5.0' HD In-cell display has 2.5D Arc glass edges that are smooth to the touch. Your eyes and fingers will thank you. In every single way, the full-featured 13MP camera brilliantly captures the best moments of your life.",
-			"productPrice": 130.90,
+			"productPrice": 103.90,
 			"productImgURL": "../Images/phonePlaceHolder.jpg",
 		},
 		{

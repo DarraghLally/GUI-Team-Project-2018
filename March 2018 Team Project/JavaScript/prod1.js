@@ -1,4 +1,6 @@
-		//On click 'add to basket' - Getting quantity amount - Adding product ID and quantity to local storage to be pulled into Basket.html for processing
+
+
+	/On click 'add to basket' - Getting quantity amount - Adding product ID and quantity to local storage to be pulled into Basket.html for processing
 document.getElementById("addToBasket").onclick = function()
 {
 	// Retrieve
@@ -49,3 +51,4 @@ document.getElementById("addToBasket").onclick = function()
 	}
 
 } 
+
