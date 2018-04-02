@@ -1,0 +1,79 @@
+/* 
+GUI & Web Devlopment Project 2018
+Authors: Darragh, Anthony, Noel
+*/
+body{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+/* Left Column */
+.leftCol{
+    padding-top: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;	
+}
+
+/* Product Title*/
+.prodTitle{
+	text-align: center;
+	font-family: 'Cabin', sans-serif;
+}
+
+/* Footer */
+.footer {
+	height: 12px;
+	padding-top: 4%;
+	padding-bottom: 3%;
+	text-align: center;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Product details for center column of product pages */
+.productDecription{
+	border: 2px solid grey;
+	padding: 15px;
+    border-radius: 12px;
+	font-size: 1.0em;	
+	font-family: 'Cabin', sans-serif;
+	background-color: #ccced1;
+}
+
+/* Add Product to Basket button */
+.btn-addToBasket{
+	padding: 15px;
+}
+
+.btn-default {
+	background-color: white;
+	border-color: grey;
+	color: #337ab7;
+	font-size: 1.0em;
+}
+
+.nav-pills {
+	font-size: 1.7em;
+	background-color: white;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.mySlides {
+	display: none;
+}
+
+
+img {
+	vertical-align: middle;
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next, .text {font-size: 11px}
+}
+

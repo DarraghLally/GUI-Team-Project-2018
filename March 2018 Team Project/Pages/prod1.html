@@ -3,7 +3,7 @@
 <!-- Authors: Darragh, Anthony, Noel -->
 <html>
 	<head>
-		<title>store.com</title>
+		<title>product1.com</title>
 		<!-- Icon for title -->
 		<link rel="shortcut icon" type="image/x-icon" href="../Images/Laptop-icon.png" />
 		<!-- Required meta tags -->
@@ -15,8 +15,11 @@
 		<!-- <meta name="viewport" content="****************"> -->
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	
-		<!-- External CSS -->		
-		<!--<link href="../Css/style.css" rel="stylesheet"> -->     
+		<!-- External CSS -->				
+		<link href="../Css/products.css" rel="stylesheet">  
+		<!-- External google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+
 	</head>
 	<body>
 		<div class="container-fluid">
@@ -56,16 +59,12 @@
 			
 			</div>
 			
-			<div class="row" padding-top = "50px">
+			<div class="row" padding-top = "50px"> <!--  -->
 				<!-- Left Col - Item Image -->
-				<div class="col-sm-4 col-md-4">
-					<!-- jpg of product, left corner -->
-					<!--<div class="">
-					  <img src="../Images/products/lgk8Mobile.jpg" alt="LG_K8_mobile">
-					</div>-->
+				<div class="col-sm-4 col-md-4 leftCol">
 					
 					<!--Image carousel - code from W3Schools, using bootstrap-->
-					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<div id="myCarousel" class="carousel slide " data-ride="carousel">
 					  <!-- Indicators -->
 					  <ol class="carousel-indicators">
 						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -74,7 +73,7 @@
 					  </ol>
 
 					  <!-- Wrapper for slides -->
-					  <div class="carousel-inner">
+					  <div class="carousel-inner ">
 						<div class="item active" align = "center">
 						  <img src="../Images/products/lgk8Mobile.jpg" alt="LG K8 Phone">
 						</div>
@@ -102,18 +101,16 @@
 				
 				<!-- Middle Col - Product details -->
 				<div class="col-sm-4 col-md-4">
-					<h2>LG K8 SIM-Free Smartphone</h2>
+					<h2 class = "prodTitle">LG K8 SIM-Free Smartphone</h2>
 					<div class = "productDecription">
-						<ul>
+						<ul class = "">
 							 <li>2.5 Arc Glass Design</li>
 							 <li>Camera features such as Gesture Shot, Flash for selfie</li>
 							 <li>5.0" HD In-cell Touch Display, Sensors Accelerometer and proximity</li>
 							 <li>Fully Equipped with essential features you'll love and delivers an awesome smartphone experience at a justifiable price</li>
 							 <li>8GB internal memory with MicroSD up to 32GB</li>
 						</ul>
-						<p>product Details</p>
-						<p>product Details</p>
-					
+											
 						<h3 align = "right">Price: €103.90</h3>
 						
 						<!-- Quantity Button -->
@@ -152,7 +149,7 @@
 					</div>
 				</div>
 				<!-- Place holder buttons for misc pages-->
-				<div class="btnList text-center">
+				<div class="btnList text-center footer">
 					<a class="btn btn-default" href="#" target="_blank">Contact Us</a>
 					<a class="btn btn-default" href="#" target="_blank">Terms of Service</a>
 					<a class="btn btn-default" href="#" target="_blank">GitHub</a>
