@@ -8,8 +8,26 @@ $(document).ready(function() {
 	var shipping = 15.00;
 	var itemsCounter = 0;
 	
-	//test for item search
-	var itemSearch = "phone";
+	var productsArr = 
+	[
+		{
+			"productID": 1001,
+			"productName":"LG K8",
+			"productDescription": "5.0' HD In-cell Touch Display with 2.5D Arc Glass Wide display, smooth edges. The big bright 5.0' HD In-cell display has 2.5D Arc glass edges that are smooth to the touch. Your eyes and fingers will thank you. In every single way, the full-featured 13MP camera brilliantly captures the best moments of your life.",
+			"productPrice": 103.90,
+			"productImgURL": "../Images/phonePlaceHolder.jpg",
+		},
+		{
+			"productID": 2001,
+			"productName":"Lenovo IdeaPad ",
+			"productDescription": "The IdeaPad 120S features a redesigned chassis with simple, clean lines giving it a contemporary take on elegant style. You count on your devices to keep up with you. So the manufacturer applied a protective finish to guard against wear and tear. Lenovo also included subtle rubber detailing on the bottom cover to maximise ventilation and extend product life. Available in a sophisticated range of colours: Mineral grey, blizzard white and ballerina pink.",
+			"productPrice": 149.99,
+			"productImgURL": "../Images/laptopPlaceholder.jpg"
+		}		
+	]
+	
+	//get searchBar value from local
+	var itemSearch = localStorage.getItem("searchBar");
 	
 	//make loop and search through JSON arrays
 	for (var i = 0; i < productsArr.length; i++)
@@ -18,7 +36,7 @@ $(document).ready(function() {
 		var description = productsArr[i].productDescription;
 		var price = productsArr[i].productPrice;
 		var image = productsArr[i].productImgURL;
-		var amount = poductQuantityArr[i];
+		//var amount = poductQuantityArr[i];
 		
 		var isFound = description.search(itemSearch);	
 		if (isFound != -1)
@@ -40,5 +58,15 @@ $(document).ready(function() {
 				"</div>" +
 			"</div>");
 		}
+	}
+	
+	//On click 'search' - send input text to local
+	document.getElementById("searchBtn").onclick = function()
+	{	
+		//get the user name from the text box
+		var searchValue = document.getElementById("searchBarText").value;
+		
+		//send search
+		localStorage.setItem("searchBar", searchValue);
 	}
 });
