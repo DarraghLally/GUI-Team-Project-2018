@@ -17,7 +17,12 @@ body{
 
 /* Add Product to Basket button */
 .btn-addToBasket{
-	padding: 15px;
+	/*padding: 15px;*/
+	padding-top: 50%;
+    padding-right: 50%;
+    padding-bottom: 50%;
+    padding-left: 0%;
+	
 }
 
 .btn-default {
