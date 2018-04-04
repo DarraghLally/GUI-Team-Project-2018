@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- GUI & Web Devlopment Project 2018-->
+<!-- Authors: Darragh, Anthony, Noel -->
+<html>
+	<head>
+		<title>checkout</title>
+		<!-- Icon for title -->
+		<link rel="shortcut icon" type="image/x-icon" href="../Images/Laptop-icon.png" />
+		<!-- Required meta tags -->
+		<meta charset="UTF-8">
+		<meta name="description" content="Checkout Page">
+		<meta name="keywords" content="Online Shopping, Laptops, Phones, PC, TV">
+		<meta name="author" content="Anthony Moore, Darragh Lally, Noel Melia">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link href="../Css/checkout.css" rel="stylesheet">	
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<!-- CREDIT CARD FORM STARTS HERE -->
+					<div class="panel panel-default credit-card-box">
+					
+						<div class="panel-heading display-table" >
+							<div class="row display-tr" >
+								<h3 class="panel-title display-td" >Payment Details</h3>
+								<div class="display-td" >                            
+									<img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+								</div>
+							</div>                    
+						</div>
+						
+						<div class="panel-body">
+							<form role="form" id="payment-form" method="POST" action="javascript:void(0);">
+								<div class="row">
+									<div class="col-xs-12">
+										<div class="form-group">
+											<label for="cardNumber">CARD NUMBER</label>
+											<div class="input-group">
+												<input 
+													type="tel"
+													class="form-control"
+													name="cardNumber"
+													placeholder="Enter 'Fake' 16-Digit Number"
+													autocomplete="cc-number"
+													required autofocus 
+												/>
+												<span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+											</div>
+										</div>                            
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-xs-7 col-md-7">
+										<div class="form-group">
+											<label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
+												<input 
+													type="tel" 
+													class="form-control" 
+													name="cardExpiry"
+													placeholder="MM / YY"
+													autocomplete="cc-exp"
+													required 
+												/>
+										</div>
+									</div>
+									
+									<div class="col-xs-5 col-md-5 pull-right">
+										<div class="form-group">
+											<label for="cardCVC">CV CODE</label>
+											<input 
+												type="tel" 
+												class="form-control"
+												name="cardCVC"
+												placeholder="CVC"
+												autocomplete="cc-csc"
+												required
+											/>
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-xs-12">
+										<div class="form-group">
+											<label for="couponCode">COUPON CODE</label>
+											<input 
+												type="text" 
+												class="form-control" 
+												name="couponCode"
+												placeholder="Enter 6-Digit Code"
+											/>
+										</div>
+									</div>                        
+								</div>
+								
+								<div class="row">
+									<div class="col-xs-12">
+										<a href="orders.html"><button class="subscribe btn btn-success btn-lg btn-block" type="button">Complete Transaction</button></a>
+									</div>
+								</div>
+								
+								<div class="row" style="display:none;">
+									<div class="col-xs-12">
+										<p class="payment-errors"></p>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>             
+				</div>              
+			</div>
+		</div>
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- External JavaScript -->
+		<script src="../JavaScript/checkout.js"></script>	
+	</body>
+</html>

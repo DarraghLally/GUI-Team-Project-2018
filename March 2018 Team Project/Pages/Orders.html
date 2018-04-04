@@ -3,12 +3,12 @@
 <!-- Authors: Darragh, Anthony, Noel -->
 <html>
 	<head>
-		<title>MyBasket</title>
+		<title>checkout</title>
 		<!-- Icon for title -->
 		<link rel="shortcut icon" type="image/x-icon" href="../Images/Laptop-icon.png" />
 		<!-- Required meta tags -->
 		<meta charset="UTF-8">
-		<meta name="description" content="Basket Page">
+		<meta name="description" content="Checkout Page">
 		<meta name="keywords" content="Online Shopping, Laptops, Phones, PC, TV">
 		<meta name="author" content="Anthony Moore, Darragh Lally, Noel Melia">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,50 +44,89 @@
 			</ul>
 			
 			<div class="row">
-				<div id="header" class="">
-					<h1>Shopping Cart</h1>
+				<div class="col-sm-8 col-md-8">
+					<h2>Syntactic Sugar</h2>
+					<p>123 Fake Street</p>
+					<p>Syntax Avenue</p>
+					<p>The Moon</p>					
+				</div>
+				<div class="col-sm-4 col-md-4">
+					<h2>Invoice</h2>
+					<div id="date-value"></div><br>
+					<div id="invoice-value"></div><br>
+					<div id="account-value"></div><br>					
 				</div>
 			</div>
 			
 			<div class="row">
 				<!-- ID tag we will target with the jQuery output -->
-				<div class="col-sm-9 col-md-9">
-					<div id="basketInfo"></div>
+				<div class="col-sm-12 col-md-12">
+					<h4>To:</h4>
+					<div id="accountDetails"></div>
 				</div>
+			</div>
 			
-				<!-- Basket summary for checkout -->
-				<div class="col-sm-3 col-md-3">
+			<!-- header for invoice summary -->
+			<hr>
+			<div class="row">
+				<!-- ID tag we will target with the jQuery output -->
+				<div class="col-sm-4 col-md-4">
+					<h4>Product: </h4>
+				</div>
+				<div class="col-sm-2 col-md-2">
+					<h4>Price: </h4>
+				</div>
+				<div class="col-sm-2 col-md-2">
+					<h4>Amount: </h4>
+				</div>
+			</div>
+			
+			<hr>
+			<div class="row">
+				<!-- ID tag we will target with the jQuery output -->
+				<div class="col-sm-12 col-md-12">
+					<div id="basketDetails"></div>
+				</div>
+			</div>
+			<hr>
+			
+			<!-- Basket summary for checkout -->
+			<div class="row">
+				<div class="col-sm-4 col-md-4">
+					Items:<br>
+					Subtotal:<br>
+					VAT(23%):<br>
+					Shipping:<br>
+					Total:<br>
+				</div>
+				<div class="col-sm-8 col-md-8">
 					<div class="totals-item">
-						<label>Items in basket</label>
 						<div id="basket-items-value"></div>
 					</div>								
 					<div class="totals-item">
-						<label>Subtotal</label>
 						<div id="sub-total-value"></div>
 					</div>
 					<div class="totals-item">
-						<label>VAT (23%)</label>
 						<div id="vat-value"></div>
 					</div>
 					<div class="totals-item">
-						<label>Shipping</label>
 						<div id="shipping-value"></div>
 					</div>
 					<div class="totals-item">
-						<label>Grand Total</label>
 						<div id="totals-value"></div>
 					</div>
-					<br>
-					<a href="checkout.html"><button class="checkoutBtn">Checkout</button></a>				
 				</div>
-			</div>
+			</div>				
 		</div>
-		
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- Vendor libraries -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.payment/1.2.3/jquery.payment.min.js"></script>
 		<!-- External JavaScript -->
-		<script src="../JavaScript/basket.js"></script>	
+		<script src="../JavaScript/orders.js"></script>	
 	</body>
 </html>

@@ -1,26 +1,18 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>regpage</title>
+		<title>register</title>
 		<!-- Icon for title -->
-		<link rel="shortcut icon" type="image/x-icon" href="Images/stars.png" />
+		<link rel="shortcut icon" type="image/x-icon" href="../Images/Laptop-icon.png" />
 		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!--Adding meta data for search engines and to control the view a user has when on the site-->
-		<meta name="description" content="*********">
-		<meta name="keywords" content="*************">
-		<meta name="viewport" content="****************">
+		<meta charset="UTF-8">
+		<meta name="description" content="Register Page">
+		<meta name="keywords" content="Online Shopping, Laptops, Phones, PC, TV">
+		<meta name="author" content="Anthony Moore, Darragh Lally, Noel Melia">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Bootstrap CSS -->
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
-		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" rel="stylesheet">	
-		<link href="../Css/style.css" rel="stylesheet">
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		<!-- External JavaScript -->
-		<script src="../JavaScript/login.js"></script>			
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	
+		<link href="../Css/style.css" rel="stylesheet">				
 	</head>
 	<body>
 		<div class="container-fluid">
@@ -54,23 +46,33 @@
 			<form> 
 				<h1> Sign up </h1> 
 				<p> 
-					<label for="usernamesignup" class="uname" >Your User-name</label>
-					<input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="username" />
+					<label for="name">User-name</label>
+					<input id="userName" name="name" required="required" type="text" placeholder="user-name" />
 				</p>
 				<p> 
-					<label for="emailsignup" class="email"  > Your email</label>
-					<input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="G*********@gmit.ie"/> 
+					<label for="email">email</label>
+					<input id="userEmail" name="email" required="required" type="email" placeholder="G*********@gmit.ie"/> 
 				</p>
 				<p> 
-					<label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
-					<input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. ********"/>
+					<label for="phoneNum">Phone Number</label>
+					<input id="userPhone" name="phoneNum" required="required" type="number" placeholder="123456"/> 
 				</p>
 				<p> 
-					<label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
-					<input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. *********"/>
+					<label for="addressLine1">Address</label><br>
+					<input id="userAddress1" name="addressline1" required="required" type="text" placeholder="Address Line 1"/><br>
+					<input id="userAddress2" name="addressline2" required="required" type="text" placeholder="Address Line 2"/><br>
+					<input id="userAddress3" name="addressline3" required="required" type="text" placeholder="Address Line 3"/><br>					
+				</p>
+				<p> 
+					<label for="password" data-icon="p">Password </label>
+					<input id="userPassword" name="password" required="required" type="password" placeholder="eg. ********"/>
+				</p>
+				<p> 
+					<label for="password_confirm" data-icon="p">Please confirm your password </label>
+					<input id="userPassword_confirm" name="password_confirm" required="required" type="password" placeholder="eg. *********"/>
 				</p>
 				<p class="signin button"> 
-					<input type="submit" /> 
+					<input id="regBtn" type="submit" /> 
 				</p>
 				<p class="change_link">  
 					Already a member ?
@@ -78,6 +80,11 @@
 				</p>
 			</form>
 		</div>
-		
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- External JavaScript -->
+		<script src="../JavaScript/register.js"></script>
 	</body>
 </html>

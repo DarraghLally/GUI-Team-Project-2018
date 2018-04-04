@@ -16,7 +16,7 @@ function showSlides() {
     setTimeout(showSlides, 4600); // Change image every 4.6 seconds
 }
 
-var found = localStorage.getItem("login");
+var found = localStorage.getItem("loginActive");
 
 if (found == 1)
 {
