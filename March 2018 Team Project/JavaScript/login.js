@@ -72,14 +72,12 @@ document.getElementById("loginBtn").onclick = function()
 	//test if name found
 	if (found == true)
 	{
-		alert("Account found");
-		localStorage.setItem("login", 1);
+		localStorage.setItem("loginActive", 1);
 		localStorage.setItem("accountName", accountName);
 	}
 	else
 	{
-		alert("Account not found - Try again");
-		localStorage.setItem("login", 0);
+		localStorage.setItem("loginActive", 0);
 		localStorage.setItem("accountName", "Void");
 	}
 	
