@@ -2,6 +2,31 @@
 GUI & Web Devlopment Project 2018
 Authors: Darragh, Anthony, Noel
 */
+
+.navbar {
+	background-color: #404040;
+	overflow: visible;
+	width:100%;
+	position: sticky;
+	top: 0;
+	border-bottom: 6px solid #3b88d6;
+	z-index: 1;
+}
+
+.navbar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 25px;
+	text-decoration: none;
+}
+
+a:hover,
+a.selected{
+	color: #3b88d6;
+}
+
 body{
 	padding-left: 5%;
 	padding-right: 5%;
@@ -33,13 +58,26 @@ body{
 
 /* Product details for center column of product pages */
 .productDecription{
-	border: 2px solid grey;
+	border: 2px solid #d4d6d8;
 	padding: 15px;
     border-radius: 12px;
 	font-size: 1.0em;	
 	font-family: 'Cabin', sans-serif;
-	background-color: #ccced1;
+	background-color: #f2f4f7;
+	margin-top: 7.6%;
 }
+
+/* Product add to basket / price for right column of product pages */
+.productAddPrice{
+	border: 2px solid #d4d6d8;
+	padding: 15px;
+    border-radius: 12px;
+	font-size: 1.0em;	
+	font-family: 'Cabin', sans-serif;
+	background-color: #f2f4f7;
+	margin-top: 2.45%;
+}
+
 
 /* Add Product to Basket button */
 .btn-addToBasket{
@@ -51,11 +89,13 @@ body{
 	border-color: grey;
 	color: #337ab7;
 	font-size: 1.0em;
+	font-family: 'Cabin', sans-serif;
 }
 
 .nav-pills {
 	font-size: 1.7em;
 	background-color: white;
+	font-family: 'Cabin', sans-serif;
 }
 
 * {

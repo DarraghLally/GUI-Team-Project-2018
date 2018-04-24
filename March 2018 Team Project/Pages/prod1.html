@@ -22,45 +22,55 @@
 
 	</head>
 	<body>
-		<div class="container-fluid">
-			<!-- Navagation bar at top of page (Place Holder) -->
-			<ul class="nav nav-pills text-center">
-			
-				<li class="pull-right">
-					<a href="#page4.html">page4</a>
-				</li>
-				
-				<li class="pull-right">
-					<a href="#page3.html">page3</a>
-				</li>
-				
-				<li class="pull-right">
-					<a href="#page2.html">page2</a>
-				</li>
-				
-				<li class="pull-right">
-					<a href="#page1.html">page1</a>
-				</li>
-					
-				<li class="pull-left">
-					<a href="../index.html">Home</a>
-				</li>
-			</ul>
-			
-			<!-- placeholder for search bar and buttons-->
+		<!--Navagation Bar-->
+		<nav class="navbar navbar-inverse">
+			  <div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span> 
+						</button>
+						
+						<a class="navbar-brand" href="../index.html">AND.com</a>
+						
+						<form class="navbar-form navbar-left" action="searchResults.html">
+							<div class="form-group ">
+								<input type="text" id="searchBarText" class="form-control" placeholder="Search">
+								<button type="submit" id="searchBtn" class="btn btn-default">Search</button>
+							</div>
+							
+						</form>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="dropdown" >
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Departments
+								<span class="caret"></span></a>
+								<ul class="dropdown-menu" >
+									<li><a href="#">Page 1-1</a></li>
+									<li><a href="#">Page 1-2</a></li>
+									<li><a href="#">Page 1-3</a></li>
+								</ul>
+							</li>
+							<li class="dropdown" >
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Account
+								<span class="caret"></span></a>
+								<ul class="dropdown-menu" >
+									<li><a href="LoginScreen.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+									<li><a href="regpage.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+									<li><a href="#">Page 1-2</a></li>
+									<li><a href="#">Page 1-3</a></li>
+								</ul>
+							</li>
+							<li><a href="Basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> Basket</a></li>
+						</ul>
+					</div>
+			  </div>
+		</nav>	
+			<h2 class = "prodTitle text-center">LG K8 SIM-Free Smartphone</h2>
 			<div class="row">
-			
-				<div class="btnList">
-					<input type="text" id="searchBar">
-					<a class="btn btn-default" href="SearchResults.html">Search</a>
-					<a class="btn btn-default pull-right" href="Basket.html">checkout</a>
-					<a class="btn btn-default pull-right" href="LoginScreen.html">log in</a>					
-				</div>
-			
-			</div>
-			
-			<div class="row" padding-top = "50px"> <!--  -->
-				<!-- Left Col - Item Image -->
+				<!-- Left Col -->
 				<div class="col-sm-4 col-md-4 leftCol">
 					
 					<!--Image carousel - code from W3Schools, using bootstrap-->
@@ -101,7 +111,6 @@
 				
 				<!-- Middle Col - Product details -->
 				<div class="col-sm-4 col-md-4">
-					<h2 class = "prodTitle">LG K8 SIM-Free Smartphone</h2>
 					<div class = "productDecription">
 						<ul class = "">
 							 <li>2.5 Arc Glass Design</li>
@@ -111,27 +120,31 @@
 							 <li>8GB internal memory with MicroSD up to 32GB</li>
 						</ul>
 											
-						<h3 align = "right">Price: €103.90</h3>
+					</div>
+				</div>
+				<!-- Right Col - Product Purchase -->
+				<div class="col-sm-3 col-md-3 productAddPrice">
+						<h3 align = "right">Price: €149.99</h3>
 						
-						<!-- Quantity Button -->
-						<div class = "btn-addToBasket" align = "right">
-							Quantity: 	<select id = "quantity" name = "Quantity">
-										<option value = "1">1</option>
-										<option value = "2">2</option>
-										<option value = "3">3</option>
-										<option value = "4">4</option>
-										<option value = "4">5</option>
-										</select>
-						</div>						
-						
-						<!-- Buy Button -->
-						<div class = "btn-addToBasket" align = "right">
-							<button id = "addToBasket" class="btn btn-default">Add to basket</button>
-						</div>
-					</div>			
+					<!-- Quantity Button -->
+					<div class = "btn-addToBasket" align = "right">
+						Quantity: 	<select id = "quantity" name = "Quantity">
+									<option value = "1">1</option>
+									<option value = "2">2</option>
+									<option value = "3">3</option>
+									<option value = "4">4</option>
+									<option value = "5">5</option>
+									</select>
+					</div>						
 					
-				</div>	<!-- end middle column-->		
-			</div>
+					<!-- Buy Button -->
+					<div class = "btn-addToBasket" align = "right">
+						<button id = "addToBasket" class="btn btn-default">Add to basket</button>
+					</div>
+				</div>			
+					
+			</div>	<!-- End Row -->		
+
 
 				<!-- placeholder images for the store page-->
 				<div class="row">
