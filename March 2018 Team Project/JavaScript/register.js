@@ -39,7 +39,6 @@ document.getElementById("regBtn").onclick = function()
 		//send to local storage
 		localStorage.setItem("accountReg", 1);
 		localStorage.setItem("newAccount", accountString);
-		window.open("../index.html");
 		//test if name found
 	}
 }
