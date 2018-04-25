@@ -9,7 +9,7 @@ document.getElementById("addToBasket").onclick = function()
 		//push productId into array
 		var prodIdArr = JSON.parse(localStorage["prodIdArr"]);
 		prodIdArr.push(2001);
-		alert("Add to Basket was clicked");
+		//alert("Add to Basket was clicked");
 		
 		//get input from number bar
 		amount = Number(document.getElementById("quantity").value);
@@ -17,7 +17,7 @@ document.getElementById("addToBasket").onclick = function()
 		//push to array
 		var quantityArr = JSON.parse(localStorage["quantityArr"]);
 		quantityArr.push(amount);
-		alert(amount);
+		//alert(amount);
 		
 		//send arrays to local storage
 		localStorage["prodIdArr"] = JSON.stringify(prodIdArr);
@@ -33,14 +33,14 @@ document.getElementById("addToBasket").onclick = function()
 		
 		//push productId into array
 		prodIdArr.push(2001);
-		alert("Add to Basket was clicked");
+		//alert("Add to Basket was clicked");
 		
 		//get input from number bar
 		amount = Number(document.getElementById("quantity").value);
 		
 		//push to array
 		quantityArr.push(amount);
-		alert(amount);
+		//alert(amount);
 		
 		//send arrays to local storage
 		localStorage["prodIdArr"] = JSON.stringify(prodIdArr);
@@ -58,3 +58,11 @@ document.getElementById("searchBtn").onclick = function()
 	localStorage.setItem("searchBar", searchValue);
 }
 
+//If account is active display holders name
+var found = localStorage.getItem("loginActive");
+
+if (found == 1)
+{
+	var name = localStorage.getItem("accountName");
+	document.getElementById("nameTag").innerHTML = "Hello, " + name;
+}
