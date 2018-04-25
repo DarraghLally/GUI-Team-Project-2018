@@ -48,7 +48,6 @@ document.getElementById("addToBasket").onclick = function()
 		localStorage.setItem("basketActive", 1);
 	}
 }
-
 //On click 'search' - send input text to local
 document.getElementById("searchBtn").onclick = function()
 {	
@@ -59,4 +58,3 @@ document.getElementById("searchBtn").onclick = function()
 	localStorage.setItem("searchBar", searchValue);
 }
 
- 
