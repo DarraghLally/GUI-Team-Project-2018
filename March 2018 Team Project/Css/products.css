@@ -3,6 +3,7 @@ GUI & Web Devlopment Project 2018
 Authors: Darragh, Anthony, Noel
 */
 
+/* NavBar */
 .navbar {
 	background-color: #404040;
 	overflow: visible;
@@ -16,9 +17,18 @@ Authors: Darragh, Anthony, Noel
 .navbar a {
 	float: left;
 	display: block;
-	color: #f2f2f2;
+						/*color: #f2f2f2;*/
 	text-align: center;
 	padding: 14px 25px;
+	text-decoration: none;
+}
+
+.navbar p {
+	float: left;
+	display: block;
+	color: #a1a1a3;
+	text-align: center;
+	padding: 15px 25px;
 	text-decoration: none;
 }
 
@@ -26,6 +36,8 @@ a:hover,
 a.selected{
 	color: #3b88d6;
 }
+
+/* NavBar End */
 
 body{
 	padding-left: 5%;

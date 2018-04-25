@@ -16,56 +16,72 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<!-- External CSS -->		
 		<link href="Css/style.css" rel="stylesheet">
+		<!-- External google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+		
 	</head>
 	<body>
 		<div class="container-fluid">
-			<!-- Navagation bar at top of page (Place Holder) -->
-			<ul class="nav nav-pills text-center">
 			
-				<li class="pull-right">
-					<a href="Pages/Basket.html">Basket</a>
-				</li>
-				
-				<li class="pull-right">
-					<a href="#page3.html">Orders</a>
-				</li>
-				
-				<li class="pull-right">
-					<a href="#page2.html">Account</a>
-				</li>
-				
-				<li class="pull-right">
-					<a href="#page1.html">Departments</a>
-				</li>
-					
-				<li class="pull-left">
-					<a href="#../Index.html">Home</a>
-				</li>
+		<!-- Navagation bar  -->
+		<nav class="navbar navbar-inverse">
+			  <div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span> 
+						</button>
+						
+						<a class="navbar-brand" href="index.html">AND.com</a>
+						
+						<form class="navbar-form navbar-left" action="searchResults.html">
+							<div class="form-group ">
+								<input type="text" id="searchBarText" class="form-control" placeholder="Search">
+								<button type="submit" id="searchBtn" class="btn btn-default">Search</button>
+							</div>
+						</form>
+					</div>
 
-			</ul>
-			
-			<!-- placeholder for search bar and buttons-->
-			<div class="row">
-			
-				<div class="btnList">
-					<input type="text" id="searchBarText">
-					<a class="btn btn-default" href="Pages/SearchResults.html" id="searchBtn">Search</a>
-					<div id="nameTag" class="pull-right"></div><br>
-					<a class="btn btn-default pull-right" href="Pages/Basket.html">Basket</a>
-					<a class="btn btn-default pull-right" href="Pages/LoginScreen.html">log in</a>					
-				</div>
-			
-			</div>
+					<div class="collapse navbar-collapse" id="myNavbar">	
+						<ul class="nav navbar-nav navbar-right">
+							<li class="dropdown" >
+								<!-- If valid acount active display account holders name -->
+								<p id="nameTag"></p>
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Departments
+								<span class="caret"></span></a>
+								<ul class="dropdown-menu" >
+									<li><a href="#">Phones</a></li>
+									<li><a href="#">Laptops</a></li>
+									<li><a href="#">Televisions</a></li>
+									<li><a href="#">Sound</a></li>
+								</ul>
+							</li>
+							<li class="dropdown" >
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Account
+								<span class="caret"></span></a>
+								<ul class="dropdown-menu" >
+									<li><a href="Pages/LoginScreen.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+									<li><a href="Pages/regpage.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+									<li><a href="#">Page 1-2</a></li>
+									<li><a href="#">Page 1-3</a></li>
+								</ul>
+							</li>
+							<li><a href="Pages/Basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> Basket</a></li>
+						</ul>
+					</div>
+			  </div>
+		</nav>
 			
 			<div class="row">
 				<div class="slideshow-container">
 					<!-- 1st slide show image-->
 					<div class="mySlides fade">
-					  <img src="Images/phonePlaceHolder.jpg" style="width:100%">
+					  <img src="Images/planet.jpg" style="width:100%">
 					</div>
 					<!-- 2nd slide show image-->
 					<div class="mySlides fade">
-					  <img src="Images/products/laptop-cheap/Lenovo IdeaPad.jpg" style="width:100%">
+					  <img src="Images/planet.jpg" style="width:100%">
 					</div>
 					<!-- 3rd slide show image-->
 					<div class="mySlides fade">
@@ -84,12 +100,12 @@
 			<div class="row">
 				<!-- left col-->
 				<div class="col-sm-4 col-md-4">
-					<a href = "pages/prod1.html"><img src="Images/products/lgk8Mobile.jpg" alt="LG_K8_mobile" class=""></a>
+					<a href = "Pages/prod1.html"><img src="Images/products/lgk8Mobile.jpg" alt="LG_K8_mobile" class=""></a>
 					<p>LG K8 Mobile Phone	Price: €103.90</p>
-					<a href = "pages/prod2.html"><img src="Images/products/laptop-cheap/Lenovo IdeaPad.jpg" alt="Lenovo_IdeaPad_laptop" class=""></a>
+					<a href = "Pages/prod2.html"><img src="Images/products/laptop-cheap/Lenovo IdeaPad.jpg" alt="Lenovo_IdeaPad_laptop" class=""></a>
 					<p>Lenovo IdeaPad 11" HD Notebook	Price: €149.99</p>
-					<img src="Images/placeHolder.jpg" alt="inProgress" class="">
-					<p>product7 Details</p>
+					<a href = "Pages/prod3.html"><img src="Images/products/tv-cheap/lgCheap1.jpg" alt="LG_TV" class=""></a>
+					<p>LG 1080p 21.5" LED TV	Price: €109.00</p>
 					<img src="Images/placeHolder.jpg" alt="inProgress" class="">
 					<p>product10 Details</p>
 				</div>

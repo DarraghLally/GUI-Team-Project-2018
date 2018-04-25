@@ -3,25 +3,23 @@
 <!-- Authors: Darragh, Anthony, Noel -->
 <html>
 	<head>
-		<title>product2.com</title>
+		<title>product3.com</title>
 		<!-- Icon for title -->
 		<link rel="shortcut icon" type="image/x-icon" href="../Images/Laptop-icon.png" />
 		<!-- Required meta tags -->
-		<meta charset="UTF-8">
-		<meta name="description" content="Basket Page">
-		<meta name="keywords" content="Online Shopping, Laptops, Phones, PC, TV">
-		<meta name="author" content="Anthony Moore, Darragh Lally, Noel Melia">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!--Adding meta data for search engines and to control the view a user has when on the site-->
+		<meta name="description" content="LG K8 SIM Free SmartPhone">
+		<meta name="keywords" content="phone">
+		<!-- <meta name="viewport" content="****************"> -->
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	
-		
 		<!-- External CSS -->				
-		<link href="../Css/products.css" rel="stylesheet">
-		
+		<link href="../Css/products.css" rel="stylesheet">  
 		<!-- External google fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-		
+
 	</head>
 	<body>
 		<!--Navagation Bar-->
@@ -33,16 +31,18 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span> 
 						</button>
+						
 						<a class="navbar-brand" href="../index.html">AND.com</a>
+						
 						<form class="navbar-form navbar-left" action="searchResults.html">
 							<div class="form-group ">
-								<input type="text" class="form-control" placeholder="Search" id="searchBarText">
+								<input type="text" id="searchBarText" class="form-control" placeholder="Search">
 								<button type="submit" id="searchBtn" class="btn btn-default">Search</button>
 							</div>
-							
 						</form>
 					</div>
-					<div class="collapse navbar-collapse" id="myNavbar">
+
+					<div class="collapse navbar-collapse" id="myNavbar">	
 						<ul class="nav navbar-nav navbar-right">
 							<li class="dropdown" >
 								<!-- If valid acount active display account holders name -->
@@ -70,11 +70,13 @@
 						</ul>
 					</div>
 			  </div>
-		</nav>
-			<h2 class=" productTitle text-center">Lenovo Ideapad HD Notebook</h2>
+		</nav>	
+		
+			<h2 class = "prodTitle text-center">LG 1080p Full HD 21.5Inch LED TV</h2>
 			<div class="row">
-				<!-- Left Col - Item Image -->
-				<div class="col-sm-4 col-md-4">
+				<!-- Left Col -->
+				<div class="col-sm-4 col-md-4 leftCol">
+					
 					<!--Image carousel - code from W3Schools, using bootstrap-->
 					<div id="myCarousel" class="carousel slide " data-ride="carousel">
 					  <!-- Indicators -->
@@ -87,17 +89,17 @@
 					  <!-- Wrapper for slides -->
 					  <div class="carousel-inner ">
 						<div class="item active" align = "center">
-						  <img src="../Images/products/laptop-cheap/Lenovo IdeaPad.jpg" alt="Lenovo IdeaPad">
+						  <img src="../Images/products/tv-cheap/lgCheap1.jpg" alt="LG_TV">
 						</div>
 
 						<div class="item" align = "center">
-						  <img src="../Images/products/laptop-cheap/Lenovo IdeaPad 2.jpg" alt="Lenovo IdeaPad">
+						  <img src="../Images/products/tv-cheap/lgCheap2.jpg" alt="LG_TV">
 						</div>
 
 						<div class="item" align = "center">
-						  <img src="../Images/products/laptop-cheap/Lenovo IdeaPad 3.jpg" alt="Lenovo IdeaPad">
+						  <img src="../Images/products/tv-cheap/lgCheap4.jpg" alt="LG_TV">
 						</div>
-					</div>
+					  </div>
 
 					  <!-- Left and right controls -->
 					  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -109,79 +111,77 @@
 						<span class="sr-only">Next</span>
 					  </a>
 					</div>	
-				</div>	
-			
+				</div>
 				
 				<!-- Middle Col - Product details -->
 				<div class="col-sm-4 col-md-4">
-					
 					<div class = "productDecription">
-						<ul>
-							 <li>Processor: Intel Celeron processor N3350 dual core, Threads 2, base frequency 1.10 GHz, burst frequency 2.40 GHz</li>
-							 <li>Internal Memory: 4 GB LPDDR4 2400 ONBOARD RAM</li>
-							 <li>Storage: 32 GB eMMC</li>
-							 <li>Display type: 11.6 inch HD antiglare 1366 x 768</li>
-							 <li>Operating System: Windows 10 S</li>
+						<ul class = "">
+							 <li>Enjoy both TV and Monitor together</li>
+							 <li>IPS Display with Full HD resolution</li>
+							 <li>Built in 5W x 2 Stereo Speakers</li>
+							 <li>Wide Viewing Angle</li>
+							 <li>Gaming Mode with Black stabilizer and DAS mode</li>
+							 <li>Wall mount and aesthetic Arcline stand</li>
+							 <li>DVB-T/C Tuner for Freeview</li>
 						</ul>
-						<p>product Details</p>
-						<p>product Details</p>
+											
 					</div>
 				</div>
-				
-				<div class="col-sm-3 col-md-3 productDecription">
-						<h3 align = "right">Price: €149.99</h3>
+				<!-- Right Col - Product Purchase -->
+				<div class="col-sm-3 col-md-3 productAddPrice">
+						<h3 align = "right">Price: €109.00</h3>
 						
-						<!-- Quantity Button -->
-						<div class = "btn-addToBasket " align = "right">
-							Quantity: 	<select id = "quantity" name = "Quantity">
-										<option value = "1">1</option>
-										<option value = "2">2</option>
-										<option value = "3">3</option>
-										<option value = "4">4</option>
-										<option value = "5">5</option>
-										</select>
-						</div>						
-						
-						<!-- Buy Button -->
-						<div class = "btn-addToBasket" align = "right">
-							<button id = "addToBasket" class="btn btn-default">Add to basket</button>
-						</div>
-				</div>
-				
+					<!-- Quantity Button -->
+					<div class = "btn-addToBasket" align = "right">
+						Quantity: 	<select id = "quantity" name = "Quantity">
+									<option value = "1">1</option>
+									<option value = "2">2</option>
+									<option value = "3">3</option>
+									<option value = "4">4</option>
+									<option value = "5">5</option>
+									</select>
+					</div>						
 					
-					
+					<!-- Buy Button -->
+					<div class = "btn-addToBasket" align = "right">
+						<button id = "addToBasket" class="btn btn-default">Add to basket</button>
+					</div>
 				</div>			
-			</div>
-			
-			<!-- placeholder images for the store page-->
-			<div class="row">
-				<!-- left col-->
-				<div class="col-sm-4 col-md-4">
 					
+			</div>	<!-- End Row -->		
+
+
+				<!-- placeholder images for the store page-->
+				<div class="row">
+					<!-- left col-->
+					<div class="col-sm-4 col-md-4">
+						
+					</div>
+					<!-- middle col-->
+					<div class="col-sm-4 col-md-4">
+						
+					</div>
+					<!-- right col-->
+					<div class="col-sm-4 col-md-4">
+						
+					</div>
 				</div>
-				<!-- middle col-->
-				<div class="col-sm-4 col-md-4">
-					
-				</div>
-				<!-- right col-->
-				<div class="col-sm-4 col-md-4">
-					
+				<!-- Place holder buttons for misc pages-->
+				<div class="btnList text-center footer">
+					<a class="btn btn-default" href="#" target="_blank">Contact Us</a>
+					<a class="btn btn-default" href="#" target="_blank">Terms of Service</a>
+					<a class="btn btn-default" href="#" target="_blank">GitHub</a>
 				</div>
 			</div>
-			<!-- Place holder buttons for misc pages-->
-			<div class="btnList text-center">
-				<a class="btn btn-default" href="#" target="_blank">Contact Us</a>
-				<a class="btn btn-default" href="#" target="_blank">Terms of Service</a>
-				<a class="btn btn-default" href="#" target="_blank">GitHub</a>
-			</div>
-			
 		</div>
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<!-- External JavaScript -->
-		<script src="../JavaScript/prod2.js"></script>	
+		<script src="../JavaScript/prod3.js"></script>	
 	</body>
 	
+
 </html>
