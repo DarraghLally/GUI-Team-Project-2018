@@ -43,23 +43,26 @@
 
 			</ul>
 		
-			<form>
+			<form name="loginForm" method="post" action="login.php">
+			
 				<br><h1>Login</h1>
 				<h5>Please Sign in with User-name and Password to proceed.</h5>
 				<hr>
 
 				<label for="username"><b>User-name</b></label>
 				<input id="nameInput" type="text" placeholder="Enter Username" name="name" required="required">
-
+				<br>
 				<label for="psw"><b>Password</b></label>
 				<input id="passInput" type="password" placeholder="Enter Password" name="psw" required="required">
 				
-				<div class="clearfix">
-				<a href ="#"><button id="loginBtn" type="button">Login</button></a>
 				
-				<a href ="regpage.html"><button type="button" class="regbtn" >Register</button></a>
+				<br><br>
 				
-				</div>
+				<button type="submit" id="loginBtn">Login</button>
+				<a href="regpage.html"><button type="button" id="regbtn" >Register</button></a>
+				<td ><input type="Reset"></td>
+				
+				
 				<hr>
 			</form>
 		</div>	
