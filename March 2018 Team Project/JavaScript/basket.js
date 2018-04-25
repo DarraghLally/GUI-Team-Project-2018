@@ -73,7 +73,7 @@ $(document).ready(function() {
 					"<div class='col-sm-2 col-md-2'> € " + price + "</div>" +
 					"<div class='col-sm-1 col-md-1'>" + amount + "</div>" +
 					"<div class='col-sm-1 col-md-1'>" + 
-						"<button id='removeItem'>Remove</button>" + 
+						"<button id='remove_" + (i+1) + "'>Remove</button>" + 
 					"</div>" +
 				"</div>");
 			}// if
@@ -90,4 +90,62 @@ $(document).ready(function() {
     $("#vat-value").html("€ " + vatCharged.toFixed(2));
 	$("#shipping-value").html("€ " + shipping.toFixed(2));
 	$("#totals-value").html("€ " + grandTotal.toFixed(2));
+	
+	// function to remove items from the basket/local pos[0]
+	document.getElementById("remove_1").onclick = function()
+	{
+		alert("Remove Button was clicked");
+		//pop productId from array
+		var prodIdArr = JSON.parse(localStorage["prodIdArr"]);
+		var quantityArr = JSON.parse(localStorage["quantityArr"]);
+		
+		// Removes the first element of prodIdArr
+		prodIdArr.splice(0, 1);
+		// Removes the first element of quantityArr        
+		quantityArr.splice(0, 1);		
+		//send arrays to local storage
+		localStorage["prodIdArr"] = JSON.stringify(prodIdArr);
+		localStorage["quantityArr"] = JSON.stringify(quantityArr);
+		//refresh page
+		location.reload();
+	}
+	
+	// function to remove items from the basket/local pos[1]
+	document.getElementById("remove_2").onclick = function()
+	{
+		alert("Remove Button was clicked");
+		//pop arrays from local storage
+		var prodIdArr = JSON.parse(localStorage["prodIdArr"]);
+		var quantityArr = JSON.parse(localStorage["quantityArr"]);
+		
+		// Removes the second element of prodIdArr
+		prodIdArr.splice(1, 1);
+		// Removes the second element of quantityArr        
+		quantityArr.splice(1, 1);		
+		//send arrays to local storage
+		localStorage["prodIdArr"] = JSON.stringify(prodIdArr);
+		localStorage["quantityArr"] = JSON.stringify(quantityArr);
+		//refresh page
+		location.reload();
+	}
+	
+	// function to remove items from the basket/local pos[2]
+	document.getElementById("remove_3").onclick = function()
+	{
+		alert("Remove Button was clicked");
+		//pop arrays from local storage
+		var prodIdArr = JSON.parse(localStorage["prodIdArr"]);
+		var quantityArr = JSON.parse(localStorage["quantityArr"]);
+		
+		// Removes the third element of prodIdArr
+		prodIdArr.splice(2, 1);
+		// Removes the third element of quantityArr        
+		quantityArr.splice(2, 1);		
+		//send arrays to local storage
+		localStorage["prodIdArr"] = JSON.stringify(prodIdArr);
+		localStorage["quantityArr"] = JSON.stringify(quantityArr);
+		//refresh page
+		location.reload();
+	}
+	
 });	
