@@ -8,7 +8,7 @@ document.getElementById("addToBasket").onclick = function()
 	{
 		//push productId into array
 		var prodIdArr = JSON.parse(localStorage["prodIdArr"]);
-		prodIdArr.push(1001);
+		prodIdArr.push(3001);
 		//alert("Add to Basket was clicked");
 		
 		//get input from number bar
@@ -32,7 +32,7 @@ document.getElementById("addToBasket").onclick = function()
 		var num;
 		
 		//push productId into array
-		prodIdArr.push(1001);
+		prodIdArr.push(3001);
 		//alert("Add to Basket was clicked");
 		
 		//get input from number bar
