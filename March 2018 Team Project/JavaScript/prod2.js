@@ -47,7 +47,7 @@ document.getElementById("addToBasket").onclick = function()
 		localStorage["quantityArr"] = JSON.stringify(quantityArr);
 		localStorage.setItem("basketActive", 1);
 	}
-} 	
+}
 //On click 'search' - send input text to local
 document.getElementById("searchBtn").onclick = function()
 {	

@@ -74,14 +74,11 @@ document.getElementById("loginBtn").onclick = function()
 	{
 		localStorage.setItem("loginActive", 1);
 		localStorage.setItem("accountName", accountName);
-		window.open("../index.html");
-		// back to home
 	}
 	else
 	{
 		localStorage.setItem("loginActive", 0);
 		localStorage.setItem("accountName", "Void");
-		location.reload();
 	}
 	
 }

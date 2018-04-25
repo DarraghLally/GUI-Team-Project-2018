@@ -1,5 +1,4 @@
 //On click 'add to basket' - Getting quantity amount - Adding product ID and quantity to local storage to be pulled into Basket.html for processing
-
 document.getElementById("addToBasket").onclick = function()
 {
 	// Retrieve
@@ -48,7 +47,9 @@ document.getElementById("addToBasket").onclick = function()
 		localStorage["quantityArr"] = JSON.stringify(quantityArr);
 		localStorage.setItem("basketActive", 1);
 	}
-}	
+
+}
+
 //On click 'search' - send input text to local
 document.getElementById("searchBtn").onclick = function()
 {	
@@ -58,4 +59,3 @@ document.getElementById("searchBtn").onclick = function()
 	//send search
 	localStorage.setItem("searchBar", searchValue);
 }
-
