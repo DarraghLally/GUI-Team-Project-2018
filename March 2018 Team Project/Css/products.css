@@ -1,7 +1,12 @@
 /* 
 GUI & Web Devlopment Project 2018
 Authors: Darragh, Anthony, Noel
-*/
+*/	
+
+button:focus{
+	background-color: blue;
+	transition-duration: 2s;
+}
 
 /* NavBar */
 .navbar {
