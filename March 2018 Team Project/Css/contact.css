@@ -56,12 +56,20 @@ input[type=submit]:hover {
     clear: both;
 }
 
-.inputBox {
-	padding-left: 10%;
+.terminputBox {
+	padding: 10%;
 	border-top: 10%;
 }
+.inputb {
+	padding-left:10%;
+}
+
+.down {
+	padding-top:7%;
+}
+
 .map {
-	padding-right: 10%;
+	padding-left: 7%;
 }
 #githubIcon {
   color: #6C0674;
