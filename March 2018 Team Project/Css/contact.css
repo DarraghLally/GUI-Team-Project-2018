@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom:2%; 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #337ab7;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #8bace5;
+	color: white;
+}
+
+
+.container {
+
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+
+.column {
+    float: right;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+.logoLink {
+	 float: left;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.terminputBox {
+	padding: 10%;
+	border-top: 10%;
+}
+.inputb {
+	padding-left:10%;
+}
+
+.down {
+	padding-top:7%;
+}
+
+.map {
+	padding-left: 7%;
+}
+#githubIcon {
+  color: #6C0674;
+}
+
+#contactIcon {
+  color: #f4b841;
+}
+
+#termsIcon {
+  color: #41f443;
+}
+
+.btn-default {
+	background-color: white;
+	border-color: grey;
+	color: #337ab7;
+	font-size: 1.0em;
+	font-family: 'Cabin', sans-serif;
+}

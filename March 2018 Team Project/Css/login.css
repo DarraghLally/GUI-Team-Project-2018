@@ -4,5 +4,28 @@
   border-bottom: 5px solid #3b88d6;
   border-radius: 5px;
 }
+.btn-default {
+	background-color: white;
+	border-color: grey;
+	color: #337ab7;
+	font-size: 1.0em;
+	font-family: 'Cabin', sans-serif;
+}
+
+.bottombtn {
+	position:relative;
+	transform:translateY(620%);
+}
+#githubIcon {
+  color: #6C0674;
+}
+
+#contactIcon {
+  color: #f4b841;
+}
+
+#termsIcon {
+  color: #41f443;
+}
 
 */ Color line credit to ninjamonk: [[http://bootsnipp.com/snippets/featured/mix-amp-match-login]]
