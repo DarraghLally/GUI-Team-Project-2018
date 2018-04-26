@@ -16,3 +16,39 @@
 		//send search
 		localStorage.setItem("searchBar", searchValue);
 	}
+	
+///////////////////////////////////////////////////////////////////////////////////////////
+/* Coupon Code */
+var codeArr = 
+	[
+		{
+			"couponCode": 99990,
+			"couponDate": 010117,
+		},
+		{
+			"couponCode": 99991,
+			"couponDate": 010118,
+		},
+		{
+			"couponCode": 99992,
+			"couponDate": 010119,
+		}		
+	]	
+
+// Check for valid coupon code
+	document.getElementById("completeTrans").onclick = function()
+	{	
+	alert("COUPON CODE MATCH");
+		//get the user coupon code from the text box
+		var code = document.getElementById("couponInput").value;
+		for(i = 0; i < codeArr.length){
+			if(codeArr[i].value == code){
+				alert("COUPON CODE MATCH");
+			}
+		}
+	}
+		//send search
+		//localStorage.setItem("searchBar", searchValue);
+	
+	
+	
