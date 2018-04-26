@@ -32,7 +32,14 @@ $(document).ready(function() {
 			"productDescription": "The IdeaPad 120S features a redesigned chassis with simple, clean lines giving it a contemporary take on elegant style. You count on your devices to keep up with you. So the manufacturer applied a protective finish to guard against wear and tear. Lenovo also included subtle rubber detailing on the bottom cover to maximise ventilation and extend product life. Available in a sophisticated range of colours: Mineral grey, blizzard white and ballerina pink.",
 			"productPrice": 149.99,
 			"productImgURL": "../Images/laptopPlaceholder.jpg"
-		}		
+		},
+		{
+			"productID": 3001,
+			"productName":"LG 1080p Full HD 21.5Inch LED TV ",
+			"productDescription": "1080p Full HD, 21.5' Screen, Suitable as TV or Monitor",
+			"productPrice": 109.99,
+			"productImgURL": "../Images/products/tv-cheap/lgCheap1.jpg"
+		}
 	]
 	
 	// Retrieve local storage data
