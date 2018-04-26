@@ -6,6 +6,10 @@ showSlides();
 
 function showSlides() {
     var i;
+	// new variable
+	
+	// new variable = math.random(1-10)
+	
     var slides = document.getElementsByClassName("mySlides");
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none"; 
