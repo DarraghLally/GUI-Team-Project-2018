@@ -1,7 +1,12 @@
 /* 
 GUI & Web Devlopment Project 2018
 Authors: Darragh, Anthony, Noel
-*/
+*/	
+
+button:focus{
+	background-color: blue;
+	transition-duration: 2s;
+}
 
 /* NavBar */
 .navbar {
@@ -82,7 +87,7 @@ body{
 /* Product add to basket / price for right column of product pages */
 .productAddPrice{
 	border: 2px solid #d4d6d8;
-	padding: 2.2%;
+	padding-right: 2%;
     border-radius: 3%;
 	font-size: 1.0em;	
 	font-family: 'Cabin', sans-serif;
