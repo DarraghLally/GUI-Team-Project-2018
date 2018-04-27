@@ -129,6 +129,30 @@ var accountsArr =
 			"productDescription": "1080p Full HD, 21.5' Screen, Suitable as TV or Monitor",
 			"productPrice": 109.99,
 			"productImgURL": "../Images/products/tv-cheap/lgCheap1.jpg"
+		},
+		{
+			"productID": 4001,
+			"productDept": "Drone",
+			"productName":"DBPOWER Predator Drone ",
+			"productDescription": "720p HD camera, Wifi with real time video play-back, Extra battery to DOUBLE your flying time!, Designed for aspiring drone pilots, One key for take off and landing, Low power and out of range alarm",
+			"productPrice": 95.99,
+			"productImgURL": "../Images/products/drone-cheap/wifiDroneCheap1.jpg"
+		},
+		{
+			"productID": 4002,
+			"productDept": "Drone",
+			"productName":"Parrot BeBop 2 Drone w/ Cockpit FPV Glasses ",
+			"productDescription": "Compact and lightweight drone at less than 500g, Live video stream from phone or tablet, Immersive First Person View with included Cockpit Glasses, Skycontroller 2 provides precise piloting and a max range of 2km, 25 minute flying time with a 270mAg battery, Low power and out of range alarm",
+			"productPrice": 491.80,
+			"productImgURL": "../Images/products/drone-mid/parrot_1.jpg"
+		},
+		{
+			"productID": 4003,
+			"productDept": "Drone",
+			"productName":"DJI Mavic Pro Drone Combo Kit ",
+			"productDescription": "Fly further from your pocket, The Mavic uses Sky Autonomy technology to sense obstacles up to 15m away, Precision Hover, Satellite positioning can help the drone hover in outdoor areas, Stay flying longer wit hup to 27 minute flying time, Intelligent Flight Battery, Quick release folding propellars, Charging Hub, Controller, Limited Addition extras pack",
+			"productPrice": 985.90,
+			"productImgURL": "../Images/products/drone-top/dji_1.jpg"
 		}
 	]
 	
