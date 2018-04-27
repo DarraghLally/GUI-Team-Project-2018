@@ -56,7 +56,8 @@ a.selected{
 
 .bottombtn {
 	position:relative;
-	transform:translateY(100%);
+	transform:translateY(90%);
+	padding-bottom: 2%;
 }
 #githubIcon {
   color: #6C0674;
