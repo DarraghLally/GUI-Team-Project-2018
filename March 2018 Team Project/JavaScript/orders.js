@@ -1,35 +1,9 @@
 //run jQuery
 $(document).ready(function() 
 {
-	
-	var productsArr = 
-	[
-		{
-			"productID": 1001,
-			"productName":"LG K8",
-			"productDescription": "5.0' HD In-cell Touch Display with 2.5D Arc Glass Wide display, smooth edges. The big bright 5.0' HD In-cell display has 2.5D Arc glass edges that are smooth to the touch. Your eyes and fingers will thank you. In every single way, the full-featured 13MP camera brilliantly captures the best moments of your life.",
-			"productPrice": 103.90,
-			"productImgURL": "../Images/phonePlaceHolder.jpg",
-		},
-		{
-			"productID": 2001,
-			"productName":"Lenovo IdeaPad ",
-			"productDescription": "The IdeaPad 120S features a redesigned chassis with simple, clean lines giving it a contemporary take on elegant style. You count on your devices to keep up with you. So the manufacturer applied a protective finish to guard against wear and tear. Lenovo also included subtle rubber detailing on the bottom cover to maximise ventilation and extend product life. Available in a sophisticated range of colours: Mineral grey, blizzard white and ballerina pink.",
-			"productPrice": 149.99,
-			"productImgURL": "../Images/laptopPlaceholder.jpg"
-		},
-		{
-			"productID": 3001,
-			"productName":"LG 1080p Full HD 21.5Inch LED TV ",
-			"productDescription": "1080p Full HD, 21.5' Screen, Suitable as TV or Monitor",
-			"productPrice": 109.99,
-			"productImgURL": "../Images/products/tv-cheap/lgCheap1.jpg"
-		}		
-	]
-	
-	
 	// Retrieve account data from local storage
 	var accounts = JSON.parse(localStorage["accountsArr"]);
+	var productsArr = JSON.parse(localStorage["productsArr"]);
 	
 	// Retrieve local storage data
 	var customerName = localStorage.getItem("accountName");
@@ -74,6 +48,8 @@ $(document).ready(function()
 	var productIdNumArr = JSON.parse(localStorage["prodIdArr"]);
 	var amountArr = JSON.parse(localStorage["quantityArr"]);
 	
+	var newCoupon = localStorage.getItem("couponActive");
+	
 	//make a loop to search through the product numbers
 	for (i = 0; i < productIdNumArr.length; i++)
 	{
@@ -111,10 +87,18 @@ $(document).ready(function()
 		}// inner for 
 	}// outer for 
 	
-	//get totals after closing loop
-	vatCharged = (subTotal * vatRate);
-	grandTotal = subTotal + vatCharged + shipping;
-	
+	if (newCoupon == 1)
+	{
+		//get totals after closing loop
+		vatCharged = (subTotal * vatRate);
+		grandTotal = (subTotal + vatCharged + shipping) * 0.9; // 10%
+	}
+	else
+	{
+		//get totals after closing loop
+		vatCharged = (subTotal * vatRate);
+		grandTotal = subTotal + vatCharged + shipping;
+	}
 	//use jQuery to target the ID tags and output the values
 	$("#basket-items-value").html(itemsCounter);
     $("#sub-total-value").html("€ " + subTotal.toFixed(2));
@@ -147,7 +131,7 @@ $(document).ready(function()
 	$("#account-value").html(accountId);	
 });
 
-//On click 'search' - send input text to local
+	//On click 'search' - send input text to local
 	document.getElementById("searchBtn").onclick = function()
 	{	
 		//get the user name from the text box
@@ -157,7 +141,7 @@ $(document).ready(function()
 		localStorage.setItem("searchBar", searchValue);
 	}
 
-//If account is active display holders name
+	//If account is active display holders name
 	var found = localStorage.getItem("loginActive");
 
 	if (found == 1)

@@ -17,34 +17,10 @@ $(document).ready(function() {
 	var shipping = 15.00;
 	var itemsCounter = 0;
 	
-	var productsArr = 
-	[
-		{
-			"productID": 1001,
-			"productName":"LG K8",
-			"productDescription": "5.0' HD In-cell Touch Display with 2.5D Arc Glass Wide display, smooth edges. The big bright 5.0' HD In-cell display has 2.5D Arc glass edges that are smooth to the touch. Your eyes and fingers will thank you. In every single way, the full-featured 13MP camera brilliantly captures the best moments of your life.",
-			"productPrice": 103.90,
-			"productImgURL": "../Images/phonePlaceHolder.jpg",
-		},
-		{
-			"productID": 2001,
-			"productName":"Lenovo IdeaPad ",
-			"productDescription": "The IdeaPad 120S features a redesigned chassis with simple, clean lines giving it a contemporary take on elegant style. You count on your devices to keep up with you. So the manufacturer applied a protective finish to guard against wear and tear. Lenovo also included subtle rubber detailing on the bottom cover to maximise ventilation and extend product life. Available in a sophisticated range of colours: Mineral grey, blizzard white and ballerina pink.",
-			"productPrice": 149.99,
-			"productImgURL": "../Images/laptopPlaceholder.jpg"
-		},
-		{
-			"productID": 3001,
-			"productName":"LG 1080p Full HD 21.5Inch LED TV ",
-			"productDescription": "1080p Full HD, 21.5' Screen, Suitable as TV or Monitor",
-			"productPrice": 109.99,
-			"productImgURL": "../Images/products/tv-cheap/lgCheap1.jpg"
-		}
-	]
-	
 	// Retrieve local storage data
 	var productIdNumArr = JSON.parse(localStorage["prodIdArr"]);
 	var amountArr = JSON.parse(localStorage["quantityArr"]);
+	var productsArr = JSON.parse(localStorage["productsArr"]);
 	
 	//make a loop to search through the product numbers
 	for (var i = 0; i < productIdNumArr.length; i++)
