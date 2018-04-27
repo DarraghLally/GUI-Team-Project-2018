@@ -73,14 +73,16 @@
 						<fieldset>
 							<div class="form-group">
 								<label for="userName"><span class="req"></span> User-Name: </label>
-								<input required type="text" name="userName" id="userName" class="form-control" maxlength="28" onkeyup="validatephone(this);"/> 
+								<input type="text" name="userName" id="userName" class="form-control" maxlength="28" onkeyup="validatephone(this)" required/> 
 							</div>
+						
 
 							<div class="form-group"> 	 
 								<label for="passWord"><span class="req">* </span> Enter Password: </label>
 								<input class="form-control" type="password" name="password" id = "pass1" onkeyup = "Validate(this)" required /> 
 								<div id="errFirst"></div>    
 							</div>
+							
 							
 							<div class="form-group"> 	 
 								<label for="rePassWord"><span class="req">* </span> Re-Enter Password: </label>
@@ -90,13 +92,13 @@
 
 							<div class="form-group">
 								<label for="phonenumber"><span class="req"></span> Phone Number: </label> 
-								<input class="form-control" type="number" name="phoneNumber" id = "phoneNum" onkeyup = "Validate(this)" required />  
+								<input class="form-control" type="number" name="phoneNumber" id = "userPhone" onkeyup = "Validate(this)" required />  
 								<div id="errLast"></div>
 							</div>
 
 							<div class="form-group">
 								<label for="email"><span class="req"></span> Email Address: </label> 
-								<input class="form-control" required type="text" name="email" id = "email"  onchange="email_validate(this.value);" />   
+								<input class="form-control" required type="text" name="email" id = "userEmail"  onchange="email_validate(this.value);" />   
 								<div class="status" id="status"></div>
 							</div>
 
@@ -104,9 +106,9 @@
 							
 							<div class="form-group">
 								<label for="address"><span class="req"></span> Home Address: </label> 
-								<input class="form-control" required type="text" name="line1" id = "address1"  onchange="email_validate(this.value);" />   
-								<input class="form-control" required type="text" name="line2" id = "address2"  onchange="email_validate(this.value);" />   
-								<input class="form-control" required type="text" name="line3" id = "address3"  onchange="email_validate(this.value);" />   
+								<input class="form-control" required type="text" name="line1" id = "userAddress1"  onchange="email_validate(this.value);" />   
+								<input class="form-control" required type="text" name="line2" id = "userAddress2"  onchange="email_validate(this.value);" />   
+								<input class="form-control" required type="text" name="line3" id = "userAddress3"  onchange="email_validate(this.value);" />   
 								<div class="status" id="status"></div>
 							</div>
 							
@@ -121,7 +123,7 @@
 							</div>
 
 							<div class="form-group">
-								<input class="btn btn-success" type="submit" name="submit_reg" value="Update Account">
+								<input id="regBtn"class="btn btn-success" type="submit" name="submit_reg" value="Update Account">
 							</div>
 						</fieldset>
 					</form><!-- ends register form -->
@@ -145,7 +147,6 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<!-- External JavaScript -->
-		<script src="../JavaScript/login.js"></script>
-		<script src="../JavaScript/register.js"></script>
+		<script src="../JavaScript/changeAcc.js"></script>
 	</body>
 </html>
