@@ -36,16 +36,14 @@ a.selected{
 /* NavBar End */
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  padding-bottom:2%; 
-}
-
-* {
-    box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-bottom:2%; 
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 /* Style inputs */
-input[type=text], select, textarea {
+#fname,#lname,#subject,#country{
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -73,13 +71,14 @@ input[type=submit]:hover {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 10px;
+	
 }
 
 
 .column {
     float: right;
     width: 50%;
-    margin-top: 6px;
+    margin-top: 5px;
     padding: 20px;
 }
 
@@ -124,6 +123,42 @@ input[type=submit]:hover {
 	background-color: white;
 	border-color: grey;
 	color: #337ab7;
-	font-size: 1.0em;
+
 	/*font-family: 'Cabin', sans-serif;*/
 }
+
+
+/* NavBar */
+.navbar {
+	background-color: #404040;
+	overflow: visible;
+	width:100%;
+	position: sticky;
+	top: 0;
+	border-bottom: 6px solid #3b88d6;
+	z-index: 1; /* To insure the drop down menu takes president over other page elements */
+}
+
+.navbar a {
+	float: left;
+	display: block;
+	/*color: #f2f2f2;*/
+	text-align: center;
+	padding: 14px 25px;
+	text-decoration: none;
+}
+
+.navbar p {
+	float: left;
+	display: block;
+	color: #a1a1a3;
+	text-align: center;
+	padding: 15px 25px;
+	text-decoration: none;
+}
+
+a:hover,
+a.selected{
+	color: #3b88d6;
+}
+

@@ -1,0 +1,93 @@
+body{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+
+/* NavBar */
+.navbar {
+	background-color: #404040;
+	overflow: visible;
+	width:100%;
+	position: sticky;
+	top: 0;
+	border-bottom: 6px solid #3b88d6;
+	z-index: 1; /* To insure the drop down menu takes president over other page elements */
+}
+
+.navbar a {
+	float: left;
+	display: block;
+						/*color: #f2f2f2;*/
+	text-align: center;
+	padding: 14px 25px;
+	text-decoration: none;
+}
+
+.navbar p {
+	float: left;
+	display: block;
+	color: #a1a1a3;
+	text-align: center;
+	padding: 15px 25px;
+	text-decoration: none;
+}
+
+a:hover,
+a.selected{
+	color: #3b88d6;
+}
+
+/* NavBar End */
+
+.line {
+  height: 5px;
+  border-top: 0;
+  border-bottom: 5px solid #3b88d6;
+  border-radius: 5px;
+}
+.btn-default {
+	background-color: white;
+	border-color: grey;
+	color: #337ab7;
+	font-size: 1.0em;
+	font-family: 'Cabin', sans-serif;
+}
+
+.bottombtn {
+	position:relative;
+	transform:translateY(100%);
+}
+#githubIcon {
+  color: #6C0674;
+}
+
+#contactIcon {
+  color: #f4b841;
+}
+
+#termsIcon {
+  color: #41f443;
+}
+
+/* styling for form sheet */
+fieldset {
+    border: thin solid #ccc; 
+    border-radius: 4px;
+    padding: 20px;
+    padding-left: 40px;
+    background: #fbfbfb;
+}
+legend {
+   color: #678;
+}
+.form-control {
+    width: 95%;
+}
+label small {
+    color: #678 !important;
+}
+span.req {
+    color:maroon;
+    font-size: 112%;
+}

@@ -1,50 +1,8 @@
 //A. Moore. D, Lally, N. Melia 
 //login.js - 1st yr final project
 
-//make an array of objects with JSON
-var accounts = 
-[
-	{
-		"username" : "John Doe", 
-		"pssword" : "maryhadalittlelamb", 
-	},
-	{
-		"username" : "Bugs Bunny", 
-		"pssword" : "whatsupdoc", 
-	},
-	{
-		"username" : "Daffy Duck", 
-		"pssword" : "quack", 
-	},
-	{
-		"username" : "Elon Musk", 
-		"pssword" : "rocketman", 
-	},
-	{
-		"username" : "Jeff Bezos", 
-		"pssword" : "skynet", 
-	},
-	{
-		"username" : "Gerry Agnew", 
-		"pssword" : "geraldo", 
-	},
-	{
-		"username" : "Bill Gates", 
-		"pssword" : "ihatelinux", 
-	},
-	{
-		"username" : "Alex Ferguson", 
-		"pssword" : "iamlegend", 
-	},
-	{
-		"username" : "Isaac Newton", 
-		"pssword" : "appletree", 
-	},
-	{
-		"username" : "Mary Jane", 
-		"pssword" : "timmy08" 
-	}
-];
+// Retrieve account data from local storage
+var accounts = JSON.parse(localStorage["accountsArr"]);
 
 //run script when login button is pressed
 document.getElementById("loginBtn").onclick = function()
@@ -84,23 +42,23 @@ document.getElementById("loginBtn").onclick = function()
 }
 
 //On click 'search' - send input text to local
-	document.getElementById("searchBtn").onclick = function()
-	{	
-		//get the user name from the text box
-		var searchValue = document.getElementById("searchBarText").value;
-		
-		//send search
-		localStorage.setItem("searchBar", searchValue);
-	}
+document.getElementById("searchBtn").onclick = function()
+{	
+	//get the user name from the text box
+	var searchValue = document.getElementById("searchBarText").value;
+	
+	//send search
+	localStorage.setItem("searchBar", searchValue);
+}
 
 //If account is active display holders name
-	var found = localStorage.getItem("loginActive");
+var found = localStorage.getItem("loginActive");
 
-	if (found == 1)
-	{
-		var name = localStorage.getItem("accountName");
-		document.getElementById("nameTag").innerHTML = "Hello, " + name;
-	}	
+if (found == 1)
+{
+	var name = localStorage.getItem("accountName");
+	document.getElementById("nameTag").innerHTML = "Hello, " + name;
+}	
 
 
 	

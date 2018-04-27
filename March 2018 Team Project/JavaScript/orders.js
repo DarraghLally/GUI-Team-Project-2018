@@ -27,55 +27,9 @@ $(document).ready(function()
 		}		
 	]
 	
-	var accounts = 
-	[
-		{
-			"username" : "John Doe", 
-			"pssword" : "maryhadalittlelamb",			
-		},
-		{
-			"username" : "Bugs Bunny", 
-			"pssword" : "whatsupdoc", 
-		},
-		{
-			"username" : "Daffy Duck", 
-			"pssword" : "quack", 
-		},
-		{
-			"username" : "Elon Musk", 
-			"pssword" : "rocketman", 
-		},
-		{
-			"username" : "Jeff Bezos", 
-			"pssword" : "skynet", 
-		},
-		{
-			"clientId" : "67345",
-			"username" : "Gerry Agnew", 
-			"pssword" : "geraldo",
-			"addressLine1" : "Gerrys Office",
-			"addressLine2" : "G.M.I.T.",
-			"addressLine3" : "Ireland",
-			"email" : "gerry@gmit.ie",
-			"phone" : "085-1234567",
-		},
-		{
-			"username" : "Bill Gates", 
-			"pssword" : "ihatelinux", 
-		},
-		{
-			"username" : "Alex Ferguson", 
-			"pssword" : "iamlegend", 
-		},
-		{
-			"username" : "Isaac Newton", 
-			"pssword" : "appletree", 
-		},
-		{
-			"username" : "Mary Jane", 
-			"pssword" : "timmy08" 
-		}
-	]
+	
+	// Retrieve account data from local storage
+	var accounts = JSON.parse(localStorage["accountsArr"]);
 	
 	// Retrieve local storage data
 	var customerName = localStorage.getItem("accountName");

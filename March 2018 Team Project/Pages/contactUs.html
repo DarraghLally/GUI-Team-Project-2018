@@ -30,6 +30,7 @@
 	</head>
 	
 	<body>
+
 		<div class="container-fluid">
 		
 			<!--Navagation Bar-->
@@ -94,23 +95,32 @@
 				<div class="column inputb down">
 					<h4><b>Fill Out Details</b></h4>
 					<form method="post" action="../index.html">
-						<label for="fname">First Name</label>
-						<input type="text" id="fname" name="firstname" placeholder="Your name..">
-						<label for="lname">Last Name</label>
-						<input type="text" id="lname" name="lastname" placeholder="Your last name..">
-						<label for="country">Country</label>
+						<label for="fname">First Name</label><br>
+						<input type="text" id="fname" name="firstname" placeholder="Your name.."><hr>
+						<label for="lname">Last Name</label><br>
+						<input type="text" id="lname" name="lastname" placeholder="Your last name.."><hr>
+						<br><label for="country">Country</label>
 						<select id="country" name="country">
 							<option value="australia">Ireland</option>
 							<option value="canada">United Kingdom</option>
 							<option value="usa">USA</option>
 						</select>
-						<label for="subject">Subject</label>
+						<label for="subject">Subject</label><br>
 						<textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
 						<input class="btn btn-default" type="submit" value="Submit">
 					</form>
 				</div>	
 			</div>
+					<!-- Place holder buttons for misc pages-->
+			<br><br>
+			<div class="btnList text-center bottombtn">
+				<a class="btn btn-default" target = "_blank" href="https://github.com/DarraghLallyGMIT/GUI-Team-Project-2018" ><i class="fa fa-github fa-lg" id="githubIcon" aria-hidden="true"></i> GitHub</a>	
+				
+				<a class="btn btn-default" href="contactUs.html" ><i class="fa fa-envelope-open" id="contactIcon" aria-hidden="true"></i> Contact Us</a>
+				<a class="btn btn-default" href="terms.html" ><i class="fa fa-university" id = "termsIcon" ></i> Terms & Conditions</a>
+			</div>
 		</div>
+
 		
 		<!-- Place holder buttons for misc pages-->
 		<br><br>
@@ -119,7 +129,7 @@
 			<a class="btn btn-default" href="contactUs.html" ><i class="fa fa-envelope-open" id="contactIcon" aria-hidden="true"></i> Contact Us</a>
 			<a class="btn btn-default" href="terms.html" ><i class="fa fa-university" id = "termsIcon" ></i> Terms & Conditions</a>
 		</div>
-			
+
 			<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -127,6 +137,7 @@
 			
 			<!-- External JavaScript -->
 			<script src="../JavaScript/footer.js"></script>	
+
 
 	</body>
 </html>
