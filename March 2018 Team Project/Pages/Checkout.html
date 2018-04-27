@@ -14,8 +14,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	
+		<!-- External Icons Link-->
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-		<link href="../Css/checkout.css" rel="stylesheet">	
+		<link href="../Css/contact.css" rel="stylesheet">	
 	</head>
 	
 	<body>
@@ -58,8 +59,8 @@
 								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Account
 								<span class="caret"></span></a>
 								<ul class="dropdown-menu" >
-									<li><a href="loginV2.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-									<li><a href="loginV2.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+									<li><a href="LoginScreen.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+									<li><a href="regpage.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
 									<li><a href="#">Page 1-2</a></li>
 									<li><a href="#">Page 1-3</a></li>
 								</ul>
@@ -69,13 +70,15 @@
 					</div>
 			  </div>
 		</nav>	
-	
+<!---------    Start of Credit Card Details  ---------->	
 		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-md-6">
-					
+			
+				
 					<!-- CREDIT CARD FORM STARTS HERE -->
-					<div class="panel panel-default credit-card-box">
+					
+					<form name="oredrForm" method="post" action="Orders.html">
+					<fieldset>
+					<div class="panel panel-default credit-card-box center">
 					
 						<div class="panel-heading display-table" >
 							<div class="row display-tr" >
@@ -115,8 +118,7 @@
 													type="tel" 
 													class="form-control" 
 													name="cardExpiry"
-													placeholder="MM / YY"
-													autocomplete="cc-exp"
+													placeholder="MM / YY"													
 													required 
 												/>
 										</div>
@@ -141,14 +143,21 @@
 									<div class="col-xs-12">
 										<div class="form-group">
 											<label for="couponCode">COUPON CODE</label>
-											<input type="text" class="form-control" name="couponCode" id = "couponInput" placeholder="Enter 6-Digit Code"/>
+											<input 
+												type="text" 
+												class="form-control" 
+												name="couponCode"
+												id="codeInput"
+												placeholder="Enter 6-Digit Code"
+											/>
 										</div>
 									</div>                        
 								</div>
 								
 								<div class="row">
 									<div class="col-xs-12">
-										<button class="subscribe btn btn-success btn-lg btn-block" id = "completeTrans" type="button">Complete Transaction</button>
+										<button type="submit" id="couponBtn" name="confirmsignup" class="subscribe btn btn-success btn-lg btn-block">Complete Transaction</button>
+
 									</div>
 								</div>
 								
@@ -159,8 +168,15 @@
 								</div>
 							</form>
 						</div>
-					</div>             
-				</div>              
+				    </div> 
+					</fieldset>
+				    </form>  
+				<br><br><br><br><br><br>
+				<div class="btnList text-center bottombtn">
+					<a class="btn btn-default" target = "_blank" href="https://github.com/DarraghLallyGMIT/GUI-Team-Project-2018" ><i class="fa fa-github fa-lg" id="githubIcon" aria-hidden="true"></i> GitHub</a>				
+					<a class="btn btn-default" href="contactUs.html" ><i class="fa fa-envelope-open" id="contactIcon" aria-hidden="true"></i> Contact Us</a>
+					<a class="btn btn-default" href="terms.html" ><i class="fa fa-university" id = "termsIcon" ></i> Terms & Conditions</a>
+				</div>					
 			</div>
 		</div>
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -168,6 +184,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<!-- External JavaScript -->
-		<script src="../JavaScript/checkout.js"></script>	
+		<script src="../JavaScript/coupon.js"></script>	
+
 	</body>
 </html>
