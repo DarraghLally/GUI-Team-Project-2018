@@ -1,0 +1,80 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	padding-bottom:2%; 
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.container {
+
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding-top:10px ;
+	padding-bottom:50px;
+	
+}
+.photoSize{
+	border: 2px solid #d4d6d8;
+	padding-left:9%;
+	padding-top:2%;
+    border-radius: 6%;
+	font-size: 1.0em;	
+	font-family: 'Cabin', sans-serif;
+	background-color: #f2f4f7;
+	margin-top: 7.6%;
+	width:33%;
+	height:70%;
+}
+
+
+
+/* NavBar */
+.navbar {
+	background-color: #404040;
+	overflow: visible;
+	width:100%;
+	position: sticky;
+	top: 0;
+	border-bottom: 6px solid #3b88d6;
+	z-index: 1; /* To insure the drop down menu takes president over other page elements */
+}
+
+.navbar a {
+	float: left;
+	display: block;
+	/*color: #f2f2f2;*/
+	text-align: center;
+	padding: 14px 25px;
+	text-decoration: none;
+}
+
+.navbar p {
+	float: left;
+	display: block;
+	color: #a1a1a3;
+	text-align: center;
+	padding: 15px 25px;
+	text-decoration: none;
+}
+
+a:hover,
+a.selected{
+	color: #3b88d6;
+}
+
+.bottombtn {
+	position:relative;
+	transform:translateY(620%);
+}
+
+#githubIcon {
+  color: #6C0674;
+}
+
+#contactIcon {
+  color: #f4b841;
+}
+
+#termsIcon {
+  color: #41f443;
+}
