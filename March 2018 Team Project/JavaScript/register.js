@@ -1,10 +1,10 @@
 //A. Moore. D, Lally, N. Melia 
-//login.js - 1st yr final project
-
+//login.js - 1st yr final project 
+	
 //run script when submit button is pressed
 document.getElementById("regBtn").onclick = function()
 {
-	
+	alert("button was clicked");
 	//get the user details from the signup form
 	var name = document.getElementById("userName").value;
 	var email = document.getElementById("userEmail").value;
@@ -15,7 +15,7 @@ document.getElementById("regBtn").onclick = function()
 	var address3 = document.getElementById("userAddress3").value;
 	var password = document.getElementById("userPassword").value;
 	
-	if(name.length > 6  && password.length >= 8)
+	if(name.length > 1  && password.length >= 1)
 	{
 		//generate random client number between 70k and 10k
 		var clientNumber = Math.floor((Math.random() * 70000) + 10000);
@@ -33,12 +33,12 @@ document.getElementById("regBtn").onclick = function()
 			"phone" : phone
 		};
 		
-		//Turn object into JSON format
-		var accountString = JSON.stringify(newAccount);
-		
-		//send to local storage
-		localStorage.setItem("accountReg", 1);
-		localStorage.setItem("newAccount", accountString);
-		//test if name found
+		// Retrieve account data from local storage
+		var accounts = JSON.parse(localStorage["accountsArr"]);
+		//push new account into array
+		accounts.push(newAccount);
+		//send account arrays to local storage
+		localStorage["accountsArr"] = JSON.stringify(accounts);
+		localStorage.setItem("newAccount", 1);
 	}
 }
