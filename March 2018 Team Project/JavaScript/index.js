@@ -1,6 +1,5 @@
 //A. Moore, D. Lally, N. Melia 
 //index.js - 1st yr final project
-
 var accountsArr = 
 	[
 		{
@@ -104,6 +103,37 @@ var accountsArr =
 			"phone" : "087-8745693" 
 		}
 	]
+	
+	var productsArr = 
+	[
+		{
+			"productID": 1001,
+			"productDept": "Phone",
+			"productName":"LG K8",
+			"productDescription": "5.0' HD In-cell Touch Display with 2.5D Arc Glass Wide display, smooth edges. The big bright 5.0' HD In-cell display has 2.5D Arc glass edges that are smooth to the touch. Your eyes and fingers will thank you. In every single way, the full-featured 13MP camera brilliantly captures the best moments of your life.",
+			"productPrice": 103.90,
+			"productImgURL": "../Images/phonePlaceHolder.jpg",
+		},
+		{
+			"productID": 2001,
+			"productDept": "Laptop",
+			"productName":"Lenovo IdeaPad ",
+			"productDescription": "The IdeaPad 120S features a redesigned chassis with simple, clean lines giving it a contemporary take on elegant style. You count on your devices to keep up with you. So the manufacturer applied a protective finish to guard against wear and tear. Lenovo also included subtle rubber detailing on the bottom cover to maximise ventilation and extend product life. Available in a sophisticated range of colours: Mineral grey, blizzard white and ballerina pink.",
+			"productPrice": 149.99,
+			"productImgURL": "../Images/laptopPlaceholder.jpg"
+		},
+		{
+			"productID": 3001,
+			"productDept": "TV",
+			"productName":"LG 1080p Full HD 21.5Inch LED TV ",
+			"productDescription": "1080p Full HD, 21.5' Screen, Suitable as TV or Monitor",
+			"productPrice": 109.99,
+			"productImgURL": "../Images/products/tv-cheap/lgCheap1.jpg"
+		}
+	]
+	
+//send account arrays to local storage
+localStorage["productsArr"] = JSON.stringify(productsArr);
 	
 var newAcc = localStorage.getItem("newAccount");
 

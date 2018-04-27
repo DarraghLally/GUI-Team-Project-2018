@@ -70,21 +70,18 @@ document.getElementById("couponBtn").onclick = function()
 		{
 			found = true;
 			validCode = code;
+			alert("coupon");
 		}
 	}
 	
 	//test if name found
 	if (found == true)
 	{
-		
-		localStorage.setItem("loginActive", 1);
-		localStorage.setItem("validCode", couponCode);
+		localStorage.setItem("couponActive", 1);
 	}
 	else
 	{
-		
-		localStorage.setItem("loginActive", 0);
-		localStorage.setItem("validCode", "Void");
+		localStorage.setItem("couponActive", 0);
 	}
 	
 }	

@@ -89,6 +89,7 @@ document.getElementById("regBtn").onclick = function()
 		localStorage["accountsArr"] = JSON.stringify(accounts);
 		//reset login name on Nav Bar
 		localStorage.setItem("accountName", name);
+		localStorage.setItem("newAccount", 1);
 		//refresh page
 		location.reload();
 	}
