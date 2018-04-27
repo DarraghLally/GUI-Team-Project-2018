@@ -14,93 +14,69 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	
-		<!-- External Icons Link-->
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-		<link href="../Css/contact.css" rel="stylesheet">	
+		<link href="../Css/checkout.css" rel="stylesheet">	
 	</head>
 	
 	<body>
-	
-	<div class="container-fluid">
+
 		<!--Navagation Bar-->
 		<nav class="navbar navbar-inverse">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span> 
-				</button>
-
-				<a class="navbar-brand" href="../index.html">AND.com</a>
-
-				<form class="navbar-form navbar-left" action="searchResults.html">
-					<div class="form-group ">
-						<input type="text" id="searchBarText" class="form-control" placeholder="Search">
-						<button type="submit" id="searchBtn" class="btn btn-default">Search</button>
+			  <div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span> 
+						</button>
+						
+						<a class="navbar-brand" href="../index.html">AND.com</a>
+						
+						<form class="navbar-form navbar-left" action="searchResults.html">
+							<div class="form-group ">
+								<input type="text" id="searchBarText" class="form-control" placeholder="Search">
+								<button type="submit" id="searchBtn" class="btn btn-default">Search</button>
+							</div>
+						</form>
 					</div>
-				</form>
-			</div>
 
-
-			<div class="collapse navbar-collapse" id="myNavbar">	
-				<ul class="nav navbar-nav navbar-right">
-					<li class="dropdown" >
-					<!-- If valid acount active display account holders name -->
-						<p id="nameTag"></p>
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Departments
-							<span class="caret"></span>
-						</a>
-						<ul class="dropdown-menu" >
-							<li><a href="#">Phones</a></li>
-							<li><a href="#">Laptops</a></li>
-							<li><a href="#">Televisions</a></li>
-							<li><a href="#">?????</a></li>
+					<div class="collapse navbar-collapse" id="myNavbar">	
+						<ul class="nav navbar-nav navbar-right">
+							<li class="dropdown" >
+								<!-- If valid acount active display account holders name -->
+								<p id="nameTag"></p>
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Departments
+								<span class="caret"></span></a>
+								<ul class="dropdown-menu" >
+									<li><a href="#">Phones</a></li>
+									<li><a href="#">Laptops</a></li>
+									<li><a href="#">Sound</a></li>
+									<li><a href="#">Televisions</a></li>
 								</ul>
 							</li>
 							<li class="dropdown" >
 								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Account
 								<span class="caret"></span></a>
 								<ul class="dropdown-menu" >
-									<li><a href="LoginScreen.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-									<li><a href="regpage.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+									<li><a href="loginV2.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+									<li><a href="loginV2.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
 									<li><a href="#">Page 1-2</a></li>
 									<li><a href="#">Page 1-3</a></li>
 								</ul>
 							</li>
 							<li><a href="Basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> Basket</a></li>
-
 						</ul>
-					</li>
-					<li class="dropdown" >
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Account
-							<span class="caret"></span>
-						</a>
-						<ul class="dropdown-menu" >
-							<li><a href="Pages/loginV2.html"><span class="glyphicon glyphicon-log-in"></span> Login / Sign Up</a></li>
-								<li><a href="#"><span class="glyphicon glyphicon-pencil"></span> Change Account Details</a></li>
-								<li><a href="#"><span class="glyphicon glyphicon-ban-circle"></span> Log Out</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="Basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> Basket</a>
-					</li>
-				</ul>
-			</div>
+					</div>
+			  </div>
 		</nav>	
-
-
-		<div class="container-fluid">
+	
+		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-md-6">
-
-
+					
 					<!-- CREDIT CARD FORM STARTS HERE -->
+					<div class="panel panel-default credit-card-box">
 					
-					<form name="oredrForm" method="post" action="Orders.html">
-					<fieldset>
-					<div class="panel panel-default credit-card-box center">
-					
-
 						<div class="panel-heading display-table" >
 							<div class="row display-tr" >
 								<h3 class="panel-title display-td" >Payment Details</h3>
@@ -109,7 +85,7 @@
 								</div>
 							</div>                    
 						</div>
-
+						
 						<div class="panel-body">
 							<form role="form" id="payment-form" method="POST" action="javascript:void(0);">
 								<div class="row">
@@ -117,61 +93,65 @@
 										<div class="form-group">
 											<label for="cardNumber">CARD NUMBER</label>
 											<div class="input-group">
-												<input type="tel" class="form-control" name="cardNumber" placeholder="Enter 'Fake' 16-Digit Number" autocomplete="cc-number" required autofocus />
-												<span class="input-group-addon">
-													<i class="fa fa-credit-card"></i>
-												</span>
+												<input 
+													type="tel"
+													class="form-control"
+													name="cardNumber"
+													placeholder="Enter 'Fake' 16-Digit Number"
+													autocomplete="cc-number"
+													required autofocus 
+												/>
+												<span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
 											</div>
 										</div>                            
 									</div>
 								</div>
-
+								
 								<div class="row">
 									<div class="col-xs-7 col-md-7">
 										<div class="form-group">
 											<label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
-
 												<input 
 													type="tel" 
 													class="form-control" 
 													name="cardExpiry"
-													placeholder="MM / YY"													
+													placeholder="MM / YY"
+													autocomplete="cc-exp"
 													required 
 												/>
-
 										</div>
 									</div>
-
+									
 									<div class="col-xs-5 col-md-5 pull-right">
 										<div class="form-group">
 											<label for="cardCVC">CV CODE</label>
-											<input type="tel" class="form-control" name="cardCVC" placeholder="CVC" autocomplete="cc-csc" required />
+											<input 
+												type="tel" 
+												class="form-control"
+												name="cardCVC"
+												placeholder="CVC"
+												autocomplete="cc-csc"
+												required
+											/>
 										</div>
 									</div>
 								</div>
-
+								
 								<div class="row">
 									<div class="col-xs-12">
 										<div class="form-group">
 											<label for="couponCode">COUPON CODE</label>
-											<input 
-												type="text" 
-												class="form-control" 
-												name="couponCode"
-												id="codeInput"
-												placeholder="Enter 6-Digit Code"
-											/>
+											<input type="text" class="form-control" name="couponCode" id = "couponInput" placeholder="Enter 6-Digit Code"/>
 										</div>
 									</div>                        
 								</div>
-
+								
 								<div class="row">
 									<div class="col-xs-12">
-										<button type="submit" id="couponBtn" name="confirmsignup" class="subscribe btn btn-success btn-lg btn-block">Complete Transaction</button>
-
+										<button class="subscribe btn btn-success btn-lg btn-block" id = "completeTrans" type="button">Complete Transaction</button>
 									</div>
 								</div>
-
+								
 								<div class="row" style="display:none;">
 									<div class="col-xs-12">
 										<p class="payment-errors"></p>
@@ -179,24 +159,15 @@
 								</div>
 							</form>
 						</div>
-				    </div> 
-					</fieldset>
-				    </form>  
-				<br><br><br><br><br><br>
-				<div class="btnList text-center bottombtn">
-					<a class="btn btn-default" target = "_blank" href="https://github.com/DarraghLallyGMIT/GUI-Team-Project-2018" ><i class="fa fa-github fa-lg" id="githubIcon" aria-hidden="true"></i> GitHub</a>				
-					<a class="btn btn-default" href="contactUs.html" ><i class="fa fa-envelope-open" id="contactIcon" aria-hidden="true"></i> Contact Us</a>
-					<a class="btn btn-default" href="terms.html" ><i class="fa fa-university" id = "termsIcon" ></i> Terms & Conditions</a>
-				</div>					
+					</div>             
+				</div>              
 			</div>
 		</div>
-	</div>
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<!-- External JavaScript -->
-		<script src="../JavaScript/coupon.js"></script>	
-
+		<script src="../JavaScript/checkout.js"></script>	
 	</body>
 </html>

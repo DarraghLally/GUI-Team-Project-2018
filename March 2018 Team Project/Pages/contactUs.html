@@ -1,143 +1,73 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		
-		<title>Contact</title>
-		
-		<!-- Icon for title -->
-		<link rel="shortcut icon" type="image/x-icon" href="../Images/Laptop-icon.png" />
-		
-		<!-- Required meta tags -->
-		<meta charset="UTF-8">
-		<meta name="description" content="Contact Us Page">
-		<meta name="keywords" content="Online Shopping, Laptops, Phones, PC, TV">
-		<meta name="author" content="Anthony Moore, Darragh Lally, Noel Melia">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	
-		<link href="../Css/style.css" rel="stylesheet">
-		
-		<!-- Font Awesome Icons -->
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-		
-		<!-- External CSS -->				
-		<link href="../Css/contact.css" rel="stylesheet"> 
-		
-		<!-- External google fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">	
-				
-	</head>
-	
+<head>
+	<!-- Icon for title -->
+	<link rel="shortcut icon" type="image/x-icon" href="../Images/Laptop-icon.png" />
+	<!-- Required meta tags -->
+	<meta charset="UTF-8">
+	<meta name="description" content="Contact Us Page">
+	<meta name="keywords" content="Online Shopping, Laptops, Phones, PC, TV">
+	<meta name="author" content="Anthony Moore, Darragh Lally, Noel Melia">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	
+	<link href="../Css/contact.css" rel="stylesheet">
+	<!-- Font Awesome Icons -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
 	<body>
 
-		<div class="container-fluid">
-		
-			<!--Navagation Bar-->
-			<nav class="navbar navbar-inverse">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span> 
-					</button>
-					
-					<a class="navbar-brand" href="../index.html">AND.com</a>
-					
-					<form class="navbar-form navbar-left" action="searchResults.html">
-						<div class="form-group ">
-							<input type="text" id="searchBarText" class="form-control" placeholder="Search" padding-top="10px">
-							<button type="submit" id="searchBtn" class="btn btn-default ">Search</button>
-						</div>
-					</form>
-				</div>
-
-				<div class="collapse navbar-collapse" id="myNavbar">	
-					<ul class="nav navbar-nav navbar-right">
-						<li class="dropdown" >	
-							<p id="nameTag"></p><!-- If valid acount active display account holders name -->
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Departments
-							<span class="caret"></span></a>
-							<ul class="dropdown-menu" >
-								<li><a href="#">Phones</a></li>
-								<li><a href="#">Laptops</a></li>
-								<li><a href="#">Televisions</a></li>
-								<li><a href="#">?????</a></li>
-							</ul>
-						</li>
-						<li class="dropdown" >
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Account
-							<span class="caret"></span></a>
-							<ul class="dropdown-menu" >
-								<li><a href="Pages/loginV2.html"><span class="glyphicon glyphicon-log-in"></span> Login / Sign Up</a></li>
-								<li><a href="#"><span class="glyphicon glyphicon-pencil"></span> Change Account Details</a></li>
-								<li><a href="#"><span class="glyphicon glyphicon-ban-circle"></span> Log Out</a></li>
-							</ul>
-						</li>
-						<li><a href="Basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> Basket</a></li>
-					</ul>
-				</div>		  
-			</nav>
-		
+		<div class="container">
 			<div style="text-align:center">
 				<h2>Contact Us</h2>
 				<p>Feel Free to Leave Us A Message</p>
 			</div>
 			<div class="row ">
+
 <!------------------------Google Maps---------------------------->
 				<div class="column down" >
 					<h4><b>Map To Find Us</b></h4>
 					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9542.676403141375!2d-9.0106931!3d53.2775483!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5a81260c20e02143!2sGMIT!5e0!3m2!1sen!2sie!4v1524674713161" 
-					width="450" height="500" frameborder="0" style="border:0" >
-					</iframe>
+					width="450" height="500" frameborder="0" style="border:0" ></iframe>
 				</div>    
 <!------------------------Contact Us Form---------------------------->	
 				<div class="column inputb down">
 					<h4><b>Fill Out Details</b></h4>
 					<form method="post" action="../index.html">
-						<label for="fname">First Name</label><br>
-						<input type="text" id="fname" name="firstname" placeholder="Your name.."><hr>
-						<label for="lname">Last Name</label><br>
-						<input type="text" id="lname" name="lastname" placeholder="Your last name.."><hr>
-						<br><label for="country">Country</label>
+						<label for="fname">First Name</label>
+						<input type="text" id="fname" name="firstname" placeholder="Your name..">
+						<label for="lname">Last Name</label>
+						<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+						<label for="country">Country</label>
 						<select id="country" name="country">
 							<option value="australia">Ireland</option>
 							<option value="canada">United Kingdom</option>
 							<option value="usa">USA</option>
 						</select>
-						<label for="subject">Subject</label><br>
+						<label for="subject">Subject</label>
 						<textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
 						<input class="btn btn-default" type="submit" value="Submit">
 					</form>
 				</div>	
 			</div>
-					<!-- Place holder buttons for misc pages-->
-			<br><br>
-			<div class="btnList text-center bottombtn">
-				<a class="btn btn-default" target = "_blank" href="https://github.com/DarraghLallyGMIT/GUI-Team-Project-2018" ><i class="fa fa-github fa-lg" id="githubIcon" aria-hidden="true"></i> GitHub</a>	
-				
-				<a class="btn btn-default" href="contactUs.html" ><i class="fa fa-envelope-open" id="contactIcon" aria-hidden="true"></i> Contact Us</a>
-				<a class="btn btn-default" href="terms.html" ><i class="fa fa-university" id = "termsIcon" ></i> Terms & Conditions</a>
-			</div>
 		</div>
-
-		
-		<!-- Place holder buttons for misc pages-->
-		<br><br>
-		<div class="btnList text-center bottombtn">
-			<a class="btn btn-default" target = "_blank" href="https://github.com/DarraghLallyGMIT/GUI-Team-Project-2018" ><i class="fa fa-github fa-lg" id="githubIcon" aria-hidden="true"></i> GitHub</a>	
-			<a class="btn btn-default" href="contactUs.html" ><i class="fa fa-envelope-open" id="contactIcon" aria-hidden="true"></i> Contact Us</a>
-			<a class="btn btn-default" href="terms.html" ><i class="fa fa-university" id = "termsIcon" ></i> Terms & Conditions</a>
-		</div>
-
+			
+			<!--
+			To use this code on your website, get a free API key from Google.
+			Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+			-->
 			<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- Place holder buttons for misc pages-->
+		<br><br>
+		<div class="btnList text-center bottombtn">
+			<a class="btn btn-default" target = "_blank" href="https://github.com/DarraghLallyGMIT/GUI-Team-Project-2018" ><i class="fa fa-github fa-lg" id="githubIcon" aria-hidden="true"></i> GitHub</a>	
 			
-			<!-- External JavaScript -->
-			<script src="../JavaScript/footer.js"></script>	
-
+			<a class="btn btn-default" href="contactUs.html" ><i class="fa fa-envelope-open" id="contactIcon" aria-hidden="true"></i> Contact Us</a>
+			<a class="btn btn-default" href="terms.html" ><i class="fa fa-university" id = "termsIcon" ></i> Terms & Conditions</a>
+		</div>
 
 	</body>
 </html>

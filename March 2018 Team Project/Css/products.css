@@ -1,22 +1,17 @@
 /* 
 GUI & Web Devlopment Project 2018
 Authors: Darragh, Anthony, Noel
-*/	
-
-button:focus{
-	background-color: blue;
-	transition-duration: 2s;
-}
+*/
 
 /* NavBar */
 .navbar {
 	background-color: #404040;
 	overflow: visible;
-	width:100%;
-	position: sticky;
-	top: 0;
+	width:100%; 
+	position: sticky; /* NavBar follows scroll */
+	top: 0%; /* Keeping NavBar to top of screen */
 	border-bottom: 6px solid #3b88d6;
-	z-index: 1; /* To insure the drop down menu takes president over other page elements */
+	z-index: 1; /* To insure the drop down menu takes precedence over other page elements */
 }
 
 .navbar a {
@@ -87,7 +82,7 @@ body{
 /* Product add to basket / price for right column of product pages */
 .productAddPrice{
 	border: 2px solid #d4d6d8;
-	padding-right: 2%;
+	padding: 2.2%;
     border-radius: 3%;
 	font-size: 1.0em;	
 	font-family: 'Cabin', sans-serif;
@@ -134,16 +129,3 @@ img {
   .prev, .next, .text {font-size: 11px}
 }
 
-/*Css for aligning the footer to bottom*/
-
-#githubIcon {
-  color: #6C0674;
-}
-
-#contactIcon {
-  color: #f4b841;
-}
-
-#termsIcon {
-  color: #41f443;
-}

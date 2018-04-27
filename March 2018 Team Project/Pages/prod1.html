@@ -3,197 +3,183 @@
 <!-- Authors: Darragh, Anthony, Noel -->
 <html>
 	<head>
-		
 		<title>product1.com</title>
-		
 		<!-- Icon for title -->
 		<link rel="shortcut icon" type="image/x-icon" href="../Images/Laptop-icon.png" />
-		
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		
 		<!--Adding meta data for search engines and to control the view a user has when on the site-->
 		<meta name="description" content="LG K8 SIM Free SmartPhone">
 		<meta name="keywords" content="phone">
 		<!-- <meta name="viewport" content="****************"> -->
-		
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	
-		
 		<!-- External CSS -->				
 		<link href="../Css/products.css" rel="stylesheet">  
-		
 		<!-- External google fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-		<!-- External Icons Link-->
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 	</head>
 	<body>
-	
-	<div class="container-fluid">
-	
 		<!--Navagation Bar-->
 		<nav class="navbar navbar-inverse">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span> 
-				</button>
-				
-				<a class="navbar-brand" href="../index.html">AND.com</a>
-				
-				<form class="navbar-form navbar-left" action="searchResults.html">
-					<div class="form-group ">
-						<input type="text" id="searchBarText" class="form-control" placeholder="Search">
-						<button type="submit" id="searchBtn" class="btn btn-default">Search</button>
+			  <div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span> 
+						</button>
+						
+						<a class="navbar-brand" href="../index.html">AND.com</a>
+						
+						<form class="navbar-form navbar-left" action="searchResults.html">
+							<div class="form-group ">
+								<input type="text" id="searchBarText" class="form-control" placeholder="Search">
+								<button type="submit" id="searchBtn" class="btn btn-default">Search</button>
+							</div>
+						</form>
 					</div>
-				</form>
-			</div>
-			<div class="collapse navbar-collapse" id="myNavbar">	
-				<ul class="nav navbar-nav navbar-right">
-					<li class="dropdown" >	
-						<p id="nameTag"></p><!-- If valid acount active display account holders name -->
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Departments
-						<span class="caret"></span></a>
-						<ul class="dropdown-menu" >
-							<li><a href="#">Phones</a></li>
-							<li><a href="#">Laptops</a></li>
-							<li><a href="#">Televisions</a></li>
-							<li><a href="#">?????</a></li>
+
+					<div class="collapse navbar-collapse" id="myNavbar">	
+						<ul class="nav navbar-nav navbar-right">
+							<li class="dropdown" >
+								<!-- If valid acount active display account holders name -->
+								<p id="nameTag"></p>
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Departments
+								<span class="caret"></span></a>
+								<ul class="dropdown-menu" >
+									<li><a href="#">Phones</a></li>
+									<li><a href="#">Laptops</a></li>
+									<li><a href="#">Sound</a></li>
+									<li><a href="#">Televisions</a></li>
+								</ul>
+							</li>
+							<li class="dropdown" >
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Account
+								<span class="caret"></span></a>
+								<ul class="dropdown-menu" >
+									<li><a href="loginV2.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+									<li><a href="loginV2.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+									<li><a href="#">Page 1-2</a></li>
+									<li><a href="#">Page 1-3</a></li>
+								</ul>
+							</li>
+							<li><a href="Basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> Basket</a></li>
 						</ul>
-					</li>
-					<li class="dropdown" >
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Account
-						<span class="caret"></span></a>
-						<ul class="dropdown-menu" >
-							<li><a href="Pages/loginV2.html"><span class="glyphicon glyphicon-log-in"></span> Login / Sign Up</a></li>
-								<li><a href="#"><span class="glyphicon glyphicon-pencil"></span> Change Account Details</a></li>
-								<li><a href="#"><span class="glyphicon glyphicon-ban-circle"></span> Log Out</a></li>
-						</ul>
-					</li>
-					<li><a href="Basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> Basket</a></li>
-				</ul>
-			</div>		  
+					</div>
+			  </div>
 		</nav>	
 		
-		<h2 class = "prodTitle text-center">LG K8 SIM-Free Smartphone</h2>
-		
-		<div class="row">
-			
-			<!-- Left Col -->
-			<div class="col-sm-4 col-md-4 leftCol">
-				
-				<!--Image carousel - code from W3Schools, using bootstrap-->
-				<div id="myCarousel" class="carousel slide " data-ride="carousel">
-					<!-- Indicators -->
-					<ol class="carousel-indicators">
+			<h2 class = "prodTitle text-center">LG K8 SIM-Free Smartphone</h2>
+			<div class="row">
+				<!-- Left Col -->
+				<div class="col-sm-4 col-md-4 leftCol">
+					
+					<!--Image carousel - code from W3Schools, using bootstrap-->
+					<div id="myCarousel" class="carousel slide " data-ride="carousel">
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
 						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 						<li data-target="#myCarousel" data-slide-to="1"></li>
 						<li data-target="#myCarousel" data-slide-to="2"></li>
-					</ol>
+					  </ol>
 
-					<!-- Wrapper for slides -->
-					<div class="carousel-inner ">
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner ">
 						<div class="item active" align = "center">
-							<img src="../Images/products/lgk8Mobile.jpg" alt="LG K8 Phone">
+						  <img src="../Images/products/lgk8Mobile.jpg" alt="LG K8 Phone">
 						</div>
 
 						<div class="item" align = "center">
-							<img src="../Images/products/lgk8Mobile2.jpg" alt="LG K8 Phone">
+						  <img src="../Images/products/lgk8Mobile2.jpg" alt="LG K8 Phone">
 						</div>
 
 						<div class="item" align = "center">
-							<img src="../Images/products/lgk8Mobile3.jpg" alt="LG K8 Phone">
+						  <img src="../Images/products/lgk8Mobile3.jpg" alt="LG K8 Phone">
 						</div>
-					</div>
+					  </div>
 
-					<!-- Left and right controls -->
-					<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+					  <!-- Left and right controls -->
+					  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
 						<span class="glyphicon glyphicon-chevron-left"></span>
 						<span class="sr-only">Previous</span>
-					</a>
-					<a class="right carousel-control" href="#myCarousel" data-slide="next">
+					  </a>
+					  <a class="right carousel-control" href="#myCarousel" data-slide="next">
 						<span class="glyphicon glyphicon-chevron-right"></span>
 						<span class="sr-only">Next</span>
-					</a>
-				</div>	
-			</div>
-			
-			<!-- Middle Col - Product details -->
-			<div class="col-sm-4 col-md-4">
-				<div class = "productDecription">
-					<ul class = "">
-						 <li>2.5 Arc Glass Design</li>
-						 <li>Camera features such as Gesture Shot, Flash for selfie</li>
-						 <li>5.0" HD In-cell Touch Display, Sensors Accelerometer and proximity</li>
-						 <li>Fully Equipped with essential features you'll love and delivers an awesome smartphone experience at a justifiable price</li>
-						 <li>8GB internal memory with MicroSD up to 32GB</li>
-					</ul>									
+					  </a>
+					</div>	
 				</div>
-			</div>
-			
-			<!-- Right Col - Product Purchase -->
-			<div class="col-sm-3 col-md-3 productAddPrice">
 				
-				<h3 align = "right">Price: €103.90</h3>
-					
-				<!-- Quantity Button -->
-				<div class = "btn-addToBasket" align = "right">Quantity: 
-					<select id = "quantity" name = "Quantity">
-						<option value = "1">1</option>
-						<option value = "2">2</option>
-						<option value = "3">3</option>
-						<option value = "4">4</option>
-						<option value = "5">5</option>
-					</select>
-				</div>						
-				
-				<!-- Buy Button -->
-				<div class = "btn-addToBasket" align = "right">
-					<button id = "addToBasket" class="btn btn-default">Add to basket</button>
-				</div>
-			</div>			
-				
-		</div>	<!-- End Row -->		
-
-
-			<!-- placeholder images for the store page-->
-			<div class="row">
-				<!-- left col-->
+				<!-- Middle Col - Product details -->
 				<div class="col-sm-4 col-md-4">
+					<div class = "productDecription">
+						<ul class = "">
+							 <li>2.5 Arc Glass Design</li>
+							 <li>Camera features such as Gesture Shot, Flash for selfie</li>
+							 <li>5.0" HD In-cell Touch Display, Sensors Accelerometer and proximity</li>
+							 <li>Fully Equipped with essential features you'll love and delivers an awesome smartphone experience at a justifiable price</li>
+							 <li>8GB internal memory with MicroSD up to 32GB</li>
+						</ul>
+											
+					</div>
+				</div>
+				<!-- Right Col - Product Purchase -->
+				<div class="col-sm-3 col-md-3 productAddPrice">
+						<h3 align = "right">Price: €149.99</h3>
+						
+					<!-- Quantity Button -->
+					<div class = "btn-addToBasket" align = "right">
+						Quantity: 	<select id = "quantity" name = "Quantity">
+									<option value = "1">1</option>
+									<option value = "2">2</option>
+									<option value = "3">3</option>
+									<option value = "4">4</option>
+									<option value = "5">5</option>
+									</select>
+					</div>						
 					
+					<!-- Buy Button -->
+					<div class = "btn-addToBasket" align = "right">
+						<button id = "addToBasket" class="btn btn-default">Add to basket</button>
+					</div>
+				</div>			
+					
+			</div>	<!-- End Row -->		
+
+
+				<!-- placeholder images for the store page-->
+				<div class="row">
+					<!-- left col-->
+					<div class="col-sm-4 col-md-4">
+						
+					</div>
+					<!-- middle col-->
+					<div class="col-sm-4 col-md-4">
+						
+					</div>
+					<!-- right col-->
+					<div class="col-sm-4 col-md-4">
+						
+					</div>
 				</div>
 				<!-- Place holder buttons for misc pages-->
-				<br><br><br><br><br><br><br><br><br>
-				<div class="btnList text-center bottombtn">
-					<a class="btn btn-default" target = "_blank" href="https://github.com/DarraghLallyGMIT/GUI-Team-Project-2018" ><i class="fa fa-github fa-lg" id="githubIcon" aria-hidden="true"></i> GitHub</a>				
-					<a class="btn btn-default" href="contactUs.html" ><i class="fa fa-envelope-open" id="contactIcon" aria-hidden="true"></i> Contact Us</a>
-					<a class="btn btn-default" href="terms.html" ><i class="fa fa-university" id = "termsIcon" ></i> Terms & Conditions</a>
+				<div class="btnList text-center footer">
+					<a class="btn btn-default" href="#" target="_blank">Contact Us</a>
+					<a class="btn btn-default" href="#" target="_blank">Terms of Service</a>
+					<a class="btn btn-default" href="#" target="_blank">GitHub</a>
+				</div>
+			</div>
+		</div>
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- External JavaScript -->
+		<script src="../JavaScript/prod1.js"></script>	
+	</body>
+	
 
-				</div>
-				<!-- right col-->
-				<div class="col-sm-4 col-md-4">
-					
-				</div>
-			</div>
-			
-			<!-- Place holder buttons for misc pages-->
-			<div class="btnList text-center footer">
-				<a class="btn btn-default" href="#" target="_blank">Contact Us</a>
-				<a class="btn btn-default" href="#" target="_blank">Terms of Service</a>
-				<a class="btn btn-default" href="#" target="_blank">GitHub</a>
-			</div>
-	</div>
-	
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<!-- External JavaScript -->
-	<script src="../JavaScript/prod1.js"></script>	
-	
-</body>
 </html>

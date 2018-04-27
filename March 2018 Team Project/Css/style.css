@@ -37,9 +37,9 @@ a.selected{
 	color: #3b88d6;
 }
 /* Navbar End */
-
 body{
-
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 .btn-default {
@@ -113,19 +113,4 @@ img {
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
-/*Css for aligning the footer to bottom*/
-.bottombtn {
-	position:relative;
-	transform:translateY(30px);
-}
-#githubIcon {
-  color: #6C0674;
-}
 
-#contactIcon {
-  color: #f4b841;
-}
-
-#termsIcon {
-  color: #41f443;
-}
