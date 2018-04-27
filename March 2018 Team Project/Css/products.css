@@ -7,11 +7,11 @@ Authors: Darragh, Anthony, Noel
 .navbar {
 	background-color: #404040;
 	overflow: visible;
-	width:100%; 
-	position: sticky; /* NavBar follows scroll */
-	top: 0%; /* Keeping NavBar to top of screen */
+	width:100%;
+	position: sticky;
+	top: 0;
 	border-bottom: 6px solid #3b88d6;
-	z-index: 1; /* To insure the drop down menu takes precedence over other page elements */
+	z-index: 1; /* To insure the drop down menu takes president over other page elements */
 }
 
 .navbar a {
@@ -129,3 +129,16 @@ img {
   .prev, .next, .text {font-size: 11px}
 }
 
+/*Css for aligning the footer to bottom*/
+
+#githubIcon {
+  color: #6C0674;
+}
+
+#contactIcon {
+  color: #f4b841;
+}
+
+#termsIcon {
+  color: #41f443;
+}
