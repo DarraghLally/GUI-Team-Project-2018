@@ -114,3 +114,14 @@ img {
   .prev, .next,.text {font-size: 11px}
 }
 
+#githubIcon {
+  color: #6C0674;
+}
+
+#contactIcon {
+  color: #f4b841;
+}
+
+#termsIcon {
+  color: #41f443;
+}
