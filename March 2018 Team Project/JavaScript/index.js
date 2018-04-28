@@ -158,26 +158,26 @@ var accountsArr =
 	
 //send account arrays to local storage
 localStorage["productsArr"] = JSON.stringify(productsArr);
-	
+//get account info from storage
 var newAcc = localStorage.getItem("newAccount");
-
+//if no new account is present send 10 origional accounts to local
 if (newAcc != 1)
 {
 	//send account arrays to local storage
 	localStorage["accountsArr"] = JSON.stringify(accountsArr);
 }
-	
-var slideIndex = 0;
-showSlides();
 
+// set random starting index for the slideshow on page load
+var slideIndex = Math.floor((Math.random() * 4) + 0);
+//var slideIndex = 0; 
+showSlides();
+// slideshow script
 function showSlides() {
     var i;
-	// new variable
-	
-	// new variable = math.random(1-10)
 	
     var slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
+    for (i = 0; i < slides.length; i++)
+	{
         slides[i].style.display = "none"; 
     }
     slideIndex++;
