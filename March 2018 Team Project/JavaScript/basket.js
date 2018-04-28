@@ -1,11 +1,3 @@
-//If account is active display holders name
-var found = localStorage.getItem("loginActive");
-
-if (found == 1)
-{
-	var name = localStorage.getItem("accountName");
-	document.getElementById("nameTag").innerHTML = "Hello, " + name;
-}
 
 //run jQuery
 $(document).ready(function() {
@@ -22,7 +14,15 @@ $(document).ready(function() {
 	var amountArr = JSON.parse(localStorage["quantityArr"]);
 	var productsArr = JSON.parse(localStorage["productsArr"]);
 	
-	//make a loop to search through the product numbers
+	//If account is active display holders name
+	var found = sessionStorage.getItem("loginActive");
+
+	if (found == 1)
+	{
+		var name = sessionStorage.getItem("accountName");
+		document.getElementById("nameTag").innerHTML = "Hello, " + name;
+		
+		//make a loop to search through the product numbers
 	for (var i = 0; i < productIdNumArr.length; i++)
 	{
 		var productIdNum = productIdNumArr[i];
@@ -73,6 +73,9 @@ $(document).ready(function() {
     $("#vat-value").html("€ " + vatCharged.toFixed(2));
 	$("#shipping-value").html("€ " + shipping.toFixed(2));
 	$("#totals-value").html("€ " + grandTotal.toFixed(2));
+	}
+	
+	
 	
 	//On click 'Phones Dept' - send data to local
 	document.getElementById("deptPhone").onclick = function()
@@ -100,6 +103,15 @@ $(document).ready(function() {
 	{	
 		//send search
 		localStorage.setItem("searchDepartment", "Drone");
+	}
+	
+	//On click 'Logout' - send data to local
+	document.getElementById("logOut").onclick = function()
+	{	
+		// clear session storage and reload page
+		sessionStorage.clear();
+		//refresh page
+		location.reload();
 	}
 	
 	// function to remove items from the basket/local pos[0]

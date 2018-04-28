@@ -6,7 +6,7 @@ $(document).ready(function()
 	var productsArr = JSON.parse(localStorage["productsArr"]);
 	
 	// Retrieve local storage data
-	var customerName = localStorage.getItem("accountName");
+	var customerName = sessionStorage.getItem("accountName");
 	//make loop and search through JSON arrays
 	for (var i = 0; i < accounts.length; i++)
 	{
@@ -50,85 +50,94 @@ $(document).ready(function()
 	
 	var newCoupon = localStorage.getItem("couponActive");
 	
-	//make a loop to search through the product numbers
-	for (i = 0; i < productIdNumArr.length; i++)
+	//If account is active display holders name
+	var found = sessionStorage.getItem("loginActive");
+
+	if (found == 1)
 	{
-		var productIdNum = productIdNumArr[i];
-		var amount = amountArr[i];
+		var name = sessionStorage.getItem("accountName");
+		document.getElementById("nameTag").innerHTML = "Hello, " + name;
 		
-		//make loop and search through JSON arrays
-		for (var j = 0; j < productsArr.length; j++)
+		//make a loop to search through the product numbers
+		for (i = 0; i < productIdNumArr.length; i++)
 		{
-			var id = productsArr[j].productID;
-			var prodName = productsArr[j].productName;
-			var description = productsArr[j].productDescription;
-			var price = productsArr[j].productPrice.toFixed(2);
-			var image = productsArr[j].productImgURL;
+			var productIdNum = productIdNumArr[i];
+			var amount = amountArr[i];
 			
-			if (productIdNum == id)
+			//make loop and search through JSON arrays
+			for (var j = 0; j < productsArr.length; j++)
 			{
-				//counters for subtotal and items in basket
-				subTotal += (price * amount);
-				itemsCounter += Number(amount);
+				var id = productsArr[j].productID;
+				var prodName = productsArr[j].productName;
+				var description = productsArr[j].productDescription;
+				var price = productsArr[j].productPrice.toFixed(2);
+				var image = productsArr[j].productImgURL;
 				
-				//use jQuery to output the JSON objects to the page (with bootStrap embedded)
-				$("#basketDetails").prepend(
-				"<div class ='row'>" + 
-					"<div class='col-sm-4 col-md-4'>" +
-						"<h4>" + prodName + "</h4>" + 
-					"</div>" + 
-					"<div class='col-sm-2 col-md-2'> € " + price + "</div>" +
-					"<div class='col-sm-1 col-md-1'>" + amount + "</div>" +
-					"<div class='col-sm-1 col-md-1'>" + 
-					"</div>" +
-				"</div>");
-				
-			}// if
-		}// inner for 
-	}// outer for 
-	
-	if (newCoupon == 1)
-	{
-		//get totals after closing loop
-		vatCharged = (subTotal * vatRate);
-		grandTotal = (subTotal + vatCharged + shipping) * 0.9; // 10%
-	}
-	else
-	{
-		//get totals after closing loop
-		vatCharged = (subTotal * vatRate);
-		grandTotal = subTotal + vatCharged + shipping;
-	}
-	//use jQuery to target the ID tags and output the values
-	$("#basket-items-value").html(itemsCounter);
-    $("#sub-total-value").html("€ " + subTotal.toFixed(2));
-    $("#vat-value").html("€ " + vatCharged.toFixed(2));
-	$("#shipping-value").html("€ " + shipping.toFixed(2));
-	$("#totals-value").html("€ " + grandTotal.toFixed(2));
-	
-	//invoice details
-	var currentdate = new Date();
-	var accountId = "Account ID: " + accountNum;
-	var invoiceFound = localStorage.getItem("invoiceActive");;
-	
-	//generate random invoice number if none is present
-	if (invoiceFound == 1)
-	{
-		var invoiceNum = localStorage.getItem("invoiceNum");
-		var invoiceOutput = "Invoice # " + invoiceNum;
-	}
-	else
-	{
-		var invoiceNum = Math.floor((Math.random() * 25000) + 10000);
-		var invoiceOutput = "Invoice # " + invoiceNum;
-		localStorage.setItem("invoiceActive", 1);
-		localStorage.setItem("invoiceNum", invoiceNum);
-	}
-	
-	//use jQuery to target the ID tags and output the values
-	$("#date-value").html(currentdate);
-	$("#invoice-value").html(invoiceOutput);
-	$("#account-value").html(accountId);	
+				if (productIdNum == id)
+				{
+					//counters for subtotal and items in basket
+					subTotal += (price * amount);
+					itemsCounter += Number(amount);
+					
+					//use jQuery to output the JSON objects to the page (with bootStrap embedded)
+					$("#basketDetails").prepend(
+					"<div class ='row'>" + 
+						"<div class='col-sm-4 col-md-4'>" +
+							"<h4>" + prodName + "</h4>" + 
+						"</div>" + 
+						"<div class='col-sm-2 col-md-2'> € " + price + "</div>" +
+						"<div class='col-sm-1 col-md-1'>" + amount + "</div>" +
+						"<div class='col-sm-1 col-md-1'>" + 
+						"</div>" +
+					"</div>");
+					
+				}// if
+			}// inner for 
+		}// outer for 
+		
+		if (newCoupon == 1)
+		{
+			//get totals after closing loop
+			vatCharged = (subTotal * vatRate);
+			grandTotal = (subTotal + vatCharged + shipping) * 0.9; // 10%
+		}
+		else
+		{
+			//get totals after closing loop
+			vatCharged = (subTotal * vatRate);
+			grandTotal = subTotal + vatCharged + shipping;
+		}
+		//use jQuery to target the ID tags and output the values
+		$("#basket-items-value").html(itemsCounter);
+		$("#sub-total-value").html("€ " + subTotal.toFixed(2));
+		$("#vat-value").html("€ " + vatCharged.toFixed(2));
+		$("#shipping-value").html("€ " + shipping.toFixed(2));
+		$("#totals-value").html("€ " + grandTotal.toFixed(2));
+		
+		//invoice details
+		var currentdate = new Date();
+		var accountId = "Account ID: " + accountNum;
+		var invoiceFound = localStorage.getItem("invoiceActive");;
+		
+		//generate random invoice number if none is present
+		if (invoiceFound == 1)
+		{
+			var invoiceNum = localStorage.getItem("invoiceNum");
+			var invoiceOutput = "Invoice # " + invoiceNum;
+		}
+		else
+		{
+			var invoiceNum = Math.floor((Math.random() * 25000) + 10000);
+			var invoiceOutput = "Invoice # " + invoiceNum;
+			localStorage.setItem("invoiceActive", 1);
+			localStorage.setItem("invoiceNum", invoiceNum);
+		}
+		
+		//use jQuery to target the ID tags and output the values
+		$("#date-value").html(currentdate);
+		$("#invoice-value").html(invoiceOutput);
+		$("#account-value").html(accountId);
+	}	
 });
 
 	//On click 'Phones Dept' - send data to local
@@ -168,12 +177,12 @@ $(document).ready(function()
 		//send search
 		localStorage.setItem("searchBar", searchValue);
 	}
-
-	//If account is active display holders name
-	var found = localStorage.getItem("loginActive");
-
-	if (found == 1)
-	{
-		var name = localStorage.getItem("accountName");
-		document.getElementById("nameTag").innerHTML = "Hello, " + name;
+	
+	//On click 'Logout' - send data to local
+	document.getElementById("logOut").onclick = function()
+	{	
+		// clear session storage and reload page
+		sessionStorage.clear();
+		//refresh page
+		location.reload();
 	}
