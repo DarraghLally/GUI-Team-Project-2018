@@ -136,7 +136,7 @@ var accountsArr =
 			"productName":"Lenovo IdeaPad ",
 			"productDescription": "The IdeaPad 120S features a redesigned chassis with simple, clean lines giving it a contemporary take on elegant style. You count on your devices to keep up with you. So the manufacturer applied a protective finish to guard against wear and tear. Lenovo also included subtle rubber detailing on the bottom cover to maximise ventilation and extend product life. Available in a sophisticated range of colours: Mineral grey, blizzard white and ballerina pink.",
 			"productPrice": 149.99,
-			"productImgURL": "../Images/products/laptop-cheap/Lenovo IdeaPad 2.jpg"
+			"productImgURL": "../Images/products/laptop-cheap/Lenovo_IdeaPad_index.jpg"
 		},
 		{
 			"productID": 2002,
@@ -252,3 +252,31 @@ document.getElementById("searchBtn").onclick = function()
 	//send search
 	localStorage.setItem("searchBar", searchValue);
 }
+
+	//On click 'Phones Dept' - send data to local
+	document.getElementById("deptPhone").onclick = function()
+	{	
+		//send search
+		localStorage.setItem("searchDepartment", "Phone");
+	}
+	
+	//On click 'Laptops Dept' - send data to local
+	document.getElementById("deptLaptop").onclick = function()
+	{	
+		//send search
+		localStorage.setItem("searchDepartment", "Laptop");
+	}
+	
+	//On click 'TV Dept' - send data to local
+	document.getElementById("deptTV").onclick = function()
+	{	
+		//send search
+		localStorage.setItem("searchDepartment", "TV");
+	}
+	
+	//On click 'Drone Dept' - send data to local
+	document.getElementById("deptDrone").onclick = function()
+	{	
+		//send search
+		localStorage.setItem("searchDepartment", "Drone");
+	}

@@ -85,3 +85,31 @@ document.getElementById("couponBtn").onclick = function()
 	}
 	
 }	
+
+	//On click 'Phones Dept' - send data to local
+	document.getElementById("deptPhone").onclick = function()
+	{	
+		//send search
+		localStorage.setItem("searchDepartment", "Phone");
+	}
+	
+	//On click 'Laptops Dept' - send data to local
+	document.getElementById("deptLaptop").onclick = function()
+	{	
+		//send search
+		localStorage.setItem("searchDepartment", "Laptop");
+	}
+	
+	//On click 'TV Dept' - send data to local
+	document.getElementById("deptTV").onclick = function()
+	{	
+		//send search
+		localStorage.setItem("searchDepartment", "TV");
+	}
+	
+	//On click 'Drone Dept' - send data to local
+	document.getElementById("deptDrone").onclick = function()
+	{	
+		//send search
+		localStorage.setItem("searchDepartment", "Drone");
+	}
