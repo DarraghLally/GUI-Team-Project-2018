@@ -1,9 +1,9 @@
 //If account is active display holders name
-var found = localStorage.getItem("loginActive");
+var found = sessionStorage.getItem("loginActive");
 
 if (found == 1)
 {
-	var name = localStorage.getItem("accountName");
+	var name = sessionStorage.getItem("accountName");
 	document.getElementById("nameTag").innerHTML = "Hello, " + name;
 }
 
@@ -79,5 +79,14 @@ $(document).ready(function() {
 		var searchValue = document.getElementById("searchBarText").value;
 		//send search
 		localStorage.setItem("searchBar", searchValue);
+	}
+	
+	//On click 'Logout' - send data to local
+	document.getElementById("logOut").onclick = function()
+	{	
+		// clear session storage and reload page
+		sessionStorage.clear();
+		//refresh page
+		location.reload();
 	}
 });
