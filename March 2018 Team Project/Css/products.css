@@ -9,6 +9,10 @@ body {
 	padding-right: 5%;
 }
 
+p{
+	font-weight: bold;
+}
+
 /* NavBar */
 .navbar {
 	background-color: #404040;
