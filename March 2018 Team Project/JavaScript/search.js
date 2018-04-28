@@ -12,6 +12,7 @@ $(document).ready(function() {
 		var description = productsArr[i].productDescription;
 		var price = productsArr[i].productPrice;
 		var image = productsArr[i].productImgURL;
+		var page = productsArr[i].productPageURL;
 		//var amount = poductQuantityArr[i];
 		
 		var isFound = description.search(itemSearch);	
@@ -21,7 +22,7 @@ $(document).ready(function() {
 			$("#searchInfo").prepend(
 			"<div class ='row'>" + 
 				"<div class='col-sm-3 col-md-3'>" +
-					"<img src=" + image + ">" +
+					"<a href=" + page + "><img src=" + image + "></a>" +
 				"</div>" + 
 				"<div class='col-sm-4 col-md-4'>" +
 					"<h4>" + name + "</h4>" + 

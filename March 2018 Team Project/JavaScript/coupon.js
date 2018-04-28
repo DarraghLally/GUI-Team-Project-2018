@@ -55,10 +55,10 @@ document.getElementById("couponBtn").onclick = function()
 {
 	var found = false;
 	var validCode;
+	//get current date
+	var currentdate = new Date();
 	//get details that user has enter for code and date
 	var couponCode = document.getElementById("codeInput").value;
-	//var couponDate = document.getElementById("dateInput").value;
-	
 	// Then search through the coupons to valid coupon
 	for (var i = 0; i< couponArr.length; i++) 
 	{
@@ -72,6 +72,8 @@ document.getElementById("couponBtn").onclick = function()
 			validCode = code;
 			alert("coupon");
 		}
+		
+		//add check date
 	}
 	
 	//test if name found
