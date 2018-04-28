@@ -21,126 +21,129 @@
 	</head>
 	<body>
 		<div class="container-fluid">
-			
-		<!-- Navagation bar  -->
-		<nav class="navbar navbar-inverse">
-			  <div class="container-fluid">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span> 
-						</button>
-						
-						<a class="navbar-brand" href="index.html">AND.com</a>
-						
-						<form class="navbar-form navbar-left" action="Pages/searchResults.html">
-							<div class="form-group ">
-								<input type="text" id="searchBarText" class="form-control" placeholder="Search">
-								<button type="submit" id="searchBtn" class="btn btn-default">Search</button>
-							</div>
-						</form>
-					</div>
+				
+			<!-- Navagation bar  -->
+			<nav class="navbar navbar-inverse">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span> 
+					</button>
 
+					<a class="navbar-brand" href="index.html">AND.com</a>
 
-					<div class="collapse navbar-collapse" id="myNavbar">	
-						<ul class="nav navbar-nav navbar-right">
-							<li class="dropdown" >
-								<!-- If valid acount active display account holders name -->
-								<p id="nameTag"></p>
-								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Departments
-								<span class="caret"></span></a>
-								<ul class="dropdown-menu" >
-									<li id="deptPhone"><a href="Pages/deptSearch.html">Phones</a></li>
-									<li id="deptLaptop"><a href="Pages/deptSearch.html">Laptops</a></li>
-									<li id="deptTV"><a href="Pages/deptSearch.html">Television</a></li>
-									<li id="deptDrone"><a href="Pages/deptSearch.html">Drone</a></li>
-								</ul>
-							</li>
-							<li class="dropdown" >
-								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Account
-								<span class="caret"></span></a>
-								<ul class="dropdown-menu" >
-									<li><a href="Pages/loginV2.html"><span class="glyphicon glyphicon-log-in"></span> Login / Sign Up</a></li>
-									<li><a href="Pages/changeAccount.html"><span class="glyphicon glyphicon-edit"></span> Edit Account</a></li>	
-									<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
-								</ul>
-							</li>
-							<li><a href="Pages/Basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> Basket</a></li>
-						</ul>
+					<form class="navbar-form navbar-left" action="Pages/searchResults.html">
+						<div class="form-group ">
+							<input type="text" id="searchBarText" class="form-control" placeholder="Search">
+							<button type="submit" id="searchBtn" class="btn btn-default">Search</button>
+						</div>
+					</form>
+				</div>
+
+				<div class="collapse navbar-collapse" id="myNavbar">	
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown" >
+							<!-- If valid acount active display account holders name -->
+							<p id="nameTag"></p>
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Departments
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" >
+								<li id="deptPhone"><a href="Pages/deptSearch.html">Phones</a></li>
+								<li id="deptLaptop"><a href="Pages/deptSearch.html">Laptops</a></li>
+								<li id="deptTV"><a href="Pages/deptSearch.html">Television</a></li>
+								<li id="deptDrone"><a href="Pages/deptSearch.html">Drone</a></li>
+							</ul>
+						</li>
+						<li class="dropdown" >
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Account
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" >
+								<li><a href="Pages/loginV2.html"><span class="glyphicon glyphicon-log-in"></span> Login / Sign Up</a></li>
+								<li><a href="Pages/changeAccount.html"><span class="glyphicon glyphicon-edit"></span> Edit Account</a></li>	
+								<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+							</ul>
+						</li>
+					<li><a href="Pages/Basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> Basket</a></li>
+					</ul>
+				</div>
+			</nav>
+				
+				<div class="row">
+					<div class="slideshow-container">
+						<!-- 1st slide show image-->
+						<div class="mySlides fade">
+						  <img src="Images/IndexCarousel/djiDrone.jpg" style="width:100%">
+						</div>
+						<!-- 2nd slide show image-->
+						<div class="mySlides fade">
+						  <img src="Images/IndexCarousel/wifiDrone.jpg" style="width:100%">
+						</div>
+						<!-- 3rd slide show image-->
+						<div class="mySlides fade">
+						  <img src="Images/IndexCarousel/parrotDrone.jpg" style="width:100%">
+						</div>
+						<!-- 4th slide show image-->
+						<div class="mySlides fade">
+						  <img src="Images/IndexCarousel/lgK8Phone.jpg" style="width:100%">
+						</div>
+						<!-- 5th slide show image-->
+						<div class="mySlides fade">
+						  <img src="Images/IndexCarousel/lenovo120s.jpg" style="width:100%">
+						</div>
 					</div>
-			  </div>
-		</nav>
+				</div>
+				
+				<!-- placeholder images for the store page-->
+				<div class="row">
+				
+					<!-- left col-->
+					<div class="col-sm-4 col-md-4 text-center ">
+						<a href = "Pages/prod1.html"><img src="Images/products/phone-cheap/lgk8Mobile.jpg" alt="LG_K8_mobile" class=""></a>
+						<p><b>LG K8 Mobile Phone	Price: €103.90</b></p>
+						<a href = "Pages/prod2.html"><img src="Images/products/laptop-cheap/Lenovo IdeaPad.jpg" alt="Lenovo_IdeaPad_laptop" class=""></a>
+						<p><b>Lenovo IdeaPad 11" HD Notebook	Price: €149.99</b></p>
+						<a href = "Pages/prod3.html"><img src="Images/products/tv-cheap/lgCheap1.jpg" alt="LG_TV" class=""></a>
+						<p><b>LG 1080p 21.5" LED TV	Price: €109.00</b></p>
+						<a href = "Pages/prod4.html"><img src="Images/products/drone-cheap/wifiDroneCheap1.jpg" alt="Drone_1" class=""></a>
+						<p><b>HD Camera Drone	Price: €95.99</b></p>
+					</div>
+					
+					<!-- middle col-->
+					<div class="col-sm-4 col-md-4 text-center ">
+						<a href = "Pages/prod1_1.html"><img src="Images/products/phone-mid/samsung_1.jpg" alt="Samsung_Galaxy_S7" class=""></a>
+						<p><b>Samsung Galaxy Edge S7	Price: €376.95</b></p>
+						<a href = "Pages/prod2_1.html"><img src="Images/products/laptop-mid/hp_1_index.jpg" alt="HP_Pavilion" class=""></a>
+						<p><b>Samsung 32 inch Curved LED TV</b></p>
+						<a href = "Pages/prod3_1.html"><img src="Images/products/tv-mid/samsung_tv_1_index.jpg" alt="Samsung_TV" class=""></a>
+						<p><b>LG 1080p 21.5" LED TV	Price: €109.00</b></p>
+						<a href = "Pages/prod4_1.html"><img src="Images/products/drone-mid/parrot_1.jpg" alt="Drone_2" class=""></a>
+						<p><b>Parrot Drone	Price: €491.80</b></p>
+					</div>
+					
+					<!-- right col-->
+					<div class="col-sm-4 col-md-4 text-center ">
+						<a href = "Pages/prod1_2.html"><img src="Images/products/phone-top/Samsung_Note_1.jpg" alt="Samsung_Note_8" class=""></a>
+						<p><b>Samsung Note 8	Price: €773.48</b></p>
+						<a href = "Pages/prod2_2.html"><img src="Images/products/laptop-top/dell_1_index.jpg" alt="Dell_Inspiron" class=""></a>
+						<p><b>Dell Inspiron 15.6 inch Gaming Laptop	Price: €849.99</b></p>
+						<a href = "Pages/prod3_2.html"><img src="Images/products/tv-top/lg_tv_1_index.jpg" alt="LG_TV" class=""></a>
+						<p><b>LG Hospitality Display LCD-TV 55 inch	Price: €939.28</b></p>
+						<a href = "Pages/prod4_2.html"><img src="Images/products/drone-top/dji_1.jpg" alt="Drone_3" class=""></a>
+						<p><b>DJI Mavic Pro	Price: €985.90</b></p>
+					</div>
+				</div>
+				
+				<!-- Place holder buttons for misc pages-->
+				<div class="btnList text-center">
+					<a class="btn btn-default" href="#" target="_blank">Contact Us</a>
+					<a class="btn btn-default" href="#" target="_blank">Terms of Service</a>
+					<a class="btn btn-default" href="#" target="_blank">GitHub</a>
+				</div>
 			
-			<div class="row">
-				<div class="slideshow-container">
-					<!-- 1st slide show image-->
-					<div class="mySlides fade">
-					  <img src="Images/IndexCarousel/djiDrone.jpg" style="width:100%">
-					</div>
-					<!-- 2nd slide show image-->
-					<div class="mySlides fade">
-					  <img src="Images/IndexCarousel/wifiDrone.jpg" style="width:100%">
-					</div>
-					<!-- 3rd slide show image-->
-					<div class="mySlides fade">
-					  <img src="Images/IndexCarousel/parrotDrone.jpg" style="width:100%">
-					</div>
-					<!-- 4th slide show image-->
-					<div class="mySlides fade">
-					  <img src="Images/IndexCarousel/lgK8Phone.jpg" style="width:100%">
-					</div>
-					<!-- 5th slide show image-->
-					<div class="mySlides fade">
-					  <img src="Images/IndexCarousel/lenovo120s.jpg" style="width:100%">
-					</div>
-				</div>
 			</div>
-			
-			<!-- placeholder images for the store page-->
-			<div class="row">
-				<!-- left col-->
-				<div class="col-sm-4 col-md-4 text-center">
-					<a href = "Pages/prod1.html"><img src="Images/products/phone-cheap/lgk8Mobile.jpg" alt="LG_K8_mobile" class=""></a>
-					<p>LG K8 Mobile Phone	Price: €103.90</p>
-					<a href = "Pages/prod2.html"><img src="Images/products/laptop-cheap/Lenovo IdeaPad.jpg" alt="Lenovo_IdeaPad_laptop" class=""></a>
-					<p>Lenovo IdeaPad 11" HD Notebook	Price: €149.99</p>
-					<a href = "Pages/prod3.html"><img src="Images/products/tv-cheap/lgCheap1.jpg" alt="LG_TV" class=""></a>
-					<p>LG 1080p 21.5" LED TV	Price: €109.00</p>
-					<a href = "Pages/prod4.html"><img src="Images/products/drone-cheap/wifiDroneCheap1.jpg" alt="Drone_1" class=""></a>
-					<p>HD Camera Drone	Price: €95.99</p>
-				</div>
-				<!-- middle col-->
-				<div class="col-sm-4 col-md-4 text-center">
-					<a href = "Pages/prod1_1.html"><img src="Images/products/phone-mid/samsung_1.jpg" alt="Samsung_Galaxy_S7" class=""></a>
-					<p>Samsung Galaxy Edge S7	Price: €376.95</p>
-					<a href = "Pages/prod2_1.html"><img src="Images/products/laptop-mid/hp_1_index.jpg" alt="HP_Pavilion" class=""></a>
-					<p>Samsung 32 inch Curved LED TV</p>
-					<a href = "Pages/prod3_1.html"><img src="Images/products/tv-mid/samsung_tv_1_index.jpg" alt="Samsung_TV" class=""></a>
-					<p>LG 1080p 21.5" LED TV	Price: €109.00</p>
-					<a href = "Pages/prod4_1.html"><img src="Images/products/drone-mid/parrot_1.jpg" alt="Drone_2" class=""></a>
-					<p>Parrot Drone	Price: €491.80</p>
-				</div>
-				<!-- right col-->
-				<div class="col-sm-4 col-md-4 text-center">
-					<a href = "Pages/prod1_2.html"><img src="Images/products/phone-top/Samsung_Note_1.jpg" alt="Samsung_Note_8" class=""></a>
-					<p>Samsung Note 8	Price: €773.48</p>
-					<a href = "Pages/prod2_2.html"><img src="Images/products/laptop-top/dell_1_index.jpg" alt="Dell_Inspiron" class=""></a>
-					<p>Dell Inspiron 15.6 inch Gaming Laptop	Price: €849.99</p>
-					<a href = "Pages/prod3_2.html"><img src="Images/products/tv-top/lg_tv_1_index.jpg" alt="LG_TV" class=""></a>
-					<p>LG Hospitality Display LCD-TV 55 inch	Price: €939.28</p>
-					<a href = "Pages/prod4_2.html"><img src="Images/products/drone-top/dji_1.jpg" alt="Drone_3" class=""></a>
-					<p>DJI Mavic Pro	Price: €985.90</p>
-				</div>
-			</div>
-			<!-- Place holder buttons for misc pages-->
-			<div class="btnList text-center">
-				<a class="btn btn-default" href="#" target="_blank">Contact Us</a>
-				<a class="btn btn-default" href="#" target="_blank">Terms of Service</a>
-				<a class="btn btn-default" href="#" target="_blank">GitHub</a>
-			</div>
-			
-		</div>
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
