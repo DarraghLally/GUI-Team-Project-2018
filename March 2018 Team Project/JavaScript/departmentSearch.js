@@ -1,3 +1,12 @@
+//If account is active display holders name
+var found = localStorage.getItem("loginActive");
+
+if (found == 1)
+{
+	var name = localStorage.getItem("accountName");
+	document.getElementById("nameTag").innerHTML = "Hello, " + name;
+}
+
 //run jQuery
 $(document).ready(function() {
 	// Retrieve account data from local storage
