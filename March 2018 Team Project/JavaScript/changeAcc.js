@@ -55,7 +55,6 @@ if (found == 1)
 //run script when submit button is pressed
 document.getElementById("regBtn").onclick = function()
 {
-	alert("button was clicked");
 	//get the user details from the signup form
 	var name = document.getElementById("userName").value;
 	var phone = document.getElementById("userPhone").value;
@@ -90,7 +89,5 @@ document.getElementById("regBtn").onclick = function()
 		//reset login name on Nav Bar
 		localStorage.setItem("accountName", name);
 		localStorage.setItem("newAccount", 1);
-		//refresh page
-		location.reload();
 	}
 }
