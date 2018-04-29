@@ -99,19 +99,24 @@ $(document).ready(function()
 		{
 			//get totals after closing loop
 			vatCharged = (subTotal * vatRate);
-			grandTotal = (subTotal + vatCharged + shipping) * 0.9; // 10%
+			total = (subTotal + vatCharged + shipping);
+			discountAmount = (total) * 0.1; // 10% discount
+			grandTotal = (total) - discountAmount;
 		}
 		else
 		{
 			//get totals after closing loop
 			vatCharged = (subTotal * vatRate);
-			grandTotal = subTotal + vatCharged + shipping;
+			total = (subTotal + vatCharged + shipping);
+			discountAmount = (total) * 0; // no discount
+			grandTotal = (total) - discountAmount;
 		}
 		//use jQuery to target the ID tags and output the values
 		$("#basket-items-value").html(itemsCounter);
 		$("#sub-total-value").html("€ " + subTotal.toFixed(2));
 		$("#vat-value").html("€ " + vatCharged.toFixed(2));
 		$("#shipping-value").html("€ " + shipping.toFixed(2));
+		$("#coupon-value").html("€ " + discountAmount.toFixed(2));
 		$("#totals-value").html("€ " + grandTotal.toFixed(2));
 		
 		//invoice details

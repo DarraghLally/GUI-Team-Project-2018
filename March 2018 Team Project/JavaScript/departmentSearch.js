@@ -19,6 +19,7 @@ $(document).ready(function() {
 		var description = productsArr[i].productDescription;
 		var price = productsArr[i].productPrice;
 		var image = productsArr[i].productImgURL;
+		var page = productsArr[i].productPageURL;
 		var dept = productsArr[i].productDept;
 		//var amount = poductQuantityArr[i];
 		
@@ -29,16 +30,14 @@ $(document).ready(function() {
 			$("#searchInfo").prepend(
 			"<div class ='row'>" + 
 				"<div class='col-sm-3 col-md-3'>" +
-					"<img src=" + image + ">" +
-				"</div>" + 
-				"<div class='col-sm-4 col-md-4'>" +
+					"<a href=" + page + "><img src=" + image + "></a>" +
+				"</div>" +
+				"<div class='col-sm-1 col-md-1'></div>" + 
+				"<div class='col-sm-6 col-md-6'>" +
 					"<h4>" + name + "</h4>" + 
 					"<p>" + description + "</p>" +
 				"</div>" + 
-				"<div class='col-sm-2 col-md-2'> € " + price + "</div>" +
-				"<div class='col-sm-1 col-md-1'></div>" +
-				"<div class='col-sm-1 col-md-1'>" + 
-					"<button id='removeItem'>Add to Basket</button>" + 
+				"<div class='col-sm-2 col-md-2'>€ " + price + 
 				"</div>" +
 			"</div>");
 		}
