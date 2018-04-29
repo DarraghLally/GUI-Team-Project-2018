@@ -70,6 +70,14 @@ input[type=submit]:hover {
 .map {
 	padding-left: 7%;
 }
+/*Css for Footer*/
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 94%;
+	height: 50px;
+}
+
 #githubIcon {
   color: #6C0674;
 }
@@ -81,7 +89,7 @@ input[type=submit]:hover {
 #termsIcon {
   color: #41f443;
 }
-
+/*End of Footer*/
 .btn-default {
 	background-color: white;
 	border-color: grey;
