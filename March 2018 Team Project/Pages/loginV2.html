@@ -22,52 +22,49 @@
 		<div class="container-fluid">
 		<!--Navagation Bar-->
 		<nav class="navbar navbar-inverse">
-			  <div class="container-fluid">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span> 
-						</button>
-						<a class="navbar-brand" href="../index.html">AND.com</a>
-						<form class="navbar-form navbar-left" action="searchResults.html">
-							<div class="form-group ">
-								<input type="text" class="form-control" placeholder="Search" id="searchBarText">
-								<button type="submit" id="searchBtn" class="btn btn-default">Search</button>
-							</div>
-							
-						</form>
-					</div>
-					<div class="collapse navbar-collapse" id="myNavbar">
-						<ul class="nav navbar-nav navbar-right">
-							<li class="dropdown" >
-								<!-- If valid acount active display account holders name -->
-								<p id="nameTag"></p>
-								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Departments
-								<span class="caret"></span></a>
-								<ul class="dropdown-menu" >
-									<li id="deptPhone"><a href="deptSearch.html">Phones</a></li>
-									<li id="deptLaptop"><a href="deptSearch.html">Laptops</a></li>
-									<li id="deptTV"><a href="deptSearch.html">Television</a></li>
-									<li id="deptDrone"><a href="deptSearch.html">Drone</a></li>
-								</ul>
-							</li>
-							<li class="dropdown" >
-								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Account
-								<span class="caret"></span></a>
-								<ul class="dropdown-menu" >
-									<li><a href="loginV2.html"><span class="glyphicon glyphicon-log-in"></span> Login / Sign Up</a></li>
-									<li><a href="changeAccount.html"><span class="glyphicon glyphicon-edit"></span> Edit Account</a></li>
-									<li id="logOut"><a href="#"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
-								</ul>
-							</li>
-							<li><a href="Basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> Basket</a></li>
-						</ul>
-					</div>
-			  </div>
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span> 
+					</button>
+					<a class="navbar-brand" href="../index.html">AND.com</a>
+					<form class="navbar-form navbar-left" action="searchResults.html">
+						<div class="form-group ">
+							<input type="text" class="form-control" placeholder="Search" id="searchBarText">
+							<button type="submit" id="searchBtn" class="btn btn-default">Search</button>
+						</div>							
+					</form>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown" >
+							<!-- If valid acount active display account holders name -->
+							<p id="nameTag"></p>
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Departments
+							<span class="caret"></span></a>
+							<ul class="dropdown-menu" >
+								<li id="deptPhone"><a href="deptSearch.html">Phones</a></li>
+								<li id="deptLaptop"><a href="deptSearch.html">Laptops</a></li>
+								<li id="deptTV"><a href="deptSearch.html">Television</a></li>
+								<li id="deptDrone"><a href="deptSearch.html">Drone</a></li>
+							</ul>
+						</li>
+						<li class="dropdown" >
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Account<span class="caret"></span></a>
+							<ul class="dropdown-menu" >
+								<li><a href="loginV2.html"><span class="glyphicon glyphicon-log-in"></span> Login / Sign Up</a></li>
+								<li><a href="changeAccount.html"><span class="glyphicon glyphicon-edit"></span> Edit Account</a></li>
+								<li id="logOut"><a href="#"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+							</ul>
+						</li>
+						<li><a href="Basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> Basket</a></li>
+					</ul>
+				</div>
+			</div>
 		</nav>
-			
-			
+	
  <!---------------------------- "https://bootsnipp.com/snippets/featured/sign-in-sign-up-dual-modal"  ------------------------------>
 		<div class="container"> 
 			<hr class="line">
@@ -76,137 +73,135 @@
 			<h1><b>Welcome to AND.com</b></h1>
 			<h3>You need to sign in or register for this service</h3>
 			<br>
-		  <button class="btn btn-primary btn-lg" href="#signup" data-toggle="modal" data-target=".bs-modal-sm">Sign In/Register</button>
-		  </center>
-		  <br>
+			<button class="btn btn-primary btn-lg" href="#signup" data-toggle="modal" data-target=".bs-modal-sm">Sign In/Register</button>
+			</center>
+			<br>
 			<hr class="line">
-		 </div>
+		</div>
 		  
 
 		<!-- Modal -->
 		<div class="modal fade bs-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-		  <div class="modal-dialog modal-sm">
-			<div class="modal-content">
-				<br>
-				<div class="bs-example bs-example-tabs">
-					<ul id="myTab" class="nav nav-tabs">
-					  <li class="active"><a href="#signin" data-toggle="tab">Sign In</a></li>
-					  <li class=""><a href="#signup" data-toggle="tab">Register</a></li>
-					  <li class=""><a href="#why" data-toggle="tab">Why?</a></li>
-					</ul>
-				</div>
-			<div class="modal-body">
-				<div id="myTabContent" class="tab-content">
-					<div class="tab-pane fade in" id="why">
-					<p>We need this information so that you can receive access to the site and its content. Rest assured your information will not be sold, traded, or given to anyone.</p>
-					<p></p><br> Please contact <a mailto:href="AND.com"></a>AND.com</a> for any other inquiries.</p>
-				</div>
-				<div class="tab-pane fade active in" id="signin ">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<br>
+					<div class="bs-example bs-example-tabs">
+						<ul id="myTab" class="nav nav-tabs">
+						  <li class="active"><a href="#signin" data-toggle="tab">Sign In</a></li>
+						  <li class=""><a href="#signup" data-toggle="tab">Register</a></li>
+						  <li class=""><a href="#why" data-toggle="tab">Conditions</a></li>
+						</ul>
+					</div>
+					<div class="modal-body">
+						<div id="myTabContent" class="tab-content">
+							<div class="tab-pane fade in" id="why">
+							<p>We need this information so that you can receive access to the site and its content. Rest assured your information will not be sold, traded, or given to anyone.</p>
+							<p></p><br> Please contact <a mailto:href="AND.com"></a>AND.com</a> for any other inquiries.</p>
+						</div>
+						<div class="tab-pane fade active in" id="signin ">
 <!---------------------------- Sign In Form  ------------------------------>
 
-					<form name="loginForm" method="post" action="../index.html">
-						<fieldset>
-						<!-- Text input-->
-						<div class="control-group">
-						  <label class="control-label" for="username">Username:</label>
-						  <div class="controls">
-							<input id="nameInput" type="text" class="form-control" placeholder="Username" class="input-medium" required="required">
-						  </div>
+							<form name="loginForm" method="post" action="../index.html">
+							<fieldset>
+							<!-- Text input-->
+							<div class="control-group">
+								<label class="control-label" for="username">Username:</label>
+								<div class="controls">
+								<input id="nameInput" type="text" class="form-control" placeholder="Username" class="input-medium" required="required">
+							</div>
 						</div>
 
-					<!-- Password input-->
+						<!-----Password input-------->
 						<div class="control-group">
-						  <label class="control-label" for="psw">Password:</label>
-						  <div class="controls">
-							<input required="" id="passInput" class="form-control" type="password" placeholder="********" class="input-medium">
-						  </div>
+							<label class="control-label" for="psw">Password:</label>
+							<div class="controls">
+								<input required="" id="passInput" class="form-control" type="password" placeholder="********" class="input-medium">
+							</div>
 						</div>
-
 
 						<!-- Button -->
 						<div class="control-group">
-						  <label class="control-label" for="signin"></label>
-						  <div class="controls">
-							<button id="loginBtn" name="signin" class="btn btn-primary">Sign In</button>
-						  </div>
+							<label class="control-label" for="signin"></label>
+							<div class="controls">
+								<button id="loginBtn" name="signin" class="btn btn-primary">Sign In</button>
+							</div>
 						</div>
 						</fieldset>
-					</form>
-				</div>
-<!---------------------------- Register Form  ------------------------------>
+						</form>
+					</div>
+	<!---------------------------- Register Form  ----------------------------------------------->
 
-				<div class="tab-pane fade" id="signup">
-					<form name="regForm" method="post" action="../index.html">
-					<fieldset>
+					<div class="tab-pane fade" id="signup">
+						<form name="regForm" method="post" action="../index.html">
+							<fieldset>
+							<!-- Username input-->
+							<div class="control-group">
+								<label class="control-label" for="name">Username:</label>
+								<div class="controls">
+									<input id="userName" class="form-control" type="text" placeholder="Username" class="input-large" required="">
+									<em>Greater than 6 Characters</em>
+								</div>
+							</div>
+							
+							<!-- Password input-->
+							<div class="control-group">
+								<label class="control-label" for="password">Password:</label>
+								<div class="controls">
+									<input id="userPassword" name="password" class="form-control" type="password" placeholder="********" class="input-large" required="">
+									<em>Greater than 8 Characters</em>
+								</div>
+							</div>
+						
+							<!-- Re Enter Password input-->
+							<div class="control-group">
+								<label class="control-label" for="password_confirm">Re-Enter Password:</label>
+								<div class="controls">
+									<input id="userPassword_confirm" class="form-control"  type="password" placeholder="********" class="input-large" required="">
+								</div>
+							</div>
 
-					<!-- Username input-->
-					<div class="control-group">
-						<label class="control-label" for="name">Username:</label>
-						<div class="controls">
-							<input id="userName" class="form-control" type="text" placeholder="Username" class="input-large" required="">
-							<em>Greater than 6 Characters</em>
-						</div>
+							<!-- Phone Number input-->
+							<div class="control-group">
+								<label class="control-label" for="phoneNum">Phone Number:</label>
+								<div class="controls">
+									<input id="userPhone" class="form-control" type="number" placeholder="0----------" class="input-large" required="">
+								</div>
+							</div>
+							
+							<!-- Email input-->
+							<div class="control-group">
+								<label class="control-label" for="Email">Email:</label>
+								<div class="controls">
+									<input id="userEmail" class="form-control" type="email" placeholder="G*********@gmit.ie" class="input-large" required="">
+								</div>
+							</div>
+							
+							<!-- Address input-->
+							<div class="control-group">
+								<label class="control-label" for="addressLine1">Address:</label>
+								<div class="controls">
+									<input id="userAddress1" class="form-control" name="addressline1" required="required" type="text" placeholder="Address Line 1" required=""/><br>
+									<input id="userAddress2" class="form-control" name="addressline2" required="required" type="text" placeholder="Address Line 2" required=""/><br>
+									<input id="userAddress3" class="form-control" name="addressline3" required="required" type="text" placeholder="Address Line 3" required=""/><br>					
+								</div>
+							</div>						
+							<!-- Button -->
+							<div class="control-group">
+								<label class="control-label" for="confirmsignup"></label>
+								<div class="controls">
+									<button type="submit" id="regBtn " name="confirmsignup" class="btn btn-primary">Sign Up</button>
+								</div>
+							</div>
+							</fieldset>
+						</form>
 					</div>
-					
-					<!-- Password input-->
-					<div class="control-group">
-						<label class="control-label" for="password">Password:</label>
-						<div class="controls">
-							<input id="userPassword" name="password" class="form-control" type="password" placeholder="********" class="input-large" required="">
-							<em>Greater than 8 Characters</em>
-						</div>
-					</div>
-					
-					<!-- Re Enter Password input-->
-					<div class="control-group">
-						<label class="control-label" for="password_confirm">Re-Enter Password:</label>
-						<div class="controls">
-							<input id="userPassword_confirm" class="form-control"  type="password" placeholder="********" class="input-large" required="">
-						</div>
-					</div>
-
-					<!-- Phone Number input-->
-					<div class="control-group">
-						<label class="control-label" for="phoneNum">Phone Number:</label>
-						<div class="controls">
-							<input id="userPhone" class="form-control" type="number" placeholder="0----------" class="input-large" required="">
-						</div>
-					</div>
-					
-					<!-- Email input-->
-					<div class="control-group">
-						<label class="control-label" for="Email">Email:</label>
-						<div class="controls">
-							<input id="userEmail" class="form-control" type="email" placeholder="G*********@gmit.ie" class="input-large" required="">
-						</div>
-					</div>
-					
-					<!-- Address input-->
-					<div class="control-group">
-						<label class="control-label" for="addressLine1">Address:</label>
-						<div class="controls">
-							<input id="userAddress1" class="form-control" name="addressline1" required="required" type="text" placeholder="Address Line 1" required=""/><br>
-							<input id="userAddress2" class="form-control" name="addressline2" required="required" type="text" placeholder="Address Line 2" required=""/><br>
-							<input id="userAddress3" class="form-control" name="addressline3" required="required" type="text" placeholder="Address Line 3" required=""/><br>					
-						</div>
-					</div>						
-					<!-- Button -->
-					<div class="control-group">
-						<label class="control-label" for="confirmsignup"></label>
-						<div class="controls">
-							<button type="submit" id="regBtn " name="confirmsignup" class="btn btn-primary">Sign Up</button>
-						</div>
-					</div>
-					</fieldset>
-					</form>
 				</div>
 			</div>
-		</div>
-		<div class="modal-footer">
-			<center>
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			</center>
-		</div>
+			<div class="modal-footer">
+				<center>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</center>
+			</div>
 		</div>
 		</div>
 		</div>

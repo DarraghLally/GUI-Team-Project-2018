@@ -12,57 +12,59 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	
+	<!-- External CSS -->
 	<link href="../Css/contact.css" rel="stylesheet">
 	<!-- Font Awesome Icons -->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
+
 <body>
 	<div class="container-fluid">
 		<!--Navagation Bar-->
 		<nav class="navbar navbar-inverse">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span> 
-						</button>
-						
-						<a class="navbar-brand" href="../index.html">AND.com</a>
-						
-						<form class="navbar-form navbar-left" action="searchResults.html">
-							<div class="form-group ">
-								<input type="text" id="searchBarText" class="form-control" placeholder="Search">
-								<button type="submit" id="searchBtn" class="btn btn-default">Search</button>
-							</div>
-						</form>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span> 
+				</button>
+				
+				<a class="navbar-brand" href="../index.html">AND.com</a>
+				
+				<form class="navbar-form navbar-left" action="searchResults.html">
+					<div class="form-group ">
+						<input type="text" id="searchBarText" class="form-control" placeholder="Search">
+						<button type="submit" id="searchBtn" class="btn btn-default">Search</button>
 					</div>
+				</form>
+			</div>
 
-					<div class="collapse navbar-collapse" id="myNavbar">	
-						<ul class="nav navbar-nav navbar-right">
-							<li class="dropdown" >
-								<!-- If valid acount active display account holders name -->
-								<p id="nameTag"></p>
-								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Departments
-								<span class="caret"></span></a>
-								<ul class="dropdown-menu" >
-									<li id="deptPhone"><a href="deptSearch.html">Phones</a></li>
-									<li id="deptLaptop"><a href="deptSearch.html">Laptops</a></li>
-									<li id="deptTV"><a href="deptSearch.html">Television</a></li>
-									<li id="deptDrone"><a href="deptSearch.html">Drone</a></li>
-								</ul>
-							</li>
-							<li class="dropdown" >
-								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Account
-								<span class="caret"></span></a>
-								<ul class="dropdown-menu" >
-									<li><a href="loginV2.html"><span class="glyphicon glyphicon-log-in"></span> Login / Sign Up</a></li>
-									<li><a href="changeAccount.html"><span class="glyphicon glyphicon-edit"></span> Edit Account</a></li>
-									<li id="logOut"><a href="#"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
-								</ul>
-							</li>
-							<li><a href="Basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> Basket</a></li>
+			<div class="collapse navbar-collapse" id="myNavbar">	
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown" >
+						<!-- If valid acount active display account holders name -->
+						<p id="nameTag"></p>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Departments
+						<span class="caret"></span></a>
+						<ul class="dropdown-menu" >
+							<li id="deptPhone"><a href="deptSearch.html">Phones</a></li>
+							<li id="deptLaptop"><a href="deptSearch.html">Laptops</a></li>
+							<li id="deptTV"><a href="deptSearch.html">Television</a></li>
+							<li id="deptDrone"><a href="deptSearch.html">Drone</a></li>
 						</ul>
-					</div>
+					</li>
+					<li class="dropdown" >
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Account
+						<span class="caret"></span></a>
+						<ul class="dropdown-menu" >
+							<li><a href="loginV2.html"><span class="glyphicon glyphicon-log-in"></span> Login / Sign Up</a></li>
+							<li><a href="changeAccount.html"><span class="glyphicon glyphicon-edit"></span> Edit Account</a></li>
+							<li id="logOut"><a href="#"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+						</ul>
+					</li>
+					<li><a href="Basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> Basket</a></li>
+				</ul>
+			</div>
 		</nav>
 		
 		<div style="text-align:left">
@@ -71,108 +73,157 @@
 		</div>	
 		
         <div class="row terminputBox">
-			<h4><b>User Account</b></h4>
+			<h4><b><a href="loginV2.html">User Account</a></b></h4>
 			<p>
-			For safety and security, each customer is allowed to create only one registered account by default. For customers who attempt to create several accounts, we reserve the right to suspend accounts without further notice.</p>
+				For safety and security, each customer is allowed to create only one registered account by default. For customers who attempt to create several accounts, we reserve the right to suspend accounts without further notice.</p>
 			<p>
-			In accordance with Customs regulations customers must provide valid and accurate data . All consignee names, address and payers name should be valid. In certain countries the consignee may have to submit their ID or passport to clear the package or for payment verification purpose. Customers are solely responsible for the accuracy of data that they provide to AND.com. Should any information be incorrect and prevent any shipment or deliveries or customs clearance, AND.com will not held responsible and will not offer any compensation in such cases.</p>
+				In accordance with Customs regulations customers must provide valid and accurate data . All consignee names, address and payers name should be valid. In certain countries the consignee may have to submit their ID or passport to clear the package or for payment verification purpose. Customers are solely responsible for the accuracy of data that they provide to <a href="../index.html"><a href="../index.html">AND.com</a></a>. Should any information be incorrect and prevent any shipment or deliveries or customs clearance, <a href="../index.html"><a href="../index.html">AND.com</a></a> will not held responsible and will not offer any compensation in such cases.
+			</p>
 			<p>
-			AND.com will always comply with the law, and we kindly remind users to do the same. As the importer customers are responsible to comply with all laws and regulations in their own countries. Please refer to our privacy policy for more information.</p>
-
+				<a href="../index.html"><a href="../index.html">AND.com</a></a> will always comply with the law, and we kindly remind users to do the same. As the importer customers are responsible to comply with all laws and regulations in their own countries. Please refer to our privacy policy for more information.
+			</p>
 			<h4><b>Ordering</b></h4>
 			<p> 
-			Whilst all efforts are made to ensure accuracy of product descriptions, specifications and pricing there may be occasions where errors arise. Should such a situation occur AND.com cannot accept your order. In the event of a mistake you will be contacted with a full explanation and a corrected offer. The information displayed is considered as an invitation not as a confirmed offer for sale. The contract is confirmed upon supply of goods.
+				Whilst all efforts are made to ensure accuracy of product descriptions, specifications and pricing there may be occasions where errors arise. Should such a situation occur <a href="../index.html">AND.com</a> cannot accept your order. In the event of a mistake you will be contacted with a full explanation and a corrected offer. The information displayed is considered as an invitation not as a confirmed offer for sale. The contract is confirmed upon supply of goods.
 			</p>
-
 			<p>
-			Given the popularity and/or supply constraints of some of our products, AND.com may have to limit the number of products available for purchase. AND.com reserves the right to change quantities available for purchase at any time, even after you place an order.
+				Given the popularity and/or supply constraints of some of our products, <a href="../index.html">AND.com</a> may have to limit the number of products available for purchase. <a href="../index.html">AND.com</a> reserves the right to change quantities available for purchase at any time, even after you place an order.
 			</p>
-
 			<p>
-			Both parties agree that, following order dispatch, transportation is the sole responsibility of the third-party logistics company. During this stage, full ownership of the product(s) belongs to the buyer; all associated liability and risks during transportation shall be borne by the buyer.
+				Both parties agree that, following order dispatch, transportation is the sole responsibility of the third-party logistics company. During this stage, full ownership of the product(s) belongs to the buyer; all associated liability and risks during transportation shall be borne by the buyer.
 			</p>
-
 			<h4><b>Shipping and Delivery</b></h4>
-
-			<p>Shipping times displayed on AND.com refer to the estimated time it takes for packages to leave our hands. Since the actual delivery of your order can be impacted by many events beyond AND.com's control once it leaves our facilities, we suggest that if customers have a special occasion or event that they wish to use their item for, such as a birthday, that they order their items well in advance. AND.com cannot be held liable for late deliveries. We will, however, work with you to ensure a smooth shopping experience.</p>
-
-			<p>For a smooth delivery and peace of mind, we strongly recommend that customers purchase shipping insurance during the checkout.In the event that your package has a shipping issue, AND.com will send you a replacement package free of charge. If the item is no longer in stock, we will offer you a refund option.</p>
-
-			<p>Any orders that do not have shipping insurance will not be the responsibility of AND.com and the customer takes full liability for their package during the shipping process.</p>
-
-			<p>There may be occasions when AND.com confirms your order but subsequently learns that it cannot supply the ordered product. In the event we cannot supply a product you ordered in a timely fashion, AND.com will contact customers and offer to cancel the order and refund the purchase cost in full.
-			</p>
 			<p>
-			We try to make the delivery process as simple as possible and we are able to send your order either to you home or to your work place. We can ship to PO Boxes via all shipping methods, except for expedited shipping methods, as signatures are required upon delivery. Express shipments of this type can only be delivered to physical addresses.
+				Shipping times displayed on <a href="../index.html">AND.com</a> refer to the estimated time it takes for packages to leave our hands. Since the actual delivery of your order can be impacted by many events beyond <a href="../index.html"><a href="../index.html">AND.com</a></a> control once it leaves our facilities, we suggest that if customers have a special occasion or event that they wish to use their item for, such as a birthday, that they order their items well in advance. <a href="../index.html"><a href="../index.html">AND.com</a></a> cannot be held liable for late deliveries. We will, however, work with you to ensure a smooth shopping experience.
 			</p>
 
 			<p>
-			Customers are responsible for providing complete and accurate shipping addresses. AND.com cannot make changes to your shipping address once a package has been shipped, and AND.com is not liable for packages lost due to incomplete or inaccurate addresses.
+				For a smooth delivery and peace of mind, we strongly recommend that customers purchase shipping insurance during the checkout.In the event that your package has a shipping issue, <a href="../index.html"><a href="../index.html">AND.com</a></a> will send you a replacement package free of charge. If the item is no longer in stock, we will offer you a refund option.
 			</p>
-			<p>We cannot be held responsible for any package that does not make it through the local customs and is destroyed due to the item being illegal in the destination country. Customers are solely responsible for complying with their local laws. We can also not be held responsible for any import tax that may occur and it is the customers sole responsibility to pay this fee, if any. Kindly note that shipping insurance does not cover any customs issues, including but not limited to, goods being destroyed or confiscated due to their illegal status in any given destination country. </p>
 
-			<p>Should the buyer refuse the package due to import duties or taxes, the buyer takes full liability for all the costs involved in the process.</p>
-
-			<p>All orders reported as "delivered" by shipping companies are considered delivered. We cannot be made liable of non-delivery in this case.</p>
-
-			<p>If a delivery fails for any reason and the address sent to was the correct address as provided by the customer, AND.com cannot be held liable if a package is returned. </p>
-
-			<p>Whatever the customer orders is what we ship. We can not be held liable for the customer receiving the wrong item if they placed the wrong order. </p>
-
-			<p>All non-receipt of orders must be reported within 3 months from the date we ship the item to you, for Latin America this deadline is extended to 4 months for postal deliveries. This applies for flat rate shipping, priority mail and standard shipping methods. All expedited delivery issues must also be reported within 3 months from the shipment date. After this time we will no longer be able to investigate and no compensation will be offered. Please note that this policy does not apply to packages sent via expedited shipping methods that are shown as delivered on the shipping company's tracking website. </p>
-
+			<p>
+				Any orders that do not have shipping insurance will not be the responsibility of <a href="../index.html"><a href="../index.html">AND.com</a></a> and the customer takes full liability for their package during the shipping process.
+			</p>
+			<p>
+				There may be occasions when <a href="../index.html"><a href="../index.html">AND.com</a></a> confirms your order but subsequently learns that it cannot supply the ordered product. In the event we cannot supply a product you ordered in a timely fashion, <a href="../index.html">AND.com</a> will contact customers and offer to cancel the order and refund the purchase cost in full.
+			</p>
+			<p>
+				We try to make the delivery process as simple as possible and we are able to send your order either to you home or to your work place. We can ship to PO Boxes via all shipping methods, except for expedited shipping methods, as signatures are required upon delivery. Express shipments of this type can only be delivered to physical addresses.
+			</p>
+			<p>
+				Customers are responsible for providing complete and accurate shipping addresses. <a href="../index.html"><a href="../index.html">AND.com</a></a> cannot make changes to your shipping address once a package has been shipped, and <a href="../index.html"><a href="../index.html">AND.com</a></a> is not liable for packages lost due to incomplete or inaccurate addresses.
+			</p>
+			<p>
+				We cannot be held responsible for any package that does not make it through the local customs and is destroyed due to the item being illegal in the destination country. Customers are solely responsible for complying with their local laws. We can also not be held responsible for any import tax that may occur and it is the customers sole responsibility to pay this fee, if any. Kindly note that shipping insurance does not cover any customs issues, including but not limited to, goods being destroyed or confiscated due to their illegal status in any given destination country. 
+			</p>
+			<p>
+				Should the buyer refuse the package due to import duties or taxes, the buyer takes full liability for all the costs involved in the process.
+			</p>
+			<p>
+				All orders reported as "delivered" by shipping companies are considered delivered. We cannot be made liable of non-delivery in this case.
+			</p>
+			<p>
+				If a delivery fails for any reason and the address sent to was the correct address as provided by the customer, <a href="../index.html"><a href="../index.html">AND.com</a></a> cannot be held liable if a package is returned. 
+			</p>
+			<p>
+				Whatever the customer orders is what we ship. We can not be held liable for the customer receiving the wrong item if they placed the wrong order. 
+			</p>
+			<p>
+				All non-receipt of orders must be reported within 3 months from the date we ship the item to you, for Latin America this deadline is extended to 4 months for postal deliveries. This applies for flat rate shipping, priority mail and standard shipping methods. All expedited delivery issues must also be reported within 3 months from the shipment date. After this time we will no longer be able to investigate and no compensation will be offered. Please note that this policy does not apply to packages sent via expedited shipping methods that are shown as delivered on the shipping company's tracking website. 
+			</p>
 			<h4><b>Exchange and Returns (Money Back Guarantee)</b></h4>
-			<p> If when you receive your product(s), you are not completely satisfied you may return the items, within 45 days for refund. Returns will take approximately 5 working days for the process once the goods have arrived. The precise length depends on the payment provider used (e.g. PayPal, credit card company, etc). Items must be in their original packaging, all the original boxes must be intact and included, along with all packaging materials, manuals, blank warranty cards, plus all accessories and documents provided by the manufacturer.</p>
-			<p>You must first contact us and be in receipt of a return merchandise authorization (RMA) number before sending any item back. Any product returned without a RMA number will not be refunded.<br>
+			<p> 
+				If when you receive your product(s), you are not completely satisfied you may return the items, within 45 days for refund. Returns will take approximately 5 working days for the process once the goods have arrived. The precise length depends on the payment provider used (e.g. PayPal, credit card company, etc). Items must be in their original packaging, all the original boxes must be intact and included, along with all packaging materials, manuals, blank warranty cards, plus all accessories and documents provided by the manufacturer.
 			</p>
-			<p>The money back guarantee does not cover volume/wholesale and customized orders.<br>
+			<p>
+				You must first contact us and be in receipt of a return merchandise authorization (RMA) number before sending any item back. Any product returned without a RMA number will not be refunded.<br>
 			</p>
-			<p>Return shipping fees are paid for by the customer. We are in general unable to refund you postal fees.</p>
-			<p>Any product returned found not to be defective can be refunded within the time stated above. Goods found to be tampered with by the customer will not be replaced but returned at the customer's own expense.</p>
-			<p>By default, the refund amount cannot exceed the original order amount paid to AND.com. AND.com is not responsible for and has no knowledge about any bank fees or exchange rate charges that may occur. These fees are processed by the issuing bank and will not be refunded by AND.com. </p>
-			<p>AND.com and/or the seller will act in accordance with the warranty as provided by the platform when and only when damage is in connection with the products valid and confirmed manufacturing defects. AND.com and/or the seller will not be held liable for any damages resulting from customers improper use,personal negligence,and other reasons that do not attribute to product defects.</p>					
-
+			<p>
+				The money back guarantee does not cover volume/wholesale and customized orders.<br>
+			</p>
+			<p>
+				Return shipping fees are paid for by the customer. We are in general unable to refund you postal fees.
+			</p>
+			<p>
+				Any product returned found not to be defective can be refunded within the time stated above. Goods found to be tampered with by the customer will not be replaced but returned at the customer's own expense.
+			</p>
+			<p>
+				By default, the refund amount cannot exceed the original order amount paid to <a href="../index.html"><a href="../index.html">AND.com</a></a>. <a href="../index.html"><a href="../index.html">AND.com</a></a> is not responsible for and has no knowledge about any bank fees or exchange rate charges that may occur. These fees are processed by the issuing bank and will not be refunded by <a href="../index.html"><a href="../index.html">AND.com</a></a>.
+			</p>
+			<p>
+				<a href="../index.html"><a href="../index.html">AND.com</a></a> and/or the seller will act in accordance with the warranty as provided by the platform when and only when damage is in connection with the products valid and confirmed manufacturing defects. <a href="../index.html"><a href="../index.html">AND.com</a></a> and/or the seller will not be held liable for any damages resulting from customers improper use,personal negligence,and other reasons that do not attribute to product defects.
+			</p>					
 			<h4><b>Non-Returnable </b></h4>
-			<p>Discounted or end of line products can only be returned for repair. No refunds or replacements will be made.</p>
-
+			<p>
+				Discounted or end of line products can only be returned for repair. No refunds or replacements will be made.
+			</p>
 			<h4><b>Incorrect/Damaged Goods</b></h4>
-			<p>We try very hard to ensure that you receive your order in pristine condition. If you do not receive the products ordered, please contact us. In the unlikely event that the product arrives damaged or faulty, please contact us immediately.</p>
-
+			<p>
+				We try very hard to ensure that you receive your order in pristine condition. If you do not receive the products ordered, please contact us. In the unlikely event that the product arrives damaged or faulty, please contact us immediately.
+			</p>
 			<h4><b>Product Descriptions</b></h4>
-			<p>While we try in good faith to be as accurate as possible, we do not warrant that product descriptions or other content is accurate, complete, reliable, or error free. From time to time there may be information on AND.com that contains typographical errors, inaccuracies or omissions that may relate to product descriptions, pricing and availability.</p>
-
-			<p>We reserve the right to correct any errors, inaccuracies or omissions and to change or update information at any time without prior notice. If a key product specification is changed after you place an order or within seven days of delivery, you can cancel and return the order for a full refund.</span></p>
-
+			<p>
+				While we try in good faith to be as accurate as possible, we do not warrant that product descriptions or other content is accurate, complete, reliable, or error free. From time to time there may be information on <a href="../index.html">AND.com</a> that contains typographical errors, inaccuracies or omissions that may relate to product descriptions, pricing and availability.
+			</p>
+			<p>
+				We reserve the right to correct any errors, inaccuracies or omissions and to change or update information at any time without prior notice. If a key product specification is changed after you place an order or within seven days of delivery, you can cancel and return the order for a full refund.</span>
+			</p>
 			<h4><b>Prices</b></h4>
-			<p>Prices and availability of items are subject to change without notice. The prices do not include V.A.T,import tax and duties, should your package become examined and deemed taxable by your local customs. Payment of these is the responsibility of the buyer.</p>
-
+			<p>
+				<a href="basket.html">Prices</a> and availability of items are subject to change without notice. The prices do not include V.A.T,import tax and duties, should your package become examined and deemed taxable by your local customs. Payment of these is the responsibility of the buyer.
+			</p>
 			<h4><b>Customer Conduct</b></h4>					
-			<p>Although AND.com will always strive to resolve issues to the satisfaction of the customer in a professional, courteous and friendly fashion, we will not tolerate any unacceptable or unreasonable behavior towards our Customer Service Team members. </p>
-
-			<p>Unacceptable behavior directed towards Customer Service staff or we may, for example, include any of the following:</p>
-			<p>Aggressive, abusive and threatening behavior. Examples include: any and all direct or implied threats on any communication channel; intimidating language; personal and verbal abuse; sexist, racist, homophobic, or derogatory remarks; rudeness; inflammatory statements; swearing; and unsubstantiated allegations.</p>
-			<p>Persistently making habitually demanding or vexatious complaints, despite the matter having been fully addressed; similarly, repeating complaints persisting despite reasonable and fair solutions being offered in accordance with our policies.</p>
-			<p>Asking, expecting or demanding staff to breach established company policy guidelines, e.g. refund amount, time lines, special compensation, etc.; similarly, seeking an unrealistic outcome beyond the scope of our own policies and procedures.</p>
 			<p>
-			Repeatedly changing the nature (or focus) of a complaint or the desired outcome, part way, after a formal response has been provided.</p>
+				Although <a href="../index.html"><a href="../index.html">AND.com</a></a> will always strive to resolve issues to the satisfaction of the customer in a professional, courteous and friendly fashion, we will not tolerate any unacceptable or unreasonable behavior towards our Customer Service Team members. 
+			</p>
 			<p>
-			Excessive number of complaints compared to the total purchase value history.</p>
-			<p><strong>For such behavior, complainants may be advised and formally notified of the following:</strong></p>
-			<p>Their language is considered offensive, abusive, threatening, and wholly unacceptable.</p>
-			<p>They must refrain from using such language, intimidation, and threats.</p>
-			<p><strong>There will be no further exchange of correspondence on the matter if they persist with this behavior.</strong></p>
+				Unacceptable behavior directed towards Customer Service staff or we may, for example, include any of the following:
+			</p>
 			<p>
-			We reserves the right to no longer accept orders from the customer in the future without further notice.</p>
-
+				Aggressive, abusive and threatening behavior. Examples include: any and all direct or implied threats on any communication channel; intimidating language; personal and verbal abuse; sexist, racist, homophobic, or derogatory remarks; rudeness; inflammatory statements; swearing; and unsubstantiated allegations.
+			</p>
+			<p>
+				Persistently making habitually demanding or vexatious complaints, despite the matter having been fully addressed; similarly, repeating complaints persisting despite reasonable and fair solutions being offered in accordance with our policies.
+			</p>
+			<p>
+				Asking, expecting or demanding staff to breach established company policy guidelines, e.g. refund amount, time lines, special compensation, etc.; similarly, seeking an unrealistic outcome beyond the scope of our own policies and procedures.</p>
+			<p>
+			Repeatedly changing the nature (or focus) of a complaint or the desired outcome, part way, after a formal response has been provided.
+			</p>
+			<p>
+				Excessive number of complaints compared to the total purchase value history.
+			</p>
+			<p>
+				<strong>For such behavior, complainants may be advised and formally notified of the following:</strong>
+			</p>
+			<p>
+				Their language is considered offensive, abusive, threatening, and wholly unacceptable.
+			</p>
+			<p>
+				They must refrain from using such language, intimidation, and threats.
+			</p>
+			<p>
+				<strong>There will be no further exchange of correspondence on the matter if they persist with this behavior.</strong>
+			</p>
+			<p>
+				We reserves the right to no longer accept orders from the customer in the future without further notice.
+			</p>
 			<h4><b>Conditions Of Use</b></h4>
-			<p><strong>Copyrights</strong></p>
 			<p>
-			All content included on the site such as text, graphics, logos, button, icons, images, audio clips, digital downloads and software are all owned by AND.com and are protected by international copyright laws.</p>
-			<p><strong>License and Site Access</strong></p>
-			<p>AND.com grants you a limited license to access and make personal use of this site. This license does not include any forms of commercial use of this site or its contents, any collection and use of any products, any collection and use of any product listings descriptions or prices, any derivative use of this site or its contents, any downloading or copying of account information for the benefit of another merchant, or any use of data mining, robots or similar data gathering and extraction tools. This site may not be reproduced, duplicated, copied, sold, resold, or otherwise exploited for any interest without express written consent from AND.com.</p>
-			</div>
+				<strong>Copyrights</strong>
+			</p>
+			<p>
+				All content included on the site such as text, graphics, logos, button, icons, images, audio clips, digital downloads and software are all owned by <a href="../index.html"><a href="../index.html">AND.com</a></a> and are protected by international copyright laws.
+			</p>
+			<p>
+				<strong>License and Site Access</strong>
+			</p>
+			<p>
+				grants you a limited license to access and make personal use of this site. This license does not include any forms of commercial use of this site or its contents, any collection and use of any products, any collection and use of any product listings descriptions or prices, any derivative use of this site or its contents, any downloading or copying of account information for the benefit of another merchant, or any use of data mining, robots or similar data gathering and extraction tools. This site may not be reproduced, duplicated, copied, sold, resold, or otherwise exploited for any interest without express written consent from <a href="../index.html"><a href="../index.html">AND.com</a></a>.
+			</p>
 		</div>
-		<br><br>
+		
+		<!-- Footer-->		
 		<div class="btnList text-center">
 			<a class="btn btn-default" target = "_blank" href="https://github.com/DarraghLallyGMIT/GUI-Team-Project-2018" ><i class="fa fa-github fa-lg" id="githubIcon" aria-hidden="true"></i> GitHub</a>				
 			<a class="btn btn-default" href="contactUs.html" ><i class="fa fa-envelope-open" id="contactIcon" aria-hidden="true"></i> Contact Us</a>
