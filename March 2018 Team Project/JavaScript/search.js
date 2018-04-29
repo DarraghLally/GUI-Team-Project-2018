@@ -3,7 +3,8 @@ $(document).ready(function() {
 	// Retrieve account data from local storage
 	var productsArr = JSON.parse(localStorage["productsArr"]);
 	//get searchBar value from local
-	var itemSearch = localStorage.getItem("searchBar");
+	var searchTerm = localStorage.getItem("searchBar");
+    var itemSearch = searchTerm.toLowerCase();
 	
 	//make loop and search through JSON arrays
 	for (var i = 0; i < productsArr.length; i++)
@@ -13,10 +14,11 @@ $(document).ready(function() {
 		var price = productsArr[i].productPrice;
 		var image = productsArr[i].productImgURL;
 		var page = productsArr[i].productPageURL;
-		//var amount = poductQuantityArr[i];
 		
-		var isFound = description.search(itemSearch);	
-		if (isFound != -1)
+		//search both the product name and product description for the "searchTerm"
+		var desrciptionFound = description.toLowerCase().search(itemSearch);
+		var nameFound = name.toLowerCase().search(itemSearch);
+		if (desrciptionFound != -1 || nameFound != -1)
 		{
 			//use jQuery to output the JSON objeccts to the page (with bootStrap imbedded)
 			$("#searchInfo").prepend(
