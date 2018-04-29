@@ -17,7 +17,54 @@
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
-	<div class="container">
+	<div class="container-fluid">
+		<!--Navagation Bar-->
+		<nav class="navbar navbar-inverse">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span> 
+						</button>
+						
+						<a class="navbar-brand" href="../index.html">AND.com</a>
+						
+						<form class="navbar-form navbar-left" action="searchResults.html">
+							<div class="form-group ">
+								<input type="text" id="searchBarText" class="form-control" placeholder="Search">
+								<button type="submit" id="searchBtn" class="btn btn-default">Search</button>
+							</div>
+						</form>
+					</div>
+
+					<div class="collapse navbar-collapse" id="myNavbar">	
+						<ul class="nav navbar-nav navbar-right">
+							<li class="dropdown" >
+								<!-- If valid acount active display account holders name -->
+								<p id="nameTag"></p>
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Departments
+								<span class="caret"></span></a>
+								<ul class="dropdown-menu" >
+									<li id="deptPhone"><a href="deptSearch.html">Phones</a></li>
+									<li id="deptLaptop"><a href="deptSearch.html">Laptops</a></li>
+									<li id="deptTV"><a href="deptSearch.html">Television</a></li>
+									<li id="deptDrone"><a href="deptSearch.html">Drone</a></li>
+								</ul>
+							</li>
+							<li class="dropdown" >
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Account
+								<span class="caret"></span></a>
+								<ul class="dropdown-menu" >
+									<li><a href="loginV2.html"><span class="glyphicon glyphicon-log-in"></span> Login / Sign Up</a></li>
+									<li><a href="changeAccount.html"><span class="glyphicon glyphicon-edit"></span> Edit Account</a></li>
+									<li id="logOut"><a href="#"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+								</ul>
+							</li>
+							<li><a href="Basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> Basket</a></li>
+						</ul>
+					</div>
+		</nav>
+		
 		<div style="text-align:left">
 			<div>
 			<h2 style="text-align:center">Terms & Conidtions</h2>
@@ -125,25 +172,21 @@
 			<p>AND.com grants you a limited license to access and make personal use of this site. This license does not include any forms of commercial use of this site or its contents, any collection and use of any products, any collection and use of any product listings descriptions or prices, any derivative use of this site or its contents, any downloading or copying of account information for the benefit of another merchant, or any use of data mining, robots or similar data gathering and extraction tools. This site may not be reproduced, duplicated, copied, sold, resold, or otherwise exploited for any interest without express written consent from AND.com.</p>
 			</div>
 		</div>
-		
+		<br><br>
+		<div class="btnList text-center">
+			<a class="btn btn-default" target = "_blank" href="https://github.com/DarraghLallyGMIT/GUI-Team-Project-2018" ><i class="fa fa-github fa-lg" id="githubIcon" aria-hidden="true"></i> GitHub</a>				
+			<a class="btn btn-default" href="contactUs.html" ><i class="fa fa-envelope-open" id="contactIcon" aria-hidden="true"></i> Contact Us</a>
+			<a class="btn btn-default" href="terms.html" ><i class="fa fa-university" id = "termsIcon" ></i> Terms & Conditions</a>
+		</div>		
     </div>
-</div>
 	
-		<!--
-		To use this code on your website, get a free API key from Google.
-		Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
-		-->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<!-- Place holder buttons for misc pages-->
-	<br><br>
-	<div class="btnList text-center">
-		<a class="btn btn-default" target = "_blank" href="https://github.com/DarraghLallyGMIT/GUI-Team-Project-2018" ><i class="fa fa-github fa-lg" id="githubIcon" aria-hidden="true"></i> GitHub</a>	
-		
-		<a class="btn btn-default" href="contactUs.html" ><i class="fa fa-envelope-open" id="contactIcon" aria-hidden="true"></i> Contact Us</a>
-		<a class="btn btn-default" href="terms.html" ><i class="fa fa-university" id = "termsIcon" ></i> Terms & Conditions</a>
-	</div>
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	<!-- External JavaScript -->
+	<script src="../JavaScript/terms.js"></script>	
+
 </body>
 </html>
