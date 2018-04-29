@@ -123,7 +123,7 @@ document.getElementById("regBtn").onclick = function()
 		//send account arrays to local storage
 		localStorage["accountsArr"] = JSON.stringify(accounts);
 		//reset login name on Nav Bar
-		localStorage.setItem("accountName", name);
+		sessionStorage.setItem("accountName", name);
 		localStorage.setItem("newAccount", 1);
 	}
 }

@@ -34,7 +34,7 @@ $(document).ready(function() {
 				"</div>" +
 				"<div class='col-sm-1 col-md-1'></div>" + 
 				"<div class='col-sm-6 col-md-6'>" +
-					"<h4>" + name + "</h4>" + 
+					"<h4 class='heading-color'>" + name + "</h4>" + 
 					"<p>" + description + "</p>" +
 				"</div>" + 
 				"<div class='col-sm-2 col-md-2'>€ " + price + 

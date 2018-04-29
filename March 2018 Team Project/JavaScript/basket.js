@@ -1,4 +1,3 @@
-
 //run jQuery
 $(document).ready(function() {
 	//variables for checkout summary
@@ -50,10 +49,10 @@ $(document).ready(function() {
 						"<img src=" + image + ">" +
 					"</div>" + 
 					"<div class='col-sm-4 col-md-4'>" +
-						"<h4>" + name + "</h4>" + 
+						"<h4 class='heading-color'>" + name + "</h4>" + 
 						"<p>" + description + "</p>" +
 					"</div>" + 
-					"<div class='col-sm-2 col-md-2'> € " + price + "</div>" +
+					"<div class='col-sm-2 col-md-2'>€ " + price + "</div>" +
 					"<div class='col-sm-1 col-md-1'>" + amount + "</div>" +
 					"<div class='col-sm-1 col-md-1'>" + 
 						"<button id='remove_" + (i+1) + "'>Remove</button>" + 
@@ -102,6 +101,16 @@ $(document).ready(function() {
 	{	
 		//send search
 		localStorage.setItem("searchDepartment", "Drone");
+	}
+	
+	//On click 'search' - send input text to local
+	document.getElementById("searchBtn").onclick = function()
+	{	
+		//get the user name from the text box
+		var searchValue = document.getElementById("searchBarText").value;
+		
+		//send search
+		localStorage.setItem("searchBar", searchValue);
 	}
 	
 	//On click 'Logout' - send data to local
