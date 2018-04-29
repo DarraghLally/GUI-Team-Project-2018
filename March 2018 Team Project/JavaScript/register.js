@@ -4,7 +4,6 @@
 //run script when submit button is pressed
 document.getElementById("regBtn").onclick = function()
 {
-	alert("button was clicked");
 	//get the user details from the signup form
 	var name = document.getElementById("userName").value;
 	var email = document.getElementById("userEmail").value;
