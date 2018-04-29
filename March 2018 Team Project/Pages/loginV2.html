@@ -13,6 +13,7 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	
 		<link href="../Css/login.css" rel="stylesheet">	
+
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 		<!-- Bootstrap Code from https://bootsnipp.com/snippets/featured/clean-modal-login-form-->		
@@ -94,42 +95,42 @@
 					  <li class=""><a href="#why" data-toggle="tab">Why?</a></li>
 					</ul>
 				</div>
-			  <div class="modal-body">
+			<div class="modal-body">
 				<div id="myTabContent" class="tab-content">
-				<div class="tab-pane fade in" id="why">
-				<p>We need this information so that you can receive access to the site and its content. Rest assured your information will not be sold, traded, or given to anyone.</p>
-				<p></p><br> Please contact <a mailto:href="AND.com"></a>AND.com</a> for any other inquiries.</p>
+					<div class="tab-pane fade in" id="why">
+					<p>We need this information so that you can receive access to the site and its content. Rest assured your information will not be sold, traded, or given to anyone.</p>
+					<p></p><br> Please contact <a mailto:href="AND.com"></a>AND.com</a> for any other inquiries.</p>
 				</div>
 				<div class="tab-pane fade active in" id="signin">
 <!---------------------------- Sign In Form  ------------------------------>
 
-				<form name="loginForm" method="post" action="../index.html">
-					<fieldset>
-					<!-- Text input-->
-					<div class="control-group">
-					  <label class="control-label" for="username">Username:</label>
-					  <div class="controls">
-						<input id="nameInput" type="text" class="form-control" placeholder="Username" class="input-medium" required="required">
-					  </div>
-					</div>
+					<form name="loginForm" method="post" action="../index.html">
+						<fieldset>
+						<!-- Text input-->
+						<div class="control-group">
+						  <label class="control-label" for="username">Username:</label>
+						  <div class="controls">
+							<input id="nameInput" type="text" class="form-control" placeholder="Username" class="input-medium" required="required">
+						  </div>
+						</div>
 
 					<!-- Password input-->
-					<div class="control-group">
-					  <label class="control-label" for="psw">Password:</label>
-					  <div class="controls">
-						<input required="" id="passInput" class="form-control" type="password" placeholder="********" class="input-medium">
-					  </div>
-					</div>
+						<div class="control-group">
+						  <label class="control-label" for="psw">Password:</label>
+						  <div class="controls">
+							<input required="" id="passInput" class="form-control" type="password" placeholder="********" class="input-medium">
+						  </div>
+						</div>
 
 
-					<!-- Button -->
-					<div class="control-group">
-					  <label class="control-label" for="signin"></label>
-					  <div class="controls">
-						<button id="loginBtn" name="signin" class="btn btn-success">Sign In</button>
-					  </div>
-					</div>
-					</fieldset>
+						<!-- Button -->
+						<div class="control-group">
+						  <label class="control-label" for="signin"></label>
+						  <div class="controls">
+							<button id="loginBtn" name="signin" class="btn btn-success">Sign In</button>
+						  </div>
+						</div>
+						</fieldset>
 					</form>
 				</div>
 <!---------------------------- Register Form  ------------------------------>
@@ -138,80 +139,83 @@
 					<form name="regForm" method="post" action="../index.html">
 					<fieldset>
 
-
-					
 					<!-- Username input-->
 					<div class="control-group">
-					  <label class="control-label" for="name">Username:</label>
-					  <div class="controls">
-						<input id="userName" class="form-control" type="text" placeholder="Username" class="input-large" required="">
-						<em>Greater than 6 Characters</em>
-					  </div>
+						<label class="control-label" for="name">Username:</label>
+						<div class="controls">
+							<input id="userName" class="form-control" type="text" placeholder="Username" class="input-large" required="">
+							<em>Greater than 6 Characters</em>
+						</div>
 					</div>
 					
 					<!-- Password input-->
 					<div class="control-group">
-					  <label class="control-label" for="password">Password:</label>
-					  <div class="controls">
-						<input id="userPassword" name="password" class="form-control" type="password" placeholder="********" class="input-large" required="">
-						<em>Greater than 8 Characters</em>
-					  </div>
+						<label class="control-label" for="password">Password:</label>
+						<div class="controls">
+							<input id="userPassword" name="password" class="form-control" type="password" placeholder="********" class="input-large" required="">
+							<em>Greater than 8 Characters</em>
+						</div>
 					</div>
 					
 					<!-- Re Enter Password input-->
 					<div class="control-group">
-					  <label class="control-label" for="password_confirm">Re-Enter Password:</label>
-					  <div class="controls">
-						<input id="userPassword_confirm" class="form-control"  type="password" placeholder="********" class="input-large" required="">
-					  </div>
+						<label class="control-label" for="password_confirm">Re-Enter Password:</label>
+						<div class="controls">
+							<input id="userPassword_confirm" class="form-control"  type="password" placeholder="********" class="input-large" required="">
+						</div>
 					</div>
 
 					<!-- Phone Number input-->
 					<div class="control-group">
-					  <label class="control-label" for="phoneNum">Phone Number:</label>
-					  <div class="controls">
-						<input id="userPhone" class="form-control" type="number" placeholder="0----------" class="input-large" required="">
-					  </div>
+						<label class="control-label" for="phoneNum">Phone Number:</label>
+						<div class="controls">
+							<input id="userPhone" class="form-control" type="number" placeholder="0----------" class="input-large" required="">
+						</div>
 					</div>
 					
 					<!-- Email input-->
 					<div class="control-group">
-					  <label class="control-label" for="Email">Email:</label>
-					  <div class="controls">
-						<input id="userEmail" class="form-control" type="email" placeholder="G*********@gmit.ie" class="input-large" required="">
-					  </div>
+						<label class="control-label" for="Email">Email:</label>
+						<div class="controls">
+							<input id="userEmail" class="form-control" type="email" placeholder="G*********@gmit.ie" class="input-large" required="">
+						</div>
 					</div>
 					
 					<!-- Address input-->
 					<div class="control-group">
-					  <label class="control-label" for="addressLine1">Address:</label>
-					  <div class="controls">
-						<input id="userAddress1" class="form-control" name="addressline1" required="required" type="text" placeholder="Address Line 1" required=""/><br>
-						<input id="userAddress2" class="form-control" name="addressline2" required="required" type="text" placeholder="Address Line 2" required=""/><br>
-						<input id="userAddress3" class="form-control" name="addressline3" required="required" type="text" placeholder="Address Line 3" required=""/><br>					
-					  </div>
+						<label class="control-label" for="addressLine1">Address:</label>
+						<div class="controls">
+							<input id="userAddress1" class="form-control" name="addressline1" required="required" type="text" placeholder="Address Line 1" required=""/><br>
+							<input id="userAddress2" class="form-control" name="addressline2" required="required" type="text" placeholder="Address Line 2" required=""/><br>
+							<input id="userAddress3" class="form-control" name="addressline3" required="required" type="text" placeholder="Address Line 3" required=""/><br>					
+						</div>
 					</div>						
 					<!-- Button -->
 					<div class="control-group">
-					  <label class="control-label" for="confirmsignup"></label>
-					  <div class="controls">
-						<button type="submit" id="regBtn" name="confirmsignup" class="btn btn-success">Sign Up</button>
-					  </div>
+						<label class="control-label" for="confirmsignup"></label>
+						<div class="controls">
+							<button type="submit" id="regBtn" name="confirmsignup" class="btn btn-success">Sign Up</button>
+						</div>
 					</div>
 					</fieldset>
 					</form>
-			  </div>
+				</div>
 			</div>
-			  </div>
-			  <div class="modal-footer">
-			  <center>
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				</center>
-			  </div>
-			</div>
-		  </div>
 		</div>
-	
+		<div class="modal-footer">
+			<center>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</center>
+		</div>
+		</div>
+		</div>
+		</div>
+		<!-- Place holder buttons for misc pages-->
+		<div class="btnList text-center footer">
+			<a class="btn btn-default " target = "_blank" href="https://github.com/DarraghLallyGMIT/GUI-Team-Project-2018" ><i class="fa fa-github fa-lg" id="githubIcon" aria-hidden="true"></i> GitHub</a>	
+			<a class="btn btn-default" href="contactUs.html" ><i class="fa fa-envelope-open" id="contactIcon" aria-hidden="true"></i> Contact Us</a>
+			<a class="btn btn-default" href="terms.html" ><i class="fa fa-university" id = "termsIcon" ></i> Terms & Conditions</a>
+		</div>	
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -219,13 +223,7 @@
 		<!-- External JavaScript -->
 		<script src="../JavaScript/login.js"></script>
 		<script src="../JavaScript/register.js"></script>
-				<br><br>
-		<div class="btnList text-center bottombtn">
-			<a class="btn btn-default" target = "_blank" href="https://github.com/DarraghLallyGMIT/GUI-Team-Project-2018" ><i class="fa fa-github fa-lg" id="githubIcon" aria-hidden="true"></i> GitHub</a>	
-			
-			<a class="btn btn-default" href="contactUs.html" ><i class="fa fa-envelope-open" id="contactIcon" aria-hidden="true"></i> Contact Us</a>
-			<a class="btn btn-default" href="terms.html" ><i class="fa fa-university" id = "termsIcon" ></i> Terms & Conditions</a>
-		</div>
+
 
 	</body>
 </html>

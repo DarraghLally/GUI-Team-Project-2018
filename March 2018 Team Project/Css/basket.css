@@ -37,3 +37,22 @@ a.selected{
 }
 
 /* NavBar End */
+/*Css for Footer*/
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 96%;
+	height: 50px;
+}
+
+#githubIcon {
+  color: #6C0674;
+}
+
+#contactIcon {
+  color: #f4b841;
+}
+
+#termsIcon {
+  color: #41f443;
+}
