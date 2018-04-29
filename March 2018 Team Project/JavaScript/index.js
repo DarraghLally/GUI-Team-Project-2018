@@ -112,7 +112,7 @@ var accountsArr =
 			"productName":"LG K8",
 			"productDescription": "5.0' HD In-cell Touch Display with 2.5D Arc Glass Wide display, smooth edges. The big bright 5.0' HD In-cell display has 2.5D Arc glass edges that are smooth to the touch. Your eyes and fingers will thank you. In every single way, the full-featured 13MP camera brilliantly captures the best moments of your life.",
 			"productPrice": 103.90,
-			"productImgURL": "../Images/phonePlaceHolder.jpg",
+			"productImgURL": "../Images/BasketImages/lgk8Mobile.jpg",
 			"productPageURL": "prod1.html",
 		},
 		{
@@ -121,7 +121,7 @@ var accountsArr =
 			"productName":"Samsung Galaxy S7 Edge 32 GB ",
 			"productDescription": "5.5 inch Super AMOLED capacitive touchscreen.12MP rear camera and 5MP front-facing camera, 3600 mAh battery. Get up to 27 hours talk time, Sensors include: Fingerprint, accelerometer, gyro, proximity, compass, barometer, heart rate, SpO2, 32GB internal memory, expansion possible, 2 year warrenty",
 			"productPrice": 376.95,
-			"productImgURL": "../Images/products/phone-mid/samsung_1.jpg",
+			"productImgURL": "../Images/BasketImages/samsung_1.jpg",
 			"productPageURL": "prod1_1.html",
 		},
 		{
@@ -130,7 +130,7 @@ var accountsArr =
 			"productName":"Samsung Galaxy Note 8 128GB ",
 			"productDescription": "6.3 inch Dual curved QHD+ Super AMOLED Display, 6GB RAM, 128GB internal memory with support for expandable memory up to 256GB microSD, Dual Edge wide-angle 12-megapixel camera, wide angle and telephoto lens, f1.7 aperture and f2.4 aperture, front-facing 8-megapixel camera, Iris Scanner for greater protection and more secure access to your phone, Use the stylus to bring out your creative side, 2 year warrenty",
 			"productPrice": 773.48,
-			"productImgURL": "../Images/products/phone-top/Samsung_Note_1.jpg",
+			"productImgURL": "../Images/BasketImages/Samsung_Note_1.jpg",
 			"productPageURL": "prod1_2.html",
 		},
 		{
@@ -139,7 +139,7 @@ var accountsArr =
 			"productName":"Lenovo IdeaPad ",
 			"productDescription": "The IdeaPad 120S features a redesigned chassis with simple, clean lines giving it a contemporary take on elegant style. You count on your devices to keep up with you. So the manufacturer applied a protective finish to guard against wear and tear. Lenovo also included subtle rubber detailing on the bottom cover to maximise ventilation and extend product life. Available in a sophisticated range of colours: Mineral grey, blizzard white and ballerina pink.",
 			"productPrice": 149.99,
-			"productImgURL": "../Images/products/laptop-cheap/Lenovo_IdeaPad_index.jpg",
+			"productImgURL": "../Images/BasketImages/LenovoIdeaPad.jpg",
 			"productPageURL": "prod2.html",
 		},
 		{
@@ -148,7 +148,7 @@ var accountsArr =
 			"productName":"HP Pavilion ",
 			"productDescription": "Intel Core i5-8250U, 8GB DDR4 SDRAM, 1TB HHD, 15.6 inch, 1366 x 768, Windows 10 Home",
 			"productPrice": 509.98,
-			"productImgURL": "../Images/products/laptop-mid/hp_1_index.jpg",
+			"productImgURL": "../Images/BasketImages/hp_1_index.jpg",
 			"productPageURL": "prod2_1.html",
 		},
 		{
@@ -157,7 +157,7 @@ var accountsArr =
 			"productName":"Dell Inspiron",
 			"productDescription": "Intel Core i7-7700HQ, 16GB DDR4 RAM, 512GH SSD, NVIDEA GeForce GTX 1050, 15.6 inch, 1920 x 1080 display, Anit-Glare LED-Backlit FHD, Windows 10 Home",
 			"productPrice": 849.99,
-			"productImgURL": "../Images/products/laptop-top/dell_1_index.jpg",
+			"productImgURL": "../Images/BasketImages/dell_1.jpg",
 			"productPageURL": "prod2_2.html",
 		},
 		{
@@ -166,7 +166,7 @@ var accountsArr =
 			"productName":"LG 1080p Full HD 21.5Inch LED TV ",
 			"productDescription": "1080p Full HD, 21.5' Screen, Suitable as TV or Monitor",
 			"productPrice": 109.99,
-			"productImgURL": "../Images/products/tv-cheap/lgCheap1.jpg",
+			"productImgURL": "../Images/BasketImages/lg22TV.jpg",
 			"productPageURL": "prod3.html",
 		},
 		{
@@ -175,7 +175,7 @@ var accountsArr =
 			"productName":"Samsung 32 inch Curved LED TV",
 			"productDescription": "Full HD 1080p Curved Screen for immersive viewing, Free Tuner, Dolby Sound Technology, Full HD Resolution with PIP, Wall mount and aesthetic Arcline stand, HDMI x 2 - SVGA x 1 - Components input x 1 - Composit input x 1 - USB 2.0 x 1",
 			"productPrice": 299.99,
-			"productImgURL": "../Images/products/tv-mid/samsung_tv_1_index.jpg",
+			"productImgURL": "../Images/BasketImages/samsumg32TV.jpg",
 			"productPageURL": "prod3_1.html",
 		},
 		{
@@ -184,7 +184,7 @@ var accountsArr =
 			"productName":"LG Hospitality Display LCD TV 55 inch",
 			"productDescription": "LG Hospitality Display LCD TV 55 inch, Full HD 1080p, 1920 x 1080,Dolby Sound Technology, Ethernet port, Wall mount and stand",
 			"productPrice": 939.28,
-			"productImgURL": "../Images/products/tv-top/lg_tv_1_index.jpg",
+			"productImgURL": "../Images/BasketImages/lg_tv_1.jpg",
 			"productPageURL": "prod3_2.html",
 		},
 		{
@@ -193,7 +193,7 @@ var accountsArr =
 			"productName":"DBPOWER Predator Drone ",
 			"productDescription": "720p HD camera, Wifi with real time video play-back, Extra battery to DOUBLE your flying time!, Designed for aspiring drone pilots, One key for take off and landing, Low power and out of range alarm",
 			"productPrice": 95.99,
-			"productImgURL": "../Images/products/drone-cheap/wifiDroneCheap1.jpg",
+			"productImgURL": "../Images/BasketImages/wifiDroneCheap1.jpg",
 			"productPageURL": "prod4.html",
 		},
 		{
@@ -202,7 +202,7 @@ var accountsArr =
 			"productName":"Parrot BeBop 2 Drone w/ Cockpit FPV Glasses ",
 			"productDescription": "Compact and lightweight drone at less than 500g, Live video stream from phone or tablet, Immersive First Person View with included Cockpit Glasses, Skycontroller 2 provides precise piloting and a max range of 2km, 25 minute flying time with a 270mAg battery, Low power and out of range alarm",
 			"productPrice": 491.80,
-			"productImgURL": "../Images/products/drone-mid/parrot_1.jpg",
+			"productImgURL": "../Images/BasketImages/parrot_1.jpg",
 			"productPageURL": "prod4_1.html",
 		},
 		{
@@ -211,7 +211,7 @@ var accountsArr =
 			"productName":"DJI Mavic Pro Drone Combo Kit ",
 			"productDescription": "Fly further from your pocket, The Mavic uses Sky Autonomy technology to sense obstacles up to 15m away, Precision Hover, Satellite positioning can help the drone hover in outdoor areas, Stay flying longer wit hup to 27 minute flying time, Intelligent Flight Battery, Quick release folding propellars, Charging Hub, Controller, Limited Addition extras pack",
 			"productPrice": 985.90,
-			"productImgURL": "../Images/products/drone-top/dji_1.jpg",
+			"productImgURL": "../Images/BasketImages/dji_1.jpg",
 			"productPageURL": "prod4_2.html"
 		}
 	]

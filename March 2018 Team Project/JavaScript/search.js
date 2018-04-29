@@ -25,15 +25,13 @@ $(document).ready(function() {
 			"<div class ='row'>" + 
 				"<div class='col-sm-3 col-md-3'>" +
 					"<a href=" + page + "><img src=" + image + "></a>" +
-				"</div>" + 
-				"<div class='col-sm-4 col-md-4'>" +
+				"</div>" +
+				"<div class='col-sm-1 col-md-1'></div>" + 
+				"<div class='col-sm-6 col-md-6'>" +
 					"<h4>" + name + "</h4>" + 
 					"<p>" + description + "</p>" +
 				"</div>" + 
-				"<div class='col-sm-2 col-md-2'> € " + price + "</div>" +
-				"<div class='col-sm-1 col-md-1'></div>" +
-				"<div class='col-sm-1 col-md-1'>" + 
-					"<button id='removeItem'>Add to Basket</button>" + 
+				"<div class='col-sm-2 col-md-2'>€ " + price + 
 				"</div>" +
 			"</div>");
 		}
