@@ -3,6 +3,9 @@ GUI & Web Devlopment Project 2018
 Authors: Darragh, Anthony, Noel
 */
 
+.heading-color{
+	color: #3b88d6;
+}
 /* NavBar */
 .navbar {
 	background-color: #404040;
@@ -38,8 +41,8 @@ a.selected{
 }
 /* Navbar End */
 body{
-	padding-left: 5%;
-	padding-right: 5%;
+	padding-left: 3.86%;
+	padding-right: 3.86%;
 }
 
 .btn-default {

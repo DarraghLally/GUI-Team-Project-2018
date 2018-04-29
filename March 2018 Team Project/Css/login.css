@@ -1,3 +1,8 @@
+body{
+	padding-left: 3.86%;
+	padding-right: 3.86%;
+}
+
 /* NavBar */
 .navbar {
 	background-color: #404040;
@@ -12,7 +17,7 @@
 .navbar a {
 	float: left;
 	display: block;
-						/*color: #f2f2f2;*/
+	/*color: #f2f2f2;*/
 	text-align: center;
 	padding: 14px 25px;
 	text-decoration: none;

@@ -3,48 +3,58 @@ document.getElementById("addToBasket").onclick = function()
 {
 	// Retrieve
 	var active = localStorage.getItem("basketActive");
+	//If account is active display holders name
+	var found = sessionStorage.getItem("loginActive");
 
-	if (active == 1)
+	if (found == 1)
 	{
-		//push productId into array
-		var prodIdArr = JSON.parse(localStorage["prodIdArr"]);
-		prodIdArr.push(1002);
-		//alert("Add to Basket was clicked");
-		
-		//get input from number bar
-		amount = Number(document.getElementById("quantity").value);
-		
-		//push to array
-		var quantityArr = JSON.parse(localStorage["quantityArr"]);
-		quantityArr.push(amount);
-		//alert(amount);
-		
-		//send arrays to local storage
-		localStorage["prodIdArr"] = JSON.stringify(prodIdArr);
-		localStorage["quantityArr"] = JSON.stringify(quantityArr);
-		localStorage.setItem("basketActive", 1);
-	}
-	else
-	{
-		//create empty arrays
-		var prodIdArr = [];
-		var quantityArr = [];
-		var num;
-		
-		//push productId into array
-		prodIdArr.push(1002);
-		//alert("Add to Basket was clicked");
-		
-		//get input from number bar
-		amount = Number(document.getElementById("quantity").value);
-		
-		//push to array
-		quantityArr.push(amount);
-				
-		//send arrays to local storage
-		localStorage["prodIdArr"] = JSON.stringify(prodIdArr);
-		localStorage["quantityArr"] = JSON.stringify(quantityArr);
-		localStorage.setItem("basketActive", 1);
+		var name = sessionStorage.getItem("accountName");
+		document.getElementById("nameTag").innerHTML = "Hello, " + name;
+		if (active == 1)
+		{
+			//push productId into array
+			var prodIdArr = JSON.parse(localStorage["prodIdArr"]);
+			prodIdArr.push(1002);
+			//alert("Add to Basket was clicked");
+			
+			//get input from number bar
+			amount = Number(document.getElementById("quantity").value);
+			
+			//push to array
+			var quantityArr = JSON.parse(localStorage["quantityArr"]);
+			quantityArr.push(amount);
+			//alert(amount);
+			
+			//send arrays to local storage
+			localStorage["prodIdArr"] = JSON.stringify(prodIdArr);
+			localStorage["quantityArr"] = JSON.stringify(quantityArr);
+			localStorage.setItem("basketActive", 1);
+		}
+		else
+		{
+			//create empty arrays
+			var prodIdArr = [];
+			var quantityArr = [];
+			var num;
+			
+			//push productId into array
+			prodIdArr.push(1002);
+			//alert("Add to Basket was clicked");
+			
+			//get input from number bar
+			amount = Number(document.getElementById("quantity").value);
+			
+			//push to array
+			quantityArr.push(amount);
+					
+			//send arrays to local storage
+			localStorage["prodIdArr"] = JSON.stringify(prodIdArr);
+			localStorage["quantityArr"] = JSON.stringify(quantityArr);
+			localStorage.setItem("basketActive", 1);
+		}
+	//change button to blue
+	document.getElementById("addToBasket").style.backgroundColor = "#3b88d6";
+	document.getElementById("addToBasket").style.color = "white";
 	}
 
 }

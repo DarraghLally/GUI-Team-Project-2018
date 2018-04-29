@@ -47,7 +47,9 @@ document.getElementById("addToBasket").onclick = function()
 		localStorage["quantityArr"] = JSON.stringify(quantityArr);
 		localStorage.setItem("basketActive", 1);
 	}
-
+	//change button to blue
+	document.getElementById("addToBasket").style.backgroundColor = "#3b88d6";
+	document.getElementById("addToBasket").style.color = "white";
 }
 
 	//On click 'Phones Dept' - send data to local

@@ -142,7 +142,19 @@ $(document).ready(function()
 		$("#date-value").html(currentdate);
 		$("#invoice-value").html(invoiceOutput);
 		$("#account-value").html(accountId);
-	}	
+		
+		//clear basket 0.5 seconds after page loads
+		setTimeout(function () {
+			var prodIdArr = [];
+			var quantityArr = [];
+			
+			// reset basket info
+			localStorage["prodIdArr"] = JSON.stringify(prodIdArr);
+			localStorage["quantityArr"] = JSON.stringify(quantityArr);
+			localStorage.setItem("basketActive", 0);
+			localStorage.setItem("couponActive", 0);
+		}, 500);
+	}// if
 });
 
 	//On click 'Phones Dept' - send data to local
