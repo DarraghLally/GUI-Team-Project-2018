@@ -16,69 +16,65 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	
 		<!-- Font Awesome Icons -->
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<!-- External CSS -->
 		<link href="../Css/checkout.css" rel="stylesheet">	
 	</head>
 	
 	<body>
-
 		<!--Navagation Bar-->
 		<nav class="navbar navbar-inverse">
-			  <div class="container-fluid">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span> 
-						</button>
-						
-						<a class="navbar-brand" href="../index.html">AND.com</a>
-						
-						<form class="navbar-form navbar-left" action="searchResults.html">
-							<div class="form-group ">
-								<input type="text" id="searchBarText" class="form-control" placeholder="Search">
-								<button type="submit" id="searchBtn" class="btn btn-default">Search</button>
-							</div>
-						</form>
-					</div>
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span> 
+					</button>
 
-					<div class="collapse navbar-collapse" id="myNavbar">	
-						<ul class="nav navbar-nav navbar-right">
+					<a class="navbar-brand" href="../index.html">AND.com</a>
+
+					<form class="navbar-form navbar-left" action="searchResults.html">
+						<div class="form-group ">
+							<input type="text" id="searchBarText" class="form-control" placeholder="Search">
+							<button type="submit" id="searchBtn" class="btn btn-default">Search</button>
+						</div>
+					</form>
+				</div>
+
+				<div class="collapse navbar-collapse" id="myNavbar">	
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown" >
+						<!-- If valid acount active display account holders name -->
+						<p id="nameTag"></p>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Departments
+						<span class="caret"></span></a>
+							<ul class="dropdown-menu" >
+								<li id="deptPhone"><a href="deptSearch.html">Phones</a></li>
+								<li id="deptLaptop"><a href="deptSearch.html">Laptops</a></li>
+								<li id="deptTV"><a href="deptSearch.html">Television</a></li>
+								<li id="deptDrone"><a href="deptSearch.html">Drone</a></li>
+							</ul>
+						</li>
 							<li class="dropdown" >
-								<!-- If valid acount active display account holders name -->
-								<p id="nameTag"></p>
-								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Departments
-								<span class="caret"></span></a>
-								<ul class="dropdown-menu" >
-									<li id="deptPhone"><a href="deptSearch.html">Phones</a></li>
-									<li id="deptLaptop"><a href="deptSearch.html">Laptops</a></li>
-									<li id="deptTV"><a href="deptSearch.html">Television</a></li>
-									<li id="deptDrone"><a href="deptSearch.html">Drone</a></li>
-								</ul>
-							</li>
-							<li class="dropdown" >
-								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Account
-								<span class="caret"></span></a>
-								<ul class="dropdown-menu" >
-									<li><a href="loginV2.html"><span class="glyphicon glyphicon-log-in"></span> Login / Sign Up</a></li>
-									<li><a href="changeAccount.html"><span class="glyphicon glyphicon-edit"></span> Edit Account</a></li>	
-									<li id="logOut"><a href="#"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
-								</ul>
-							</li>
-							<li><a href="Basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> Basket</a></li>
-						</ul>
-					</div>
-			  </div>
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Account
+						<span class="caret"></span></a>
+							<ul class="dropdown-menu" >
+								<li><a href="loginV2.html"><span class="glyphicon glyphicon-log-in"></span> Login / Sign Up</a></li>
+								<li><a href="changeAccount.html"><span class="glyphicon glyphicon-edit"></span> Edit Account</a></li>	
+								<li id="logOut"><a href="#"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+							</ul>
+						</li>
+						<li><a href="Basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> Basket</a></li>
+					</ul>
+				</div>
+			</div>
 		</nav>	
 <!---------    Start of Credit Card Details  ---------->	
 		<div class="container">
-			
-				
-					<!-- CREDIT CARD FORM STARTS HERE -->
-					
-					<form name="oredrForm" method="post" action="Orders.html">
-					<fieldset>
+		<!-- CREDIT CARD FORM STARTS HERE -->					
+			<form name="oredrForm" method="post" action="Orders.html">
+				<fieldset>
 					<div class="panel panel-default credit-card-box center">
-					
 						<div class="panel-heading display-table" >
 							<div class="row display-tr" >
 								<h3 class="panel-title display-td" >Payment Details</h3>
@@ -156,7 +152,6 @@
 								<div class="row">
 									<div class="col-xs-12">
 										<button type="submit" id="couponBtn" name="confirmsignup" class="subscribe btn btn-success btn-lg btn-block">Complete Transaction</button>
-
 									</div>
 								</div>
 								
@@ -168,16 +163,17 @@
 							</form>
 						</div>
 				    </div> 
-					</fieldset>
-				    </form>        
-			</div>
-			<!-- Place holder buttons for misc pages-->
-			<div class="btnList text-center footer">
-				<a class="btn btn-default " target = "_blank" href="https://github.com/DarraghLallyGMIT/GUI-Team-Project-2018" ><i class="fa fa-github fa-lg" id="githubIcon" aria-hidden="true"></i> GitHub</a>	
-				<a class="btn btn-default" href="contactUs.html" ><i class="fa fa-envelope-open" id="contactIcon" aria-hidden="true"></i> Contact Us</a>
-				<a class="btn btn-default" href="terms.html" ><i class="fa fa-university" id = "termsIcon" ></i> Terms & Conditions</a>
-			</div>			
+				</fieldset>
+			</form>        
 		</div>
+		
+		<!-- Footer-->
+		<div class="btnList text-center footer">
+			<a class="btn btn-default " target = "_blank" href="https://github.com/DarraghLallyGMIT/GUI-Team-Project-2018" ><i class="fa fa-github fa-lg" id="githubIcon" aria-hidden="true"></i> GitHub</a>	
+			<a class="btn btn-default" href="contactUs.html" ><i class="fa fa-envelope-open" id="contactIcon" aria-hidden="true"></i> Contact Us</a>
+			<a class="btn btn-default" href="terms.html" ><i class="fa fa-university" id = "termsIcon" ></i> Terms & Conditions</a>
+		</div>			
+
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

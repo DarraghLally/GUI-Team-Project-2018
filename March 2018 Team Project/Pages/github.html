@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- GUI & Web Development Project 2018-->
+<!-- Authors: Darragh, Anthony, Noel -->
+<html>
+	<head>
+		<title>product1.com</title>
+		<!-- Icon for title -->
+		<link rel="shortcut icon" type="image/x-icon" href="../Images/Laptop-icon.png" />
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!--Adding meta data for search engines and to control the view a user has when on the site-->
+		<meta name="description" content="LG K8 SIM Free SmartPhone">
+		<meta name="keywords" content="phone">
+		<!-- <meta name="viewport" content="****************"> -->
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	
+		<!-- External CSS -->				
+		<link href="../Css/github.css" rel="stylesheet">  
+		<!-- External google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+		<!-- Font Awesome Icons -->
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	</head>
+	
+	<body>
+		<!--Navagation Bar-->
+		<nav class="navbar navbar-inverse">
+			  <div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span> 
+						</button>						
+						<a class="navbar-brand" href="../index.html">AND.com</a>						
+						<form class="navbar-form navbar-left" action="searchResults.html">
+							<div class="form-group ">
+								<input type="text" id="searchBarText" class="form-control" placeholder="Search">
+								<button type="submit" id="searchBtn" class="btn btn-default">Search</button>
+							</div>
+						</form>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">	
+						<ul class="nav navbar-nav navbar-right">
+							<li class="dropdown" >
+								<!-- If valid acount active display account holders name -->
+								<p id="nameTag"></p>
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Departments
+								<span class="caret"></span></a>
+								<ul class="dropdown-menu" >
+									<li><a href="#">Phones</a></li>
+									<li><a href="#">Laptops</a></li>
+									<li><a href="#">Sound</a></li>
+									<li><a href="#">Televisions</a></li>
+								</ul>
+							</li>
+							<li class="dropdown" >
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Account
+								<span class="caret"></span></a>
+								<ul class="dropdown-menu" >
+									<li><a href="loginV2.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+									<li><a href="loginV2.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+									<li><a href="#">Page 1-2</a></li>
+									<li><a href="#">Page 1-3</a></li>
+								</ul>
+							</li>
+							<li><a href="Basket.html"><span class="glyphicon glyphicon-shopping-cart"></span> Basket</a></li>
+						</ul>
+					</div>
+			  </div>
+		</nav>	
+				
+		<div class="container">
+			<div style="text-align:left">
+				<div>
+				<h2 style="text-align:center">GitHub Accounts</h2>
+			</div>	
+			<div class="row">
+				<p style="text-align:center"><b>Click on Name to go to GitHub Accounts</b></p>
+				<!-- Noel Melia Photo -->
+				<div class="col-sm-3 col-md-3 photoSize">
+					<div style="display:table-cell; vertical-align:middle; text-align:center">
+						<img src="../Images/Profile Pics/Noel.png" width="150px" height="150px"><br><br>		
+						<a href="https://github.com/NoelMelia" target = "_blank" style="text-align:center"><b>Noel's GitHub Page</b></a>
+					</div>											
+				</div>
+				<!-- Right Col - Product Purchase -->
+				<div class="col-sm-3 col-md-3 photoSize" >
+					<div style="display:table-cell; vertical-align:middle; text-align:center">
+						<img src="../Images/Profile Pics/Darragh.png" width="150px" height="150px"><br><br>
+						<a href="https://github.com/DarraghLallyGMIT" target = "_blank" style="text-align:center"><b>Darragh's GitHub Page</b></a>
+					</div>
+				</div>
+				<div class="col-sm-3 col-md-3 photoSize" >
+					<div style="display:table-cell; vertical-align:middle; text-align:center">
+						<img src="../Images/Profile Pics/Anthony.png" width="150px" height="150px"><br><br>
+						<a href="https://github.com/AntoMoore" target = "_blank" style="text-align:center"><b>Anthony's GitHub Page</b></a>						
+					</div>
+				</div>									
+			</div>	<!-- End Row -->	
+			
+			<!-- Footer-->
+			<br><br><br><br>
+			<div class="btnList text-center">
+				<a class="btn btn-default " target = "_blank" href="https://github.com/DarraghLallyGMIT/GUI-Team-Project-2018" ><i class="fa fa-github fa-lg" id="githubIcon" aria-hidden="true"></i> GitHub</a>	
+				<a class="btn btn-default" href="contactUs.html" ><i class="fa fa-envelope-open" id="contactIcon" aria-hidden="true"></i> Contact Us</a>
+				<a class="btn btn-default" href="terms.html" ><i class="fa fa-university" id = "termsIcon" ></i> Terms & Conditions</a>
+			</div>			
+		</div>
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- External JavaScript -->
+		
+	</body>
+	
+
+</html>
