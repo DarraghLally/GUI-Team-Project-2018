@@ -5,43 +5,43 @@ var couponArr =
 	[
 		{
 			"couponCode": 99990,
-			"couponDate": 100117,
+			"couponDate": 20161001,
 		},
 		{
 			"couponCode": 99991,
-			"couponDate": 011011,
+			"couponDate": 20161001,
 		},
 		{
 			"couponCode": 99992,
-			"couponDate": 010119,
+			"couponDate": 20191001,
 		},
 		{
 			"couponCode": 99993,
-			"couponDate": 010118,
+			"couponDate": 20191001,
 		},
 		{
 			"couponCode": 99994,
-			"couponDate": 010119,
+			"couponDate": 20191001,
 		},
 		{
 			"couponCode": 99995,
-			"couponDate": 010118,
+			"couponDate": 20191001,
 		},
 		{
 			"couponCode": 99996,
-			"couponDate": 010119,
+			"couponDate": 20191001,
 		},
 		{
 			"couponCode": 99997,
-			"couponDate": 010118,
+			"couponDate": 20191001,
 		},
 		{
 			"couponCode": 99998,
-			"couponDate": 010119,
+			"couponDate": 20191001,
 		},
 		{
 			"couponCode": 99999,
-			"couponDate": 010119
+			"couponDate": 20191001
 		}					
 	]
 
@@ -59,21 +59,21 @@ document.getElementById("couponBtn").onclick = function()
 	var discount = false;
 	var validCode;
 	//get current date
-	var currentdate = new Date();
+	//var currentdate = new Date();
 	//get details that user has enter for code and date
 	var couponCode = document.getElementById("codeInput").value;
 	// Then search through the coupons to valid coupon
 	for (var i = 0; i< couponArr.length; i++) 
 	{
 		var code = couponArr[i].couponCode;
-		//var date = couponArr[i].couponDate;
+		var date = couponArr[i].couponDate;
 		
 		//test if date is valid
-		if (couponCode == code)
+		if (couponCode == code && 20180429 <= date)
 		{
 			discount = true;
 			validCode = code;
-			alert("coupon");
+			
 		}
 		
 		//add check date
