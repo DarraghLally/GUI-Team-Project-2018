@@ -13,53 +13,46 @@ $(document).ready(function() {
 	var amountArr = JSON.parse(sessionStorage["quantityArr"]);
 	var productsArr = JSON.parse(localStorage["productsArr"]);
 	
-	//If account is active 
-	var found = sessionStorage.getItem("loginActive");
-	var name = sessionStorage.getItem("accountName");
-	document.getElementById("nameTag").innerHTML = "Hello, " + name;
-
-	if (found == 1)
+	//make a loop to search through the product numbers
+	for (var i = 0; i < productIdNumArr.length; i++)
 	{
-		//make a loop to search through the product numbers
-		for (var i = 0; i < productIdNumArr.length; i++)
+		var productIdNum = productIdNumArr[i];
+		var amount = amountArr[i];
+	
+		//make loop and search through JSON arrays
+		for (var j = 0; j < productsArr.length; j++)
 		{
-			var productIdNum = productIdNumArr[i];
-			var amount = amountArr[i];
-		
-			//make loop and search through JSON arrays
-			for (var j = 0; j < productsArr.length; j++)
+			var id = productsArr[j].productID;
+			var name = productsArr[j].productName;
+			var description = productsArr[j].productDescription;
+			var price = productsArr[j].productPrice.toFixed(2);
+			var image = productsArr[j].productImgURL;
+			
+			if (productIdNum == id)
 			{
-				var id = productsArr[j].productID;
-				var name = productsArr[j].productName;
-				var description = productsArr[j].productDescription;
-				var price = productsArr[j].productPrice.toFixed(2);
-				var image = productsArr[j].productImgURL;
+				//counters for subtotal and items in basket
+				subTotal += (price * amount);
+				itemsCounter += Number(amount);
 				
-				if (productIdNum == id)
-				{
-					//counters for subtotal and items in basket
-					subTotal += (price * amount);
-					itemsCounter += Number(amount);
-					
-					//use jQuery to output the JSON objects to the page (with bootStrap imbedded)
-					$("#basketInfo").prepend(
-					"<div class ='row'>" + 
-						"<div class='col-sm-3 col-md-3 text-center'>" +
-							"<img src=" + image + ">" +
-						"</div>" + 
-						"<div class='col-sm-4 col-md-4'>" +
-							"<h4 class='heading-color'>" + name + "</h4>" + 
-							"<p>" + description + "</p>" +
-						"</div>" + 
-						"<div class='col-sm-2 col-md-2'>€ " + price + "</div>" +
-						"<div class='col-sm-1 col-md-1'>" + amount + "</div>" +
-						"<div class='col-sm-1 col-md-1'>" + 
-							"<button id='remove_" + (i+1) + "'>Remove</button>" + 
-						"</div>" +
-					"</div>");
-				}// if
-			}// inner for 
-		}// outer for 
+				//use jQuery to output the JSON objects to the page (with bootStrap imbedded)
+				$("#basketInfo").prepend(
+				"<div class ='row'>" + 
+					"<div class='col-sm-3 col-md-3 text-center'>" +
+						"<img src=" + image + ">" +
+					"</div>" + 
+					"<div class='col-sm-4 col-md-4'>" +
+						"<h4 class='heading-color'>" + name + "</h4>" + 
+						"<p>" + description + "</p>" +
+					"</div>" + 
+					"<div class='col-sm-2 col-md-2'>€ " + price + "</div>" +
+					"<div class='col-sm-1 col-md-1'>" + amount + "</div>" +
+					"<div class='col-sm-1 col-md-1'>" + 
+						"<button id='remove_" + (i+1) + "'>Remove</button>" + 
+					"</div>" +
+				"</div>");
+			}// if
+		}// inner for 
+	}// outer for 
 	
 	//get totals after closing loop
 	vatCharged = (subTotal * vatRate);
@@ -71,8 +64,6 @@ $(document).ready(function() {
     $("#vat-value").html("€ " + vatCharged.toFixed(2));
 	$("#shipping-value").html("€ " + shipping.toFixed(2));
 	$("#totals-value").html("€ " + grandTotal.toFixed(2));
-	
-	}//if
 	
 	//On click 'Phones Dept' - send data to local
 	document.getElementById("deptPhone").onclick = function()
@@ -392,4 +383,13 @@ $(document).ready(function() {
 		//refresh page
 		location.reload();
 	}
-});	
+});
+
+//If account is active display holders name
+var found = sessionStorage.getItem("loginActive");
+
+if (found == 1)
+{
+	var name = sessionStorage.getItem("accountName");
+	document.getElementById("nameTag").innerHTML = "Hello, " + name;
+}
