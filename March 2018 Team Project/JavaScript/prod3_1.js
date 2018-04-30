@@ -53,6 +53,10 @@ document.getElementById("addToBasket").onclick = function()
 		document.getElementById("addToBasket").style.backgroundColor = "#3b88d6";
 		document.getElementById("addToBasket").style.color = "white";
 	}
+	else
+	{
+		alert("Please login/sign-up");
+	}
 
 	
 }
