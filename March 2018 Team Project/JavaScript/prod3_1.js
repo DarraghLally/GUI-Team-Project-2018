@@ -1,84 +1,89 @@
-//On click 'add to basket' - Getting quantity amount - Adding product ID and quantity to local storage to be pulled into Basket.html for processing
+//On click 'add to basket' - Getting quantity amount - Adding product ID and quantity to session storage to be pulled into Basket.html for processing
 document.getElementById("addToBasket").onclick = function()
 {
-	// Retrieve
-	var active = localStorage.getItem("basketActive");
+	// Retrieve session data
+	var active = sessionStorage.getItem("basketActive");
+	var found = sessionStorage.getItem("loginActive");
 
-	if (active == 1)
+	if (found == 1)
 	{
-		//push productId into array
-		var prodIdArr = JSON.parse(localStorage["prodIdArr"]);
-		prodIdArr.push(3002);
-		//alert("Add to Basket was clicked");
 		
-		//get input from number bar
-		amount = Number(document.getElementById("quantity").value);
-		
-		//push to array
-		var quantityArr = JSON.parse(localStorage["quantityArr"]);
-		quantityArr.push(amount);
-		//alert(amount);
-		
-		//send arrays to local storage
-		localStorage["prodIdArr"] = JSON.stringify(prodIdArr);
-		localStorage["quantityArr"] = JSON.stringify(quantityArr);
-		localStorage.setItem("basketActive", 1);
+		if (active == 1)
+		{
+			//push productId into array
+			var prodIdArr = JSON.parse(sessionStorage["prodIdArr"]);
+			prodIdArr.push(3002);
+			
+			//get input from number bar
+			amount = Number(document.getElementById("quantity").value);
+			
+			//push to array
+			var quantityArr = JSON.parse(sessionStorage["quantityArr"]);
+			quantityArr.push(amount);
+			
+			//send arrays to local storage
+			sessionStorage["prodIdArr"] = JSON.stringify(prodIdArr);
+			sessionStorage["quantityArr"] = JSON.stringify(quantityArr);
+			sessionStorage.setItem("basketActive", 1);
+		}
+		else
+		{
+			//create empty arrays
+			var prodIdArr = [];
+			var quantityArr = [];
+			var num;
+			
+			//push productId into array
+			prodIdArr.push(3002);
+			//alert("Add to Basket was clicked");
+			
+			//get input from number bar
+			amount = Number(document.getElementById("quantity").value);
+			
+			//push to array
+			quantityArr.push(amount);
+			//alert(amount);
+			
+			//send arrays to session storage
+			sessionStorage["prodIdArr"] = JSON.stringify(prodIdArr);
+			sessionStorage["quantityArr"] = JSON.stringify(quantityArr);
+			sessionStorage.setItem("basketActive", 1);
+		}
+		//change button to blue
+		document.getElementById("addToBasket").style.backgroundColor = "#3b88d6";
+		document.getElementById("addToBasket").style.color = "white";
 	}
-	else
-	{
-		//create empty arrays
-		var prodIdArr = [];
-		var quantityArr = [];
-		var num;
-		
-		//push productId into array
-		prodIdArr.push(3002);
-		//alert("Add to Basket was clicked");
-		
-		//get input from number bar
-		amount = Number(document.getElementById("quantity").value);
-		
-		//push to array
-		quantityArr.push(amount);
-		//alert(amount);
-		
-		//send arrays to local storage
-		localStorage["prodIdArr"] = JSON.stringify(prodIdArr);
-		localStorage["quantityArr"] = JSON.stringify(quantityArr);
-		localStorage.setItem("basketActive", 1);
-	}
-	//change button to blue
-	document.getElementById("addToBasket").style.backgroundColor = "#3b88d6";
-	document.getElementById("addToBasket").style.color = "white";
+
+	
 }
 
-	//On click 'Phones Dept' - send data to local
-	document.getElementById("deptPhone").onclick = function()
-	{	
-		//send search
-		localStorage.setItem("searchDepartment", "Phone");
-	}
-	
-	//On click 'Laptops Dept' - send data to local
-	document.getElementById("deptLaptop").onclick = function()
-	{	
-		//send search
-		localStorage.setItem("searchDepartment", "Laptop");
-	}
-	
-	//On click 'TV Dept' - send data to local
-	document.getElementById("deptTV").onclick = function()
-	{	
-		//send search
-		localStorage.setItem("searchDepartment", "TV");
-	}
-	
-	//On click 'Drone Dept' - send data to local
-	document.getElementById("deptDrone").onclick = function()
-	{	
-		//send search
-		localStorage.setItem("searchDepartment", "Drone");
-	}
+//On click 'Phones Dept' - send data to local
+document.getElementById("deptPhone").onclick = function()
+{	
+	//send search
+	localStorage.setItem("searchDepartment", "Phone");
+}
+
+//On click 'Laptops Dept' - send data to local
+document.getElementById("deptLaptop").onclick = function()
+{	
+	//send search
+	localStorage.setItem("searchDepartment", "Laptop");
+}
+
+//On click 'TV Dept' - send data to local
+document.getElementById("deptTV").onclick = function()
+{	
+	//send search
+	localStorage.setItem("searchDepartment", "TV");
+}
+
+//On click 'Drone Dept' - send data to local
+document.getElementById("deptDrone").onclick = function()
+{	
+	//send search
+	localStorage.setItem("searchDepartment", "Drone");
+}
 
 //On click 'search' - send input text to local
 document.getElementById("searchBtn").onclick = function()
