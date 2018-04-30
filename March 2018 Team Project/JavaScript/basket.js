@@ -15,12 +15,11 @@ $(document).ready(function() {
 	
 	//If account is active 
 	var found = sessionStorage.getItem("loginActive");
+	var name = sessionStorage.getItem("accountName");
+	document.getElementById("nameTag").innerHTML = "Hello, " + name;
 
 	if (found == 1)
 	{
-		var name = sessionStorage.getItem("accountName");
-		document.getElementById("nameTag").innerHTML = "Hello, " + name;
-		
 		//make a loop to search through the product numbers
 		for (var i = 0; i < productIdNumArr.length; i++)
 		{
