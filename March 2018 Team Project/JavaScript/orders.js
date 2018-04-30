@@ -44,13 +44,13 @@ $(document).ready(function()
 	var vatCharged = 0;
 	var shipping = 15.00;
 	var itemsCounter = 0;
-	// Retrieve local storage data
-	var productIdNumArr = JSON.parse(localStorage["prodIdArr"]);
-	var amountArr = JSON.parse(localStorage["quantityArr"]);
 	
+	// Retrieve storage data
+	var productIdNumArr = JSON.parse(sessionStorage["prodIdArr"]);
+	var amountArr = JSON.parse(sessionStorage["quantityArr"]);
 	var newCoupon = localStorage.getItem("couponActive");
 	
-	//If account is active display holders name
+	//If account is active
 	var found = sessionStorage.getItem("loginActive");
 
 	if (found == 1)
@@ -149,8 +149,8 @@ $(document).ready(function()
 			var quantityArr = [];
 			
 			// reset basket info
-			localStorage["prodIdArr"] = JSON.stringify(prodIdArr);
-			localStorage["quantityArr"] = JSON.stringify(quantityArr);
+			sessionStorage["prodIdArr"] = JSON.stringify(prodIdArr);
+			sessionStorage["quantityArr"] = JSON.stringify(quantityArr);
 			localStorage.setItem("basketActive", 0);
 			localStorage.setItem("couponActive", 0);
 		}, 500);

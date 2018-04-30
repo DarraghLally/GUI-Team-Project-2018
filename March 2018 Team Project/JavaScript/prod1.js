@@ -1,34 +1,31 @@
-//On click 'add to basket' - Getting quantity amount - Adding product ID and quantity to local storage to be pulled into Basket.html for processing
+//On click 'add to basket' - Getting quantity amount - Adding product ID and quantity to session storage to be pulled into Basket.html for processing
 document.getElementById("addToBasket").onclick = function()
 {
-	// Retrieve
-	var active = localStorage.getItem("basketActive");
-	//If account is active display holders name
+	// Retrieve session data
+	var active = sessionStorage.getItem("basketActive");
 	var found = sessionStorage.getItem("loginActive");
 
 	if (found == 1)
 	{
-		var name = sessionStorage.getItem("accountName");
-		document.getElementById("nameTag").innerHTML = "Hello, " + name;
 		
 		if (active == 1)
 		{
 			//push productId into array
-			var prodIdArr = JSON.parse(localStorage["prodIdArr"]);
+			var prodIdArr = JSON.parse(sessionStorage["prodIdArr"]);
 			prodIdArr.push(1001);
 		
 			//get input from number bar
 			amount = Number(document.getElementById("quantity").value);
 			
 			//push to array
-			var quantityArr = JSON.parse(localStorage["quantityArr"]);
+			var quantityArr = JSON.parse(sessionStorage["quantityArr"]);
 			quantityArr.push(amount);
 			//alert(amount);
 			
-			//send arrays to local storage
-			localStorage["prodIdArr"] = JSON.stringify(prodIdArr);
-			localStorage["quantityArr"] = JSON.stringify(quantityArr);
-			localStorage.setItem("basketActive", 1);
+			//send arrays to sessionStorage
+			sessionStorage["prodIdArr"] = JSON.stringify(prodIdArr);
+			sessionStorage["quantityArr"] = JSON.stringify(quantityArr);
+			sessionStorage.setItem("basketActive", 1);
 		}
 		else
 		{
@@ -49,13 +46,13 @@ document.getElementById("addToBasket").onclick = function()
 			//alert(amount);
 			
 			//send arrays to local storage
-			localStorage["prodIdArr"] = JSON.stringify(prodIdArr);
-			localStorage["quantityArr"] = JSON.stringify(quantityArr);
-			localStorage.setItem("basketActive", 1);
+			sessionStorage["prodIdArr"] = JSON.stringify(prodIdArr);
+			sessionStorage["quantityArr"] = JSON.stringify(quantityArr);
+			sessionStorage.setItem("basketActive", 1);
 		}
-	//change button to blue
-	document.getElementById("addToBasket").style.backgroundColor = "#3b88d6";
-	document.getElementById("addToBasket").style.color = "white";
+		//change button to blue
+		document.getElementById("addToBasket").style.backgroundColor = "#3b88d6";
+		document.getElementById("addToBasket").style.color = "white";
 	}
 }
 
