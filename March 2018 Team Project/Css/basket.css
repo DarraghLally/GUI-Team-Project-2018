@@ -13,6 +13,7 @@
 	z-index: 1; /* To insure the drop down menu takes president over other page elements */
 }
 
+
 .navbar a {
 	float: left;
 	display: block;
@@ -38,12 +39,7 @@ a.selected{
 
 /* NavBar End */
 /*Css for Footer*/
-.footer {
-	position: absolute;
-	bottom: 0;
-	width: 96%;
-	height: 50px;
-}
+
 
 #githubIcon {
   color: #6C0674;
