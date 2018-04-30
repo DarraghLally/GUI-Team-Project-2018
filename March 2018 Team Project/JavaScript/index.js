@@ -111,7 +111,7 @@ var accountsArr =
 			"productDept": "Phone",
 			"productName":"LG K8",
 			"productDescription": "5.0' HD In-cell Touch Display with 2.5D Arc Glass Wide display, smooth edges. The big bright 5.0' HD In-cell display has 2.5D Arc glass edges that are smooth to the touch. Your eyes and fingers will thank you. In every single way, the full-featured 13MP camera brilliantly captures the best moments of your life.",
-			"productPrice": 103.90,
+			"productPrice": 103.95,
 			"productImgURL": "../Images/BasketImages/lgk8Mobile.jpg",
 			"productPageURL": "prod1.html",
 		},
@@ -201,7 +201,7 @@ var accountsArr =
 			"productDept": "Drone",
 			"productName":"Parrot BeBop 2 Drone w/ Cockpit FPV Glasses ",
 			"productDescription": "Compact and lightweight drone at less than 500g, Live video stream from phone or tablet, Immersive First Person View with included Cockpit Glasses, Skycontroller 2 provides precise piloting and a max range of 2km, 25 minute flying time with a 270mAg battery, Low power and out of range alarm",
-			"productPrice": 491.80,
+			"productPrice": 491.85,
 			"productImgURL": "../Images/BasketImages/parrot_1.jpg",
 			"productPageURL": "prod4_1.html",
 		},
@@ -210,7 +210,7 @@ var accountsArr =
 			"productDept": "Drone",
 			"productName":"DJI Mavic Pro Drone Combo Kit ",
 			"productDescription": "Fly further from your pocket, The Mavic uses Sky Autonomy technology to sense obstacles up to 15m away, Precision Hover, Satellite positioning can help the drone hover in outdoor areas, Stay flying longer wit hup to 27 minute flying time, Intelligent Flight Battery, Quick release folding propellars, Charging Hub, Controller, Limited Addition extras pack",
-			"productPrice": 985.90,
+			"productPrice": 985.95,
 			"productImgURL": "../Images/BasketImages/dji_1.jpg",
 			"productPageURL": "prod4_2.html"
 		}
